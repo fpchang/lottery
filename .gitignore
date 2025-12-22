@@ -1,0 +1,6 @@
+node_modules/
+unpackage/
+manifest
+.hbuilderx/
+pages/kl8/storage/
+pages/kl8/buckets/
