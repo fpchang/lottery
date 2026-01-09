@@ -73,9 +73,9 @@ function printTop10(selectNum, data) {
 async function main() {
     // 配置参数
     const TOTAL_DRAWS = 20;
-    const SELECT_NUMS = [7, 8, 9, 10]; // 重点测试大组合数
+    const SELECT_NUMS = [5]; // 重点测试大组合数
     //const historyData = generateMockHistory(TOTAL_DRAWS);
-	const historyData = kl8_data.map(item=>item.redBall);
+	const historyData = kl8_data.map(item=>item.redBall).slice(0,100);
     console.log(`===== 快乐8统计开始 =====`);
     console.log(`模拟期数：${TOTAL_DRAWS}，选号数：${SELECT_NUMS.join(',')}\n`);
 
