@@ -1,3 +1,4 @@
+import { kl8_data } from "../kl8_data.js";
 /**
  * 生成数组的所有n个元素的组合（模拟Python的itertools.combinations）
  * @param {Array} arr - 源数组
@@ -93,24 +94,20 @@ function printTopOmission(omissionDict, topN = 10) {
 // 测试示例
 // ------------------------------
 // 模拟历史开奖数据（实际使用时替换为真实数据）
-const testHistory = [
-    [1, 5, 8, 12, 15, 20, 25, 30, 35, 40],  // 第1期
-    [2, 6, 9, 13, 16, 21, 26, 31, 36, 41],  // 第2期
-    [3, 7, 10, 14, 17, 22, 27, 32, 37, 42], // 第3期
-    [4, 8, 11, 18, 19, 23, 28, 33, 38, 43], // 第4期
-    [5, 9, 12, 15, 20, 24, 29, 34, 39, 44], // 第5期
-];
 
+
+const history = kl8_data.map(item=>item.redBall);
+//console.log(history)
 // 示例1：计算选2组合的遗漏数据
 try {
-    const select2Omission = calculateHappy8Omission(testHistory, 2);
+    const select2Omission = calculateHappy8Omission(history, 2);
     console.log("=== 快乐8选2组合遗漏数据 ===");
-    printTopOmission(select2Omission, 5);
+    printTopOmission(select2Omission, 20);
 
     // 示例2：计算选3组合的遗漏数据
-    const select3Omission = calculateHappy8Omission(testHistory, 3);
+    const select3Omission = calculateHappy8Omission(history, 3);
     console.log("\n=== 快乐8选3组合遗漏数据 ===");
-    printTopOmission(select3Omission, 5);
+    printTopOmission(select3Omission, 20);
 } catch (error) {
     console.error("计算出错：", error.message);
 }
