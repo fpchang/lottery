@@ -1,12 +1,7 @@
 import {
 	kl8_data
 } from "./kl8_data.js";
-import {
-	getSpecifiedLengthCombinations,
-	sortObjectByNumberValue,
-	sortObjectArrayByNumberValue,
-	countStrDuplicatesAndSort
-} from "./math.js"
+
 const history = kl8_data;
 const BALL = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
 	30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
@@ -220,20 +215,26 @@ function getGroupList(listHistory) {
 }
 //console.log(getRandomRedBall());
 //sameHistory(2,history);
-//与所有历史数据相比
+//与所有历史数据相比 基本在【2，8】之间
 function S0(list, history) {
-	let result = true;
-
+	let result = {};
+	let flag =true;
 	for (let i = 0; i < history.length; i++) {
 		let newList = new Set([...history[i].redBall, ...list]);
-		if (newList.size < 8) {
+		let num = list.length+history[i].redBall.length - newList.size;
+		if (num<2 || num>8) {
 			// console.log("repeat and:"+history[i].index);
-			result = false;
+			flag = false;
 			break;
 		}
-	}
-
-	return result;
+	// 	if(result[num]){
+	// 		result[num]++
+	// 	}else{
+	// 		result[num]=1
+	// 	}
+	 }
+	// console.log("与历史 所有数据相比重复数量 ：",result)
+	return flag;
 
 }
 //红球算法 与前几期比较
@@ -264,7 +265,8 @@ function S1(list, history) {
 	const s6 = count6 > 14 && count4 < 20;
 	const s7 = count7 > 15 && count4 < 20;
 	const s8 = count8 > 16;
-	if (s1 & s2 && s3 && s4 && s5 && s6 && s7 && s8) {
+	const s = S0(list,history);
+	if (s&&s1 & s2 && s3 && s4 && s5 && s6 && s7 && s8) {
 		return true
 	}
 	return false;
@@ -400,12 +402,11 @@ function caculate(fn, n = 20) {
 //  const c5=getGroupList(history.slice(history.length-5));
 //  const c6=getGroupList(history.slice(history.length-6));
 //  console.log(new Set(c4),new Set(c5),new Set(c6));
-//const list=caculate(S1,10);
-//console.log(list);
+
 //console.log(sortObjectByNumberValue(S1_stat(list)));
 
 //set NODE_OPTIONS=--max-old-space-size=4096
-S5(10,6);
+//S5(10,6);
 //getWinTime([22,34,56,66],history);//4-75,3-32,2-17,5-23
 
 // history.forEach(item=>{
@@ -456,3 +457,7 @@ S5(10,6);
 //   '16,46,53,55,62': 5,
 //   '5,28,33,34,45': 5,
 //   '9,13,28,34,48': 5
+// for(let i=0;i<history.length;i++){
+// 	let item = history[i].redBall;
+// 	S0(item,history)
+// }
