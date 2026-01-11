@@ -1,4 +1,4 @@
-import { kl8_data } from "../kl8_data.js";
+import { ssq_history } from "../ssq_data.js";
 /**
  * 生成数组的所有n个元素的组合（模拟Python的itertools.combinations）
  * @param {Array} arr - 源数组
@@ -31,15 +31,15 @@ function combinations(arr, n) {
  */
 function calculateHappy8Omission(historyData, selectNum) {
     // 输入参数验证
-    if (!Number.isInteger(selectNum) || selectNum < 2 || selectNum > 10) {
-        throw new Error("选号类型必须是2到10之间的整数");
+    if (!Number.isInteger(selectNum) || selectNum < 2 || selectNum > 6) {
+        throw new Error("选号类型必须是1到6之间的整数");
     }
     if (!Array.isArray(historyData) || historyData.length === 0) {
         throw new Error("历史开奖记录不能为空且必须是数组格式");
     }
 
-    // 生成快乐8所有号码（1-80）
-    const allNumbers = Array.from({ length: 80 }, (_, i) => i + 1);
+    // 生成快乐8所有号码（1-33）
+    const allNumbers = Array.from({ length: 33}, (_, i) => i + 1);
     // 生成所有选n组合
     const allCombinations = combinations(allNumbers, selectNum);
     // 初始化遗漏字典：所有组合初始遗漏为总期数（从未出现）
@@ -101,18 +101,19 @@ function printTopOmission(omissionDict, topN = 10) {
 // 模拟历史开奖数据（实际使用时替换为真实数据）
 
 
-const history = kl8_data.map(item=>item.redBall);
+const history = ssq_history.map(item=>item.redBall);
 //console.log(history)
 // 示例1：计算选2组合的遗漏数据
 try {
+    console.log("history length",history.length)
     const select2Omission = calculateHappy8Omission(history, 2);
-    console.log("=== 快乐8选2组合遗漏数据 ===",sortDesc(select2Omission));
+    console.log("=== 双色球选2组合遗漏数据 ===",sortDesc(select2Omission));
     printTopOmission(select2Omission, 20);
 
     // 示例2：计算选3组合的遗漏数据
-   // const select3Omission = calculateHappy8Omission(history, 3);
-   // console.log("\n=== 快乐8选3组合遗漏数据 ===");
-   // printTopOmission(select3Omission, 20);
+   const select3Omission = calculateHappy8Omission(history, 3);
+   console.log("\n=== 双色球选3组合遗漏数据 ===");
+   printTopOmission(select3Omission, 20);
 } catch (error) {
     console.error("计算出错：", error.message);
 }

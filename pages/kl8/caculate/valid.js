@@ -63,3 +63,7 @@ function caculate() {
 	return result;
 }
 caculate();
+caculate();
+caculate();
+caculate();
+caculate();
