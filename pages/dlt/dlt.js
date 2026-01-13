@@ -1,5 +1,5 @@
 
-import { dltHistory } from "./dlt_data.js";
+import { dltHistory } from "../../common/dlt.js";
 const redballAll =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]
 const history=dltHistory;
 function getRandomRedBall(ballIndex='redBall'){
@@ -258,7 +258,7 @@ sameHistory(12,dltHistory);
 // console.log(caculate(S3_BLUE,1,"blueBall"));
 //热号
 console.log("上期开奖",dltHistory[dltHistory.length-1])
-console.log(caculate(S1,14));
+//console.log(caculate(S1,14));
 //console.log(caculate(S1_BLUE,10,"blueBall"));
 const c3=getGroupList(dltHistory.slice(dltHistory.length-3));
 const c4=getGroupList(dltHistory.slice(dltHistory.length-4));

@@ -1,4 +1,4 @@
-import { ssq_history } from "../ssq_data.js";
+import { ssqHistory } from "../../../common/ssq.js";
 /**
  * 生成数组的所有n个元素的组合（模拟Python的itertools.combinations）
  * @param {Array} arr - 源数组
@@ -101,19 +101,19 @@ function printTopOmission(omissionDict, topN = 10) {
 // 模拟历史开奖数据（实际使用时替换为真实数据）
 
 
-const history = ssq_history.map(item=>item.redBall);
+const history = ssqHistory.map(item=>item.redBall);
 //console.log(history)
 // 示例1：计算选2组合的遗漏数据
 try {
     console.log("history length",history.length)
     const select2Omission = calculateHappy8Omission(history, 2);
     console.log("=== 双色球选2组合遗漏数据 ===",sortDesc(select2Omission));
-    printTopOmission(select2Omission, 20);
+    printTopOmission(select2Omission, 30);
 
     // 示例2：计算选3组合的遗漏数据
    const select3Omission = calculateHappy8Omission(history, 3);
    console.log("\n=== 双色球选3组合遗漏数据 ===");
-   printTopOmission(select3Omission, 20);
+   printTopOmission(select3Omission, 30);
 } catch (error) {
     console.error("计算出错：", error.message);
 }

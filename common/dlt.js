@@ -42315,6 +42315,16 @@ export const dltHistory= [
             2,
             4
         ]
+    },
+    {
+        "index": "26004",
+        "date": "",
+        "redBall": [
+           5,18,23,25,32
+        ],
+        "blueBall": [
+            5,9
+        ]
     }
 
 ]
@@ -42329,4 +42339,4 @@ export const dltHistory= [
 //     blueBall:item.blueBall
 //   })
 // });
-console.log(dltHistory.length);
+//console.log(dltHistory.length);
