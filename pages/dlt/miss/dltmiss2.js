@@ -167,7 +167,7 @@ function getCombinationStats(num1, num2) {
 // 示例2：获取当前遗漏最大的前5个组合
 const sortedByCurrentOmission = Object.values(result)
   .sort((a, b) => b.currentOmission - a.currentOmission)
-  .slice(0, 15)
+  .slice(0, 30)
   .map(stat => ({
     组合: stat.combination,
     当前遗漏: stat.currentOmission,
@@ -176,7 +176,7 @@ const sortedByCurrentOmission = Object.values(result)
     最后命中期号: stat.lastHitPeriod
   }));
 
-console.log('当前遗漏最大的前15个组合：', sortedByCurrentOmission);
+console.log('当前遗漏最大的前30个组合：', sortedByCurrentOmission);
 
 // 示例3：导出所有组合数据为JSON（含当前遗漏）
 const exportData = JSON.stringify(result, null, 2);

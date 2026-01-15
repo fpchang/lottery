@@ -108,7 +108,7 @@ function S0(list,history){
 	for(let i=0;i<history.length;i++){
 		 let newList = new Set([...history[i].redBall,...list]);
 		 if(newList.size<8){
-			// console.log("repeat and:"+history[i].index);
+			//console.log("与开过的相同太大:",newList,history[i]);
 			 result=false;
 			 break;
 		 }
@@ -132,8 +132,9 @@ function S1(list,history){
 	const s2=count2<3;
 	const s3=count3<4;
 	const s4= count4>0&&count4<5;
-	const s5=count5>1&&count5<5;
+	const s5=count5>0;
 	const s6=count6>1;
+	
 	if(s1&&s2&&s3&&s4&&s5&&s6){
 		return true
 	}
@@ -211,7 +212,7 @@ function caculate(fn,num=5,ballIndex='redBall'){
 	let result =[];
 	while(thread<num){
 		let list =getRandomRedBall(ballIndex);		
-		if(fn&&S0(list,dltHistory)&&fn(list,dltHistory)){
+		if(fn&&S0(list,dltHistory.slice(-600))&&S1(list,dltHistory)){
 			result.push({valueBall:list})
 			thread++;
 		}
@@ -241,33 +242,44 @@ function caculate(fn,num=5,ballIndex='redBall'){
 // sameHistory(15,dltHistory,"blueBall");
 // sameHistory(16,dltHistory,"blueBall");
 // sameHistory(17,dltHistory,"blueBall");
-sameHistory(1,dltHistory);
-sameHistory(2,dltHistory);
-sameHistory(3,dltHistory);
-sameHistory(4,dltHistory);
-sameHistory(5,dltHistory);
-sameHistory(6,dltHistory);
-sameHistory(7,dltHistory);
-sameHistory(8,dltHistory);
-sameHistory(9,dltHistory);
-sameHistory(10,dltHistory);
-sameHistory(11,dltHistory);
-sameHistory(12,dltHistory);
+// sameHistory(1,dltHistory);
+// sameHistory(2,dltHistory);
+// sameHistory(3,dltHistory);
+// sameHistory(4,dltHistory);
+// sameHistory(5,dltHistory);
+// sameHistory(6,dltHistory);
+// sameHistory(7,dltHistory);
+// sameHistory(8,dltHistory);
+// sameHistory(9,dltHistory);
+// sameHistory(10,dltHistory);
+// sameHistory(11,dltHistory);
+// sameHistory(12,dltHistory);
 //爆冷号
 // console.log(caculate(S3,1));
 // console.log(caculate(S3_BLUE,1,"blueBall"));
 //热号
-console.log("上期开奖",dltHistory[dltHistory.length-1])
-//console.log(caculate(S1,14));
+//console.log("上期开奖",dltHistory[dltHistory.length-1])
+console.log(caculate(S1,14));
 //console.log(caculate(S1_BLUE,10,"blueBall"));
-const c3=getGroupList(dltHistory.slice(dltHistory.length-3));
-const c4=getGroupList(dltHistory.slice(dltHistory.length-4));
-const c5=getGroupList(dltHistory.slice(dltHistory.length-5));
-const c6=getGroupList(dltHistory.slice(dltHistory.length-6));
-const c7=getGroupList(dltHistory.slice(dltHistory.length-7));
-const c8=getGroupList(dltHistory.slice(dltHistory.length-8));
-const c9=getGroupList(dltHistory.slice(dltHistory.length-9));
-const c10=getGroupList(dltHistory.slice(dltHistory.length-10));
-const c11=getGroupList(dltHistory.slice(dltHistory.length-11));
-console.log("c3",new Set(c3),new Set(c4),new Set(c5),new Set(c6),new Set(c7),new Set(c8),"c9",new Set(c9),new Set(c10),new Set(c11));
+// const c3=getGroupList(dltHistory.slice(dltHistory.length-3));
+// const c4=getGroupList(dltHistory.slice(dltHistory.length-4));
+// const c5=getGroupList(dltHistory.slice(dltHistory.length-5));
+// const c6=getGroupList(dltHistory.slice(dltHistory.length-6));
+// const c7=getGroupList(dltHistory.slice(dltHistory.length-7));
+// const c8=getGroupList(dltHistory.slice(dltHistory.length-8));
+// const c9=getGroupList(dltHistory.slice(dltHistory.length-9));
+// const c10=getGroupList(dltHistory.slice(dltHistory.length-10));
+// const c11=getGroupList(dltHistory.slice(dltHistory.length-11));
+// console.log("c3",new Set(c3),new Set(c4),new Set(c5),new Set(c6),new Set(c7),new Set(c8),"c9",new Set(c9),new Set(c10),new Set(c11));
 
+function testValid(list=[]){
+	const flag = S0(list,dltHistory);
+	console.log(list,flag?"有效":"无效")
+}
+//testValid([6,8,14,17,21,24]);
+//testValid([8,11,13,25,28,31]);
+
+// dltHistory.forEach(item => {
+// 	const result = repeatSinglHistory(item.redBall,dltHistory);
+// 	console.log("result",result)
+// });

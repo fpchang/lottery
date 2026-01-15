@@ -107,7 +107,7 @@ const history = historyKl8.map(item=>item.redBall);
 try {
     const select2Omission = calculateHappy8Omission(history, 2);
     console.log("=== 快乐8选2组合遗漏数据 ===",sortDesc(select2Omission));
-    printTopOmission(select2Omission, 100);
+    printTopOmission(select2Omission, 20);
 
     // 示例2：计算选3组合的遗漏数据
    // const select3Omission = calculateHappy8Omission(history, 3);

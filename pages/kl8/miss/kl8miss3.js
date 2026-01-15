@@ -246,11 +246,11 @@ function getTopHistoryOmission(topN = 10) {
 //console.log('选3组合 [1,6,22] 的遗漏数据：', combo1_6_22);
 
 // 示例2：获取当前遗漏最大的前5个组合
-const top5CurrentOmission = getTopCurrentOmission(15);
-console.log('当前遗漏最大的前15个选3组合：', top5CurrentOmission);
+const top5CurrentOmission = getTopCurrentOmission(25);
+console.log('当前遗漏最大的前25个选3组合：', top5CurrentOmission);
 
-const top5HistoryOmission = getTopHistoryOmission(15);
-console.log('历史遗漏最大的前15个选3组合：', top5HistoryOmission);
+const top5HistoryOmission = getTopHistoryOmission(25);
+console.log('历史遗漏最大的前25个选3组合：', top5HistoryOmission);
 
 // 示例3：导出所有组合数据为JSON（可保存为文件）
 // const exportJson = JSON.stringify(omissionResult, null, 2);

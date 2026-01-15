@@ -42325,6 +42325,16 @@ export const dltHistory= [
         "blueBall": [
             5,9
         ]
+    },
+    {
+        "index": "26005",
+        "date": "",
+        "redBall": [
+           2,4,16,23,35
+        ],
+        "blueBall": [
+            6,11
+        ]
     }
 
 ]
@@ -42339,4 +42349,4 @@ export const dltHistory= [
 //     blueBall:item.blueBall
 //   })
 // });
-//console.log(dltHistory.length);
+console.log("===大乐透历史记录一共有",dltHistory.length,"条");
