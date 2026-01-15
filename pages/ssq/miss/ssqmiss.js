@@ -69,7 +69,7 @@ function calculateHappy8Omission(historyData, selectNum) {
 function sortDesc(omissionDict){
 	const sortedItems = Object.entries(omissionDict)
 	    .sort((a, b) => b[1] - a[1]);
-	const result = sortedItems.slice(0,100);
+	const result = sortedItems//.slice(0,100);
 	return result;
 }
 /**
@@ -105,20 +105,33 @@ const history = ssqHistory.map(item=>item.redBall);
 //console.log(history)
 // 示例1：计算选2组合的遗漏数据
 try {
-    console.log("history length",history.length)
-    const select2Omission = calculateHappy8Omission(history, 2);
-    console.log("=== 双色球选2组合遗漏数据 ===",sortDesc(select2Omission));
-    printTopOmission(select2Omission, 30);
+    // console.log("history length",history.length)
+    // const select2Omission = calculateHappy8Omission(history, 2);
+    // console.log("=== 双色球选2组合遗漏数据 ===",sortDesc(select2Omission));
+    // printTopOmission(select2Omission, 30);
 
-    // 示例2：计算选3组合的遗漏数据
-   const select3Omission = calculateHappy8Omission(history, 3);
-   console.log("\n=== 双色球选3组合遗漏数据 ===");
-   printTopOmission(select3Omission, 30);
+//     // 示例2：计算选3组合的遗漏数据
+//    const select3Omission = calculateHappy8Omission(history, 3);
+//    console.log("\n=== 双色球选3组合遗漏数据 ===");
+//    printTopOmission(select3Omission, 30);
 } catch (error) {
     console.error("计算出错：", error.message);
 }
 
-export function getMiss(n=2){
+export function getMiss(n=2,dan=[]){
 	  const selectmission = calculateHappy8Omission(history, n);
-	  return sortDesc(selectmission);
+	 let result = sortDesc(selectmission);
+     result = result.filter(item=>{
+        
+        const a1=item[0].split(",").map(num=>parseInt(num));
+       //console.log(a1)
+       const groupList= new Set([...a1,...dan]);
+      // console.log(groupList.size)
+       return groupList.size ==a1.length;
+     });
+        console.log(`\n=== 双色球选${n}组合遗漏数据 ===`);
+        console.log(result)
+         //printTopOmission(selectmission, 100);
 }
+//getMiss(5,[3,16,21,29]);
+getMiss(2);

@@ -25335,3 +25335,4 @@ export var ssqHistory = [
 	
 	}
 ]
+console.log(`双色球一共${ssqHistory.length}期`);
