@@ -1,7 +1,7 @@
-import {ssq_history} from "./ssq_data.js";
+import {ssqHistory} from "../../common/ssq.js";
 
 const redballAll =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33]
-const history=ssq_history;
+const history=ssqHistory;
 function getRandomRedBall(len=33){
 	let result = [];
 	while(result.length<6){
@@ -192,6 +192,22 @@ function validSelfCheck(list){
 	}
 	return false;
 }
+//与历史每期比较，获取重复数量
+function repeatSinglHistory(list,history){
+	let result={};
+	for(let i =0;i<history.length;i++){
+		let redBall = history[i].redBall;
+		
+		let num = list.length + redBall.length - new Set([...redBall,...list]).size;
+		//console.log(num)
+		if(result[num]){
+			result[num]++
+		}else{
+			result[num]=1;
+		}
+	}
+	return result;
+}
 function caculate(fn,n=20){
 	
 
@@ -212,24 +228,29 @@ function caculate(fn,n=20){
 //let flag = S1([ 8, 10, 14, 23, 28, 32 ],history);
 //console.log(flag);
 //将2024年双色球61到90期开奖结束整理成json格式，要全部开奖数据升序排列，生成附件
-sameHistory(1,history);
-sameHistory(2,history);
-sameHistory(3,history);
-sameHistory(4,history);
-sameHistory(5,history);
-sameHistory(6,history);
-sameHistory(7,history);
-sameHistory(8,history);
-sameHistory(9,history);
-sameHistory(10,history);
-sameHistory(11,history);
-const c3=getGroupList(history.slice(history.length-3));
-const c4=getGroupList(history.slice(history.length-4));
-const c5=getGroupList(history.slice(history.length-5));
+// sameHistory(1,history);
+// sameHistory(2,history);
+// sameHistory(3,history);
+// sameHistory(4,history);
+// sameHistory(5,history);
+// sameHistory(6,history);
+// sameHistory(7,history);
+// sameHistory(8,history);
+// sameHistory(9,history);
+// sameHistory(10,history);
+// sameHistory(11,history);
+// const c3=getGroupList(history.slice(history.length-3));
+// const c4=getGroupList(history.slice(history.length-4));
+// const c5=getGroupList(history.slice(history.length-5));
 
-const list=caculate(S1,14);
-console.log(list);
-console.log(S1_stat(list));
-const c6=getGroupList(history.slice(history.length-6));
-console.log("c3",new Set(c3),"c4",new Set(c4),"c5",new Set(c5),"c6",new Set(c6));//夹号，冷号
+// const list=caculate(S1,14);
+// console.log(list);
+// console.log(S1_stat(list));
+// const c6=getGroupList(history.slice(history.length-6));
+// console.log("c3",new Set(c3),"c4",new Set(c4),"c5",new Set(c5),"c6",new Set(c6));//夹号，冷号
+
+history.forEach(item => {
+	const result = repeatSinglHistory(item.redBall,history);
+	console.log("result",result)
+});
 
