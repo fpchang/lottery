@@ -14605,7 +14605,7 @@ export var historyKl8 = [
     redBall: [
      6,12,13,14,18,24,28,29,30,34,38,43,49,52,59,60,64,74,78,80
     ]
-  
+  }
 ];
 
 // let templist = list.reverse().slice(1700,1800);

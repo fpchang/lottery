@@ -30,9 +30,10 @@ function combinations(arr, n) {
  * @returns {Object} 键为组合字符串(如"1,5")，值为遗漏期数
  */
 function calculateHappy8Omission(historyData, selectNum) {
+    console.log("快乐8历史记录有::",historyData.length)
     // 输入参数验证
-    if (!Number.isInteger(selectNum) || selectNum < 2 || selectNum > 10) {
-        throw new Error("选号类型必须是2到10之间的整数");
+    if (!Number.isInteger(selectNum) || selectNum < 1 || selectNum > 10) {
+        throw new Error("选号类型必须是1到10之间的整数");
     }
     if (!Array.isArray(historyData) || historyData.length === 0) {
         throw new Error("历史开奖记录不能为空且必须是数组格式");
@@ -105,9 +106,9 @@ const history = historyKl8.map(item=>item.redBall);
 //console.log(history)
 // 示例1：计算选2组合的遗漏数据
 try {
-    const select2Omission = calculateHappy8Omission(history, 2);
+   const select2Omission = calculateHappy8Omission(history, 2);
     console.log("=== 快乐8选2组合遗漏数据 ===",sortDesc(select2Omission));
-    printTopOmission(select2Omission, 20);
+   printTopOmission(select2Omission, 20);
 
     // 示例2：计算选3组合的遗漏数据
    // const select3Omission = calculateHappy8Omission(history, 3);
@@ -117,7 +118,9 @@ try {
     console.error("计算出错：", error.message);
 }
 
-export function getMiss(n=2){
-	  const selectmission = calculateHappy8Omission(history, n);
+export function getMiss(n=2,historyList=history){
+	  const selectmission = calculateHappy8Omission(historyList, n);
+     // console.log(111,selectmission);
+      
 	  return sortDesc(selectmission);
 }
