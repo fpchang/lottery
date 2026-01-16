@@ -37,8 +37,8 @@ export function getProfitAmount(index=1,numList=[],singleAmount=19){
     }
 }
 try {
-  const list= getNumList(2,19,10,30);
-  console.log("获取购买票数",list);
+  const list= getNumList(1,19,4,30);
+ console.log("获取购买票数",list);
 } catch (error) {
     
 }

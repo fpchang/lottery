@@ -108,6 +108,7 @@ function S0(list,history){
 	for(let i=0;i<history.length;i++){
 		 let newList = new Set([...history[i].redBall,...list]);
 		 if(newList.size<8){
+			console.log("重复数量:",10-newList.size)
 			//console.log("与开过的相同太大:",newList,history[i]);
 			 result=false;
 			 break;
@@ -276,7 +277,7 @@ function testValid(list=[]){
 	const flag = S0(list,dltHistory);
 	console.log(list,flag?"有效":"无效")
 }
-//testValid([6,8,14,17,21,24]);
+testValid([3,14,15,17,21]);
 //testValid([8,11,13,25,28,31]);
 
 // dltHistory.forEach(item => {

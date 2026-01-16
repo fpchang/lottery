@@ -30,7 +30,7 @@ function combinations(arr, n) {
  * @returns {Object} 键为组合字符串(如"1,5")，值为遗漏期数
  */
 function calculateHappy8Omission(historyData, selectNum) {
-    console.log("快乐8历史记录有::",historyData.length)
+   // console.log("快乐8历史记录有::",historyData.length)
     // 输入参数验证
     if (!Number.isInteger(selectNum) || selectNum < 1 || selectNum > 10) {
         throw new Error("选号类型必须是1到10之间的整数");
@@ -67,10 +67,10 @@ function calculateHappy8Omission(historyData, selectNum) {
 
     return omissionDict;
 }
-function sortDesc(omissionDict){
+function sortDesc(omissionDict,num=100){
 	const sortedItems = Object.entries(omissionDict)
 	    .sort((a, b) => b[1] - a[1]);
-	const result = sortedItems.slice(0,100);
+	const result = sortedItems.slice(0,num);
 	return result;
 }
 /**
@@ -83,8 +83,8 @@ function printTopOmission(omissionDict, topN = 10) {
     const sortedItems = Object.entries(omissionDict)
         .sort((a, b) => b[1] - a[1]);
 
-    console.log(`\n遗漏值最高的前${topN}个组合：`);
-    console.log("组合\t\t遗漏期数");
+   // console.log(`\n遗漏值最高的前${topN}个组合：`);
+    //console.log("组合\t\t遗漏期数");
     console.log("-".repeat(20));
     
     sortedItems.slice(0, topN).forEach(([combStr, omission], index) => {
@@ -107,7 +107,7 @@ const history = historyKl8.map(item=>item.redBall);
 // 示例1：计算选2组合的遗漏数据
 try {
    const select2Omission = calculateHappy8Omission(history, 2);
-    console.log("=== 快乐8选2组合遗漏数据 ===",sortDesc(select2Omission));
+   // console.log("=== 快乐8选2组合遗漏数据 ===",sortDesc(select2Omission));
    printTopOmission(select2Omission, 20);
 
     // 示例2：计算选3组合的遗漏数据
@@ -117,10 +117,16 @@ try {
 } catch (error) {
     console.error("计算出错：", error.message);
 }
-
-export function getMiss(n=2,historyList=history){
+/**
+ * 
+ * @param {*} n 
+ * @param {*} historyList 
+ * @param {*} num  嫌前num位
+ * @returns 
+ */
+export function getMiss(n=2,historyList=history,num){
 	  const selectmission = calculateHappy8Omission(historyList, n);
      // console.log(111,selectmission);
       
-	  return sortDesc(selectmission);
+	  return sortDesc(selectmission,num);
 }

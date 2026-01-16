@@ -40,7 +40,7 @@ function get100miss_found(slelctType = 2, historyList, drawHistory) {
     });
     return resultList;
  })();
- //console.log("includMissList,相同选号组合",includMissList);
+ console.log("miss23,相同选号组合",includMissList);
 
  //选2组合开奖时间
   const waitnumlist2=(()=>{
@@ -86,11 +86,11 @@ function getAmount100(SELECT) {
     300
   );
   console.log("listnum", listNum);
-  for (let i = 0; i < 30; i++) {
+//  for (let i = 0; i < 30; i++) {
     const historyList = historyKl8
       .map((item) => item.redBall)
-      .slice(0, historyKl8.length - 690 - i);
-    const drawHistory = historyKl8.map((item) => item.redBall).slice(-690 - i);
+     // .slice(0, historyKl8.length - 90 - i);
+    const drawHistory = historyKl8.map((item) => item.redBall)//.slice(-90 - i);
 
     let grouplist = get100miss_found(
       SELECT.select_num,
@@ -105,10 +105,11 @@ function getAmount100(SELECT) {
       let a = getProfitAmount(item, listNum, SELECT.singleAmount);
       // console.log("计算利润",a)
       resultProfile += a.profitAmount;
-    });
-    console.log("最长等待期为", Math.max(...grouplist));
-    console.log(`选${SELECT.select_num}总利润为`, resultProfile);
-  }
+    }); 
+    //console.log("最长等待期为", Math.max(...grouplist));
+      console.log("最小等待期为", Math.min(...grouplist));
+   // console.log(`选${SELECT.select_num}总利润为`, resultProfile);
+ // }
 }
 const selectObject = {
   select_1: {
