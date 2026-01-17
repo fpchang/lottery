@@ -86,12 +86,12 @@ function getAmount100(SELECT) {
     300
   );
   console.log("listnum", listNum);
-//  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 30; i++) {
     const historyList = historyKl8
       .map((item) => item.redBall)
-     // .slice(0, historyKl8.length - 90 - i);
-    const drawHistory = historyKl8.map((item) => item.redBall)//.slice(-90 - i);
-
+     .slice(0, historyKl8.length - 190-i);
+    const drawHistory = historyKl8.map((item) => item.redBall).slice(-190-i);
+//console.log("tttt",historyKl8[historyList.length-1],historyKl8.slice(-90-i)[0],drawHistory[0])
     let grouplist = get100miss_found(
       SELECT.select_num,
       historyList,
@@ -109,7 +109,7 @@ function getAmount100(SELECT) {
     //console.log("最长等待期为", Math.max(...grouplist));
       console.log("最小等待期为", Math.min(...grouplist));
    // console.log(`选${SELECT.select_num}总利润为`, resultProfile);
- // }
+  }
 }
 const selectObject = {
   select_1: {
