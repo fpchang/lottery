@@ -37,9 +37,10 @@ export function getProfitAmount(index=1,numList=[],singleAmount=19){
     }
 }
 try {
-  console.log("获取购买票数",list);
- let count = list.reduce((total,cur)=>total+cur,0)
- console.log("总票数",count);
+  //console.log("获取购买票数",list);
+// let count = list.reduce((total,cur)=>total+cur,0)
+ //console.log("总票数",count);
+ console.log(getNumList(1,52,6,300).slice(100))
 } catch (error) {
     
 }

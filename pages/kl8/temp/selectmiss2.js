@@ -1,4 +1,4 @@
-import { historyKl8 } from "../../../common/kl8.js";
+ import { historyKl8 } from "../../../common/kl8.js";
 import {getMiss} from "../miss/kl8miss2.js";
 import {getNumList,getProfitAmount} from "../../../common/api/getNum.js"
 //历史最大遗漏在接下来300期等待多少期开出奖项目
@@ -35,7 +35,7 @@ function getselect100Numbers(historyList,drawHistory){
     //const drawHistory=historyKl8.map(item=>item.redBall).slice(-400);
     // console.log("开奖结果第一期",historyKl8.slice(-400)[0])
     let resultIndexList=[];
-    missMaxList=missMaxList.slice(0,100);
+    missMaxList=missMaxList.slice(0,3);
     missMaxList.forEach(list => {
         let ind =0;
         const formatList = list[0].split(",").map(Number);//[2,3]

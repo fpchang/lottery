@@ -7,30 +7,31 @@ import { getNumList, getProfitAmount } from "../../../common/api/getNum.js";
 //18+20+18+.
 //selectType 选几玩法
 function get100miss_found(slelctType = 2, historyList, drawHistory) {
-  const getMiss2List=((count=2)=>{
-        let missMaxList = getMiss(slelctType, historyList); //
-        missMaxList = missMaxList.slice(0, count);
-       // console.log("选最大遗漏5=", missMaxList);
-    let result =[];
-    missMaxList.forEach(item=>{
-        const formatList = item[0].split(",").map(Number); //[2,3]
-        result.push(formatList)
-    })
-    return result;
-  })();
-  //console.log("miss2",getMiss2List);
-  //选n+1
-  // const getMiss3List = (() => {
-  //   //获取倚楼+1的组合
-  //   let missMaxListAdd = getMiss(slelctType + 1, historyList,80000);
+  // const getMiss2List=((count=2)=>{
+  //       let missMaxList = getMiss(slelctType, historyList); //
+  //       missMaxList = missMaxList.slice(0, count);
+  //      // console.log("选最大遗漏5=", missMaxList);
   //   let result =[];
-  //   missMaxListAdd.forEach(item=>{
-  //       const formatList = item[0].split(",").map(Number); //[2,3，4]
+  //   missMaxList.forEach(item=>{
+  //       const formatList = item[0].split(",").map(Number); //[2,3]
   //       result.push(formatList)
   //   })
   //   return result;
   // })();
-  //console.log("miss3",getMiss3List)
+  //console.log("miss2",getMiss2List);
+  //选n+1
+  const getMiss3List = ((count=4) => {
+    //获取倚楼+1的组合
+    let missMaxListAdd = getMiss(slelctType, historyList,80000);
+    missMaxListAdd=missMaxListAdd.slice(0,count);
+    let result =[];
+    missMaxListAdd.forEach(item=>{
+        const formatList = item[0].split(",").map(Number); //[2,3，4]
+        result.push(formatList)
+    })
+    return result;
+  })();
+  console.log("miss3",getMiss3List)
  //获取与选2包含的组3
 //  const includMissList=(()=>{
 //     let resultList=[];
@@ -42,10 +43,10 @@ function get100miss_found(slelctType = 2, historyList, drawHistory) {
 //  })();
 //  console.log("miss23,相同选号组合",includMissList);
 
- //选2组合开奖时间
-  const waitnumlist2=(()=>{
+ //选3组合开奖时间
+  const waitnumlist3=(()=>{
     let resultList=[]; 
-    getMiss2List.forEach(list=>{
+    getMiss3List.forEach(list=>{
          let ind=0;
          drawHistory.find((item, index) => {
          ind = index;
@@ -57,7 +58,7 @@ function get100miss_found(slelctType = 2, historyList, drawHistory) {
     return resultList;
   })();
 
-  console.log("选2开奖等待期数：：", waitnumlist2);
+  console.log("选3开奖等待期数：：", waitnumlist3);
 
 
   //选3包2组合开奖时间
@@ -75,7 +76,7 @@ function get100miss_found(slelctType = 2, historyList, drawHistory) {
   //   return resultList;
   // })();
   //console.log("3包2的开奖时间",waitnumlist32);
-  return waitnumlist2;
+  return waitnumlist3;
 }
 
 function getAmount100(SELECT) {
@@ -87,7 +88,7 @@ function getAmount100(SELECT) {
   );
   //console.log("listnum", listNum);
   let minwait=0;
-  for (let i = 0; i < 1000; i++) {
+  for (let i = 0; i < 2000; i=i+100) {
     const historyList = historyKl8
       .map((item) => item.redBall)
      .slice(0, historyKl8.length - 190-i);
@@ -141,4 +142,4 @@ const selectObject = {
   },
 };
 //选2
-getAmount100(selectObject.select_2);
+getAmount100(selectObject.select_3);
