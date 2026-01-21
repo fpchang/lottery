@@ -11783,11 +11783,17 @@ export var ssqHistory = [
     index: "2026006",
     redBall: [2, 6, 22, 23, 24, 28],
   },
-//   {
-//     blueBall: 1,
-//     date: "2026 - 01 - 11",
-//     index: "2026007",
-//     redBall: [9, 13, 19, 27, 29, 30],
-//   },
+  {
+    blueBall: 1,
+    date: "2026 - 01 - 11",
+    index: "2026007",
+    redBall: [9, 13, 19, 27, 29, 30],
+  },
+  {
+    blueBall: 10,
+    date: "2026 - 01 - 18",
+    index: "2026008",
+    redBall: [6,9,16,27,31,33],
+  },
 ];
 console.log(`双色球一共${ssqHistory.length}期`);

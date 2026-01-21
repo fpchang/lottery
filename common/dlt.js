@@ -42335,6 +42335,26 @@ export const dltHistory= [
         "blueBall": [
             6,12
         ]
+    },
+    {
+        "index": "26007",
+        "date": "",
+        "redBall": [
+           1,3,13,20,26
+        ],
+        "blueBall": [
+            3,8
+        ]
+    },
+    {
+        "index": "26007",
+        "date": "",
+        "redBall": [
+          3,6,17,21,33
+        ],
+        "blueBall": [
+            6,11
+        ]
     }
 
 ]

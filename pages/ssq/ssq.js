@@ -106,7 +106,7 @@ function S1(list,history){
 	let count6 = compare(list,history.slice(history.length-6));
 	let count7 = compare(list,history.slice(history.length-7));
 	//console.log("count:",count1,count2,count3,count4,count5);
-	const s1=count1<3;
+	const s1=count1<2;
 	const s2=count2>0&&count2<4;
 	const s3=count3>1&&count3<5;
 	const s4=count4<6&&count4>1;
@@ -228,29 +228,39 @@ function caculate(fn,n=20){
 //let flag = S1([ 8, 10, 14, 23, 28, 32 ],history);
 //console.log(flag);
 //将2024年双色球61到90期开奖结束整理成json格式，要全部开奖数据升序排列，生成附件
-// sameHistory(1,history);
-// sameHistory(2,history);
-// sameHistory(3,history);
-// sameHistory(4,history);
-// sameHistory(5,history);
-// sameHistory(6,history);
-// sameHistory(7,history);
-// sameHistory(8,history);
-// sameHistory(9,history);
-// sameHistory(10,history);
-// sameHistory(11,history);
-// const c3=getGroupList(history.slice(history.length-3));
-// const c4=getGroupList(history.slice(history.length-4));
-// const c5=getGroupList(history.slice(history.length-5));
+sameHistory(1,history);
+sameHistory(2,history);
+sameHistory(3,history);
+sameHistory(4,history);
+sameHistory(5,history);
+sameHistory(6,history);
+sameHistory(7,history);
+sameHistory(8,history);
+sameHistory(9,history);
+sameHistory(10,history);
+sameHistory(11,history);
+const c2=getGroupList(history.slice(history.length-2));
+const c3=getGroupList(history.slice(history.length-3));
+const c4=getGroupList(history.slice(history.length-4));
+const c5=getGroupList(history.slice(history.length-5));
+const c6=getGroupList(history.slice(history.length-6));
 
-// const list=caculate(S1,14);
-// console.log(list);
+ const list=caculate(S1,14);
+ console.log(list);
 // console.log(S1_stat(list));
 // const c6=getGroupList(history.slice(history.length-6));
-// console.log("c3",new Set(c3),"c4",new Set(c4),"c5",new Set(c5),"c6",new Set(c6));//夹号，冷号
+console.log("c2",c2);
+console.log("c3",c3);
+console.log("c4",c4);
+console.log("c5",c5);
+console.log("c6",c6);
 
-history.forEach(item => {
-	const result = repeatSinglHistory(item.redBall,history);
-	console.log("result",result)
-});
+// history.forEach(item => {
+// 	const result = repeatSinglHistory(item.redBall,history);
+// 	console.log("result",result)
+// });
 
+
+//总结
+//1，c3中选5加一个冷号
+//2，c3与c4前区夹号
