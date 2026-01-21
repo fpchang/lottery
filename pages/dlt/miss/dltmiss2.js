@@ -178,6 +178,20 @@ const sortedByCurrentOmission = Object.values(result)
 
 console.log('当前遗漏最大的前30个组合：', sortedByCurrentOmission);
 
+
+const sortedByCurrentOmission2 = Object.values(result)
+  .sort((a, b) => b.maxOmission - a.maxOmission)
+  .slice(0, 30)
+  .map(stat => ({
+    组合: stat.combination,
+    当前遗漏: stat.currentOmission,
+    最大遗漏: stat.maxOmission,
+    平均遗漏: stat.avgOmission,
+    最后命中期号: stat.lastHitPeriod
+  }));
+
+console.log('历史最大的前30个组合：', sortedByCurrentOmission2);
+
 // 示例3：导出所有组合数据为JSON（含当前遗漏）
 const exportData = JSON.stringify(result, null, 2);
 //console.log('所有组合遗漏数据（JSON）：', exportData);
