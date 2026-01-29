@@ -86,8 +86,13 @@ function S0(list,history){
 	
 	for(let i=0;i<history.length;i++){
 		 let newList = new Set([...history[i].redBall,...list]);
+<<<<<<< HEAD
 		 const repeatCount = 12- newList.size;
 		 if(newList.size>4){
+=======
+		 const repeatCount = 12-newList.size;
+		 if(repeatCount>3){
+>>>>>>> refs/remotes/origin/main
 			// console.log("repeat and:"+history[i].index);
 			 result=false;
 			 break;
