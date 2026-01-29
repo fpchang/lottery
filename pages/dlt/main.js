@@ -107,7 +107,9 @@ function S0(list,history){
 	
 	for(let i=0;i<history.length;i++){
 		 let newList = new Set([...history[i].redBall,...list]);
-		 if(newList.size<8){
+		 const repeatCount = 10 -newList.size;
+		// console.log("repeat",repeatCount)
+		 if(repeatCount>2){
 			//console.log("重复数量:",10-newList.size)
 			//console.log("与开过的相同太大:",newList,history[i]);
 			 result=false;
@@ -243,18 +245,18 @@ function caculate(fn,num=5,ballIndex='redBall'){
 // sameHistory(15,dltHistory,"blueBall");
 // sameHistory(16,dltHistory,"blueBall");
 // sameHistory(17,dltHistory,"blueBall");
-sameHistory(1,dltHistory);
-sameHistory(2,dltHistory);
-sameHistory(3,dltHistory);
-sameHistory(4,dltHistory);
-sameHistory(5,dltHistory);
-sameHistory(6,dltHistory);
-sameHistory(7,dltHistory);
-sameHistory(8,dltHistory);
-sameHistory(9,dltHistory);
-sameHistory(10,dltHistory);
-sameHistory(11,dltHistory);
-sameHistory(12,dltHistory);
+// sameHistory(1,dltHistory);
+// sameHistory(2,dltHistory);
+// sameHistory(3,dltHistory);
+// sameHistory(4,dltHistory);
+// sameHistory(5,dltHistory);
+// sameHistory(6,dltHistory);
+// sameHistory(7,dltHistory);
+// sameHistory(8,dltHistory);
+// sameHistory(9,dltHistory);
+// sameHistory(10,dltHistory);
+// sameHistory(11,dltHistory);
+// sameHistory(12,dltHistory);
 //爆冷号
 // console.log(caculate(S3,1));
 // console.log(caculate(S3_BLUE,1,"blueBall"));
@@ -277,7 +279,7 @@ function testValid(list=[]){
 	const flag = S0(list,dltHistory);
 	console.log(list,flag?"有效":"无效")
 }
-testValid([9,14,17,25,28]);
+//testValid([14,21,23,29,33]);
 //testValid([8,11,13,25,28,31]);
 
 // dltHistory.forEach(item => {
