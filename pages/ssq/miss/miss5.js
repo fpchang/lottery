@@ -68,14 +68,14 @@ function filterList(){
  let combinations = ballCalculator.getAllRedBallCombinations();
  //第一步过滤
 combinations=combinations.filter(item=>{
-  const filterarr=[9,16,30,31,33] //[1,2,3,4,5,12,13,16,18,20,23,26,35];
+  const filterarr=[1,2,3,4,5,9,12,13,16,19,20] //[1,2,3,4,5,12,13,16,18,20,23,26,35];
     return new Set([...filterarr,...item]).size==(filterarr.length+ item.length)
 })
 console.log("第一步过滤完后",combinations.length);
 //第二步定胆
 combinations=combinations.filter(item=>{
 
-  const danArr=[2,6,13,19,25]
+  const danArr=[6,8]
 
     return new Set([...danArr,...item]).size==item.length;
   })
