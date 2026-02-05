@@ -86,13 +86,8 @@ function S0(list,history){
 	
 	for(let i=0;i<history.length;i++){
 		 let newList = new Set([...history[i].redBall,...list]);
-<<<<<<< HEAD
 		 const repeatCount = 12- newList.size;
 		 if(newList.size>4){
-=======
-		 const repeatCount = 12-newList.size;
-		 if(repeatCount>3){
->>>>>>> refs/remotes/origin/main
 			// console.log("repeat and:"+history[i].index);
 			 result=false;
 			 break;
@@ -251,8 +246,8 @@ const c4=getGroupList(history.slice(history.length-4));
 const c5=getGroupList(history.slice(history.length-5));
 const c6=getGroupList(history.slice(history.length-6));
 
- const list=caculate(S1,14);
- console.log(list);
+ //const list=caculate(S1,14);
+ //console.log(list);
 // console.log(S1_stat(list));
 // const c6=getGroupList(history.slice(history.length-6));
 console.log("c2",c2);

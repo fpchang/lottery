@@ -130,8 +130,15 @@ export function getMiss(n=2,dan=[]){
        return groupList.size ==a1.length;
      });
         console.log(`\n=== 双色球选${n}组合遗漏数据 ===`);
-        console.log(result)
+        let filter=[8,17]
+      let obj=  result.find(item=>{
+        let arr =item[0].split(",");
+        arr=arr.map(Number);
+
+           return new Set([...arr,...filter]).size==3 
+        })
+        console.log(obj)
          //printTopOmission(selectmission, 100);
 }
 //getMiss(5,[3,16,21,29]);
-getMiss(2);
+getMiss(3);
