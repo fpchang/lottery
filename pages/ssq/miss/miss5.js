@@ -68,27 +68,19 @@ function filterList(){
  let combinations = ballCalculator.getAllRedBallCombinations();
  //第一步过滤
 combinations=combinations.filter(item=>{
-<<<<<<< HEAD
-  const filterarr=[3,5,7,16,20,24] //[1,2,3,4,5,12,13,16,18,20,23,26,35];
-=======
-  const filterarr=[1,2,3,4,5,9,12,13,16,19,20] //[1,2,3,4,5,12,13,16,18,20,23,26,35];
->>>>>>> refs/remotes/origin/main
+  const filterarr=[7,10,13,22,27,31] //[1,2,3,4,5,12,13,16,18,20,23,26,35];
     return new Set([...filterarr,...item]).size==(filterarr.length+ item.length)
 })
 console.log("第一步过滤完后",combinations.length);
 //第二步定胆
 combinations=combinations.filter(item=>{
 
-<<<<<<< HEAD
-  const danArr=[8,13,17]
-=======
-  const danArr=[6,8]
->>>>>>> refs/remotes/origin/main
+  const danArr=[4,8,11]
 
     return new Set([...danArr,...item]).size==item.length;
   })
  const ssqHistoryArray=ssqHistory.map(item=>item.redBall);
- console.log(111,combinations.length,2222)
+ //console.log(111,combinations.length,2222)
  //第二步过滤
  combinations.filter(list=>{
   let result =true;
