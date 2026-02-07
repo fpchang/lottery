@@ -262,7 +262,7 @@ function caculate(fn,num=5,ballIndex='redBall'){
 // console.log(caculate(S3_BLUE,1,"blueBall"));
 //热号
 //console.log("上期开奖",dltHistory[dltHistory.length-1])
-console.log(caculate(S1,14));
+//console.log(caculate(S1,14));
 //console.log(caculate(S1_BLUE,10,"blueBall"));
 // const c3=getGroupList(dltHistory.slice(dltHistory.length-3));
 // const c4=getGroupList(dltHistory.slice(dltHistory.length-4));
@@ -279,7 +279,7 @@ function testValid(list=[]){
 	const flag = S0(list,dltHistory);
 	console.log(list,flag?"有效":"无效")
 }
-//testValid([14,21,23,29,33]);
+testValid([3,13,16,28,32]);
 //testValid([8,11,13,25,28,31]);
 
 // dltHistory.forEach(item => {
