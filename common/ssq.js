@@ -11793,46 +11793,114 @@ export var ssqHistory = [
     blueBall: 10,
     date: "2026 - 01 - 18",
     index: "2026008",
-    redBall: [6,9,16,27,31,33],
-  },{
+    redBall: [6, 9, 16, 27, 31, 33],
+  },
+  {
     blueBall: 10,
     date: "2026 - 01 - 20",
     index: "2026009",
-    redBall: [3,6,13,19,23,25],
-  },{
+    redBall: [3, 6, 13, 19, 23, 25],
+  },
+  {
     blueBall: 12,
     date: "2026 - 01 - 20",
     index: "2026010",
-    redBall: [4,9,10,15,19,26],
-  },{
+    redBall: [4, 9, 10, 15, 19, 26],
+  },
+  {
     blueBall: 4,
     date: "2026 - 01 - 20",
     index: "2026011",
-    redBall: [2,3,4,20,31,32],
+    redBall: [2, 3, 4, 20, 31, 32],
   },
   {
     blueBall: 8,
     date: "2026 - 01 - 20",
     index: "2026012",
-    redBall: [3,5,7,16,20,24],
+    redBall: [3, 5, 7, 16, 20, 24],
   },
-   {
+  {
     blueBall: 1,
     date: "2026 - 01 - 20",
     index: "2026013",
-    redBall: [4,9,12,13,16,20],
+    redBall: [4, 9, 12, 13, 16, 20],
   },
-   {
+  {
     blueBall: 1,
     date: "2026 - 01 - 20",
     index: "2026014",
-    redBall: [7,13,19,22,26,32],
+    redBall: [7, 13, 19, 22, 26, 32],
   },
-   {
+  {
     blueBall: 12,
     date: "2026 - 01 - 20",
     index: "2026015",
-    redBall: [7,10,13,22,27,31],
+    redBall: [7, 10, 13, 22, 27, 31],
+  },
+  {
+    blueBall: 13,
+    date: "2026 - 01 - 20",
+    index: "2026016",
+    redBall: [4, 5, 9, 10, 27, 30],
+  },
+  {
+    blueBall: 4,
+    date: "2026 - 01 - 20",
+    index: "2026017",
+    redBall: [1, 3, 5, 18, 29, 32],
+  },
+  {
+    blueBall: 7,
+    date: "2026 - 01 - 20",
+    index: "2026018",
+    redBall: [11, 15, 17, 22, 25, 30],
+  },
+  {
+    blueBall: 1,
+    date: "2026 - 01 - 20",
+    index: "2026019",
+    redBall: [7, 8, 16, 17, 18, 30],
+  },{
+    blueBall: 2,
+    date: "2026 - 01 - 20",
+    index: "2026020",
+    redBall: [1,13,14,21,24,30],
   }
 ];
 console.log(`双色球一共${ssqHistory.length}期`);
+
+function test() {
+  const his = ssqHistory.slice(0, ssqHistory.length - 100);
+  //let T =[{redBall:[ 11, 15, 17, 22, 25, 30 ]}] //ssqHistory.slice(-100);
+  let T = ssqHistory.slice(-100);
+
+  for (let t of T) {
+    let max = 0;
+    let maxTtaget = null;
+    let maxindex=0;
+    
+    const li = t.redBall;
+    for (let i = 0; i < his.length; i++) {
+      // console.log("tt",t)
+      let item = his[i];
+      let repeatCount =
+        li.length +
+        item.redBall.length -
+        new Set([...item.redBall, ...li]).size;
+      if (repeatCount ==4 || repeatCount==5) {
+        // console.log("max index", item);
+        if (repeatCount > max) {
+        maxTtaget = item;
+        maxindex=i;
+      }
+      max = Math.max(max, repeatCount);
+      }
+      
+    }
+    //console.log("当前：",t)
+    //console.log("总量：",his.length);
+    console.log("位置：",maxindex);
+    //console.log("重复量 ：：", max, maxTtaget);
+  }
+}
+//test();

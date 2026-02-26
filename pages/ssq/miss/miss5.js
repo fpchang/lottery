@@ -63,42 +63,42 @@ class DoubleColorBall {
   }
 }
 
-function filterList(){
+export function filterList(filterarr=[],danArr=[]){
     const ballCalculator = new DoubleColorBall();
  let combinations = ballCalculator.getAllRedBallCombinations();
  //第一步过滤
 combinations=combinations.filter(item=>{
-  const filterarr=[7,10,13,22,27,31] //[1,2,3,4,5,12,13,16,18,20,23,26,35];
+ // const filterarr=[1,3,5,18,29,32] //[1,2,3,4,5,12,13,16,18,20,23,26,35];
     return new Set([...filterarr,...item]).size==(filterarr.length+ item.length)
 })
 console.log("第一步过滤完后",combinations.length);
 //第二步定胆
 combinations=combinations.filter(item=>{
 
-  const danArr=[4,8,11]
+ // const danArr=[]
 
     return new Set([...danArr,...item]).size==item.length;
   })
  const ssqHistoryArray=ssqHistory.map(item=>item.redBall);
  //console.log(111,combinations.length,2222)
  //第二步过滤
- combinations.filter(list=>{
-  let result =true;
-	
-	for(let i=0;i<ssqHistoryArray.length;i++){
-		 let newList = new Set([...ssqHistoryArray[i],...list]);
-		 if(newList.size<8){
-			// console.log("repeat and:"+history[i].index);
-			 result=false;
-			 break;
-		 }
-	}
-	
-	return result;
+ //console.log("22222",combinations)
+ //与历史开奖记录重复4个或5个
+ combinations=combinations.filter(list=>{
+  
+	const f=ssqHistoryArray.find(lis=>{
+     let newList = new Set([...lis,...list]);
+     let repeatCount = lis.length + list.length - newList.size;
+		 return repeatCount==4|| repeatCount==5;
+  })
+  return f?true:false;
+	//return result;
  })
- console.log("过滤后",combinations.length ,combinations.slice())
+ //console.log("33333",combinations)
+ console.log("过滤后",combinations.length)
+ return combinations;
 }
 // 使用示例
 
 //ballCalculator.printCombinations();
-filterList();
+//filterList([1,3,5,18,29,32],[4]);

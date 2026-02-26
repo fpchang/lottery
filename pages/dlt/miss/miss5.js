@@ -68,13 +68,13 @@ function filterList(){
  let combinations = ballCalculator.getAllRedBallCombinations();
  //第一步过滤
 combinations=combinations.filter(item=>{
-  const filterarr=[23,34,35] //[1,2,3,4,5,12,13,16,18,20,23,26,35];
+  const filterarr=[1,3,5,18,29,32] //[1,2,3,4,5,12,13,16,18,20,23,26,35];
     return new Set([...filterarr,...item]).size==(filterarr.length+ item.length)
 })
 console.log("第一步过滤完后",combinations.length);
 //第二步定胆
 combinations=combinations.filter(item=>{
-  const danArr=[5,15,18,30]
+  const danArr=[]
 
     return new Set([...danArr,...item]).size==item.length;
 })
@@ -83,24 +83,13 @@ console.log("定胆后结果::",combinations.length,combinations[0]);
  //console.log(111,combinations.length,2222)
  //第二步过滤
  combinations = combinations.filter(list=>{
-   let flag=true;
-  //  let obj= dltHistoryArray.find(s=>{
-  //     const newList = new Set([...s,...list]).size;
-  //     const repeatCount = 10 - newList.size;
-  //     return repeatCount==5 || repeatCount==4 || repeatCount==3;
-  //  } )
-  for(let i=0;i<dltHistoryArray.length;i++){
-		 let newList = new Set([...dltHistoryArray[i],...list]);
-     const repeatCount = 10-newList.size;
-		 if(repeatCount>3){
-			//console.log("重复数量:",10-newList.size)
-			//console.log("与开过的相同太大:",repeatCount);
-			 flag=false;
-			 break;
-		 }
-	}
-  //console.log("1111",flag);
-  return flag;
+
+  const f=dltHistoryArray.find(lis=>{
+     let newList = new Set([...lis,...list]);
+     let repeatCount = lis.length + list.length - newList.size;
+		 return repeatCount==3 || repeatCount ==4;
+  })
+  return f?true:false;
  })
   console.log("3步过滤后",combinations.length)
  const result = combinations.filter(item=>{

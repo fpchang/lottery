@@ -72,7 +72,7 @@ export const dltHistory = [
     blueBall: [7, 11],
   },
   {
-    index: 70
+    index: 70,
     date: "2070年",
     redBall: [12, 17, 27, 29, 34],
     blueBall: [6, 9],
@@ -16986,7 +16986,27 @@ export const dltHistory = [
     date: "",
     redBall: [16,18,23,34,35],
     blueBall: [1,6],
-  },
+  },{
+    index: "26015",
+    date: "",
+    redBall: [1,4,10,13,17],
+    blueBall: [3,11],
+  },{
+    index: "26016",
+    date: "",
+    redBall: [8,9,12,19,24],
+    blueBall: [1,6],
+  },{
+    index: "26017",
+    date: "",
+    redBall: [4,5,10,23,31],
+    blueBall: [7,12],
+  },{
+    index: "26018",
+    date: "",
+    redBall: [9,11,19,30,35],
+    blueBall: [1,12],
+  }
 ];
 
 // let templist = list.reverse().slice(700,800);
@@ -17000,3 +17020,29 @@ export const dltHistory = [
 //   })
 // });
 console.log("===大乐透历史记录一共有", dltHistory.length, "条");
+
+function test() {
+  const his = dltHistory.slice(0, dltHistory.length - 1);
+  let T = dltHistory.slice(-1);
+  for (let t of T) {
+    let max = 0;
+    let target =null;
+    const li = t.redBall;
+    for (let item of his) {
+     // console.log("tt",t)
+      let repeatCount =
+        li.length +
+        item.redBall.length -
+        new Set([...item.redBall, ...li]).size;
+      if (repeatCount > 3) {
+       // console.log("max index", item);
+      }
+      if(max <repeatCount){
+        target=item;
+      }
+      max = Math.max(max, repeatCount);
+    }
+    console.log("重复量 ：：", max,target);
+  }
+}
+//test();
