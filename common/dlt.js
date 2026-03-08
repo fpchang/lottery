@@ -17004,8 +17004,28 @@ export const dltHistory = [
   },{
     index: "26018",
     date: "",
-    redBall: [9,11,19,30,35],
-    blueBall: [1,12],
+    redBall: [4,5,10,23,31],
+    blueBall: [7,12],
+  },{
+    index: "26019",
+    date: "",
+    redBall: [12,13,14,16,31],
+    blueBall: [4,12],
+  },{
+    index: "26020",
+    date: "",
+    redBall: [1,10,21,23,29],
+    blueBall: [10,12],
+  },{
+    index: "26021",
+    date: "",
+    redBall: [5,9,10,18,26],
+    blueBall: [4,5],
+  },{
+    index: "26022",
+    date: "",
+    redBall: [5,9,10,18,26],
+    blueBall: [5,6],
   }
 ];
 
