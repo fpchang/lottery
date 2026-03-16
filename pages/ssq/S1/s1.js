@@ -113,9 +113,9 @@ function C4(list,dan=[]){
 }
 
 function main(n=14){
-    const dan =[20,24,28,29,31];
-   //const filterarr=ssqHistory[ssqHistory.length-1].redBall;
-   const filterarr=[]
+    const dan =[5,9,33];
+   const filterarr=ssqHistory[ssqHistory.length-1].redBall;
+   //const filterarr=[]
     let thread =0;
     let result =[]
     while (thread < n) {

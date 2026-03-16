@@ -16986,7 +16986,47 @@ export const dltHistory = [
     date: "",
     redBall: [16,18,23,34,35],
     blueBall: [1,6],
-  },
+  },{
+    index: "26015",
+    date: "",
+    redBall: [1,4,10,13,17],
+    blueBall: [3,11],
+  },{
+    index: "26016",
+    date: "",
+    redBall: [8,9,12,19,24],
+    blueBall: [1,6],
+  },{
+    index: "26017",
+    date: "",
+    redBall: [4,5,10,23,31],
+    blueBall: [7,12],
+  },{
+    index: "26018",
+    date: "",
+    redBall: [4,5,10,23,31],
+    blueBall: [7,12],
+  },{
+    index: "26019",
+    date: "",
+    redBall: [12,13,14,16,31],
+    blueBall: [4,12],
+  },{
+    index: "26020",
+    date: "",
+    redBall: [1,10,21,23,29],
+    blueBall: [10,12],
+  },{
+    index: "26021",
+    date: "",
+    redBall: [5,9,10,18,26],
+    blueBall: [4,5],
+  },{
+    index: "26022",
+    date: "",
+    redBall: [5,9,10,18,26],
+    blueBall: [5,6],
+  }
 ];
 
 // let templist = list.reverse().slice(700,800);
