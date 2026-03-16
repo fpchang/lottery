@@ -17066,3 +17066,28 @@ function test() {
   }
 }
 //test();
+function findsame(){
+  const target=[3,14,19,28,32]
+  dltHistory.map(item=>{
+    const groupList = new Set([...item.redBall,...target]);
+    const sameNum = 10 - groupList.size;
+    if(sameNum>2){
+      console.log("重复超过3个",item);
+    }
+  })
+}
+//findsame();
+
+function findRepeatRedAndBlue(){
+  let sum =0;
+  dltHistory.map(item=>{
+    const groupList = new Set([...item.redBall,...item.blueBall]);
+    
+    if(groupList.size==6){
+      console.log("重复",item);
+      sum++;
+    }
+  })
+  console.log(`that all data length is ${dltHistory.length},repeat is ${sum}`)
+}
+//findRepeatRedAndBlue();
