@@ -72,7 +72,7 @@ export const dltHistory = [
     blueBall: [7, 11],
   },
   {
-    index: 70
+    index: 7013,
     date: "2070年",
     redBall: [12, 17, 27, 29, 34],
     blueBall: [6, 9],
