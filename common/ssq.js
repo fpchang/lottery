@@ -11919,3 +11919,14 @@ function test() {
   }
 }
 //test();
+function findsame(){
+  const target=[3,4,14,19,28,32]
+  ssqHistory.map(item=>{
+    const groupList = new Set([...item.redBall,...target]);
+    const sameNum = 12 - groupList.size;
+    if(sameNum>4){
+      console.log("重复超过4个",item);
+    }
+  })
+}
+findsame();

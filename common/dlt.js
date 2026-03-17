@@ -17064,3 +17064,54 @@ export const dltHistory = [
 //   })
 // });
 console.log("===大乐透历史记录一共有", dltHistory.length, "条");
+
+function test() {
+  const his = dltHistory.slice(0, dltHistory.length - 1);
+  let T = dltHistory.slice(-1);
+  for (let t of T) {
+    let max = 0;
+    let target =null;
+    const li = t.redBall;
+    for (let item of his) {
+     // console.log("tt",t)
+      let repeatCount =
+        li.length +
+        item.redBall.length -
+        new Set([...item.redBall, ...li]).size;
+      if (repeatCount > 3) {
+       // console.log("max index", item);
+      }
+      if(max <repeatCount){
+        target=item;
+      }
+      max = Math.max(max, repeatCount);
+    }
+    console.log("重复量 ：：", max,target);
+  }
+}
+//test();
+function findsame(){
+  const target=[3,14,19,28,32]
+  dltHistory.map(item=>{
+    const groupList = new Set([...item.redBall,...target]);
+    const sameNum = 10 - groupList.size;
+    if(sameNum>2){
+      console.log("重复超过3个",item);
+    }
+  })
+}
+//findsame();
+
+function findRepeatRedAndBlue(){
+  let sum =0;
+  dltHistory.map(item=>{
+    const groupList = new Set([...item.redBall,...item.blueBall]);
+    
+    if(groupList.size==6){
+      console.log("重复",item);
+      sum++;
+    }
+  })
+  console.log(`that all data length is ${dltHistory.length},repeat is ${sum}`)
+}
+//findRepeatRedAndBlue();
