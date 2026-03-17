@@ -119,7 +119,7 @@ function C4(list,dan=[]){
 }
 
 function main(n=14){
-    const dan =[7];
+    const dan =[];
    const filterarr=dltHistory[dltHistory.length-1].redBall;
    //const filterarr=[11,15,17,22,25,30]
     let thread =0;
