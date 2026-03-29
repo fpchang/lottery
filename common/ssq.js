@@ -11900,12 +11900,35 @@ export var ssqHistory = [
     date: "2026 - 01 - 20",
     index: "2026027",
     redBall: [2,13,17,18,25,26],
+<<<<<<< HEAD
   }
   ,{
     blueBall: 15,
     date: "2026 - 01 - 20",
     index: "2026026",
     redBall: [2,6,9,17,25,28],
+=======
+  },{
+    blueBall: 15,
+    date: "2026 - 01 - 20",
+    index: "2026028",
+    redBall: [2,6,9,17,25,28],
+  },{
+    blueBall: 5,
+    date: "2026 - 01 - 20",
+    index: "2026029",
+    redBall: [6,19,22,23,28,31],
+  },{
+    blueBall: 4,
+    date: "2026 - 01 - 20",
+    index: "2026030",
+    redBall: [10,11,14,19,22,24],
+  },{
+    blueBall: 8,
+    date: "2026 - 01 - 20",
+    index: "2026031",
+    redBall: [3,10,12,13,18,33],
+>>>>>>> 5b0fbd26742588c3e69d55fab550a4606dc812d6
   }
 ];
 console.log(`双色球一共${ssqHistory.length}期`);
