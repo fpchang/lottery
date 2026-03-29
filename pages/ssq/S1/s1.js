@@ -113,15 +113,15 @@ function C4(list,dan=[]){
 }
 
 function main(n=14){
-    const dan =[5,9,33];
-   const filterarr=ssqHistory[ssqHistory.length-1].redBall;
-   //const filterarr=[]
+    const dan =[29];
+  // const filterarr=ssqHistory[ssqHistory.length-1].redBall;
+   const filterarr=[2]
     let thread =0;
     let result =[]
     while (thread < n) {
         const list = getRandomRedBall();
         if(C1(list)&&C2(list)&&C3(list,filterarr)&&C4(list,dan)){
-             result.push({ redBall: list });
+             result.push({ "红球": list, "蓝球":9});
             thread++;
         }
 
