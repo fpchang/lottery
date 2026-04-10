@@ -230,7 +230,7 @@ function caculate(fn, n = 20) {
       //console.log("no1::",list);
       //const f = fl.find(lis=> new Set([...lis,...list]).size ==lis.length);
     //  if (f) {
-        result.push({ redBall: list });
+        result.push({ "红球": list , "蓝球":"09" });
         thread++;
      // }
     }
