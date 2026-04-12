@@ -11860,77 +11860,127 @@ export var ssqHistory = [
     date: "2026 - 01 - 20",
     index: "2026019",
     redBall: [7, 8, 16, 17, 18, 30],
-  },{
+  },
+  {
     blueBall: 2,
     date: "2026 - 01 - 20",
     index: "2026020",
-    redBall: [1,13,14,21,24,30],
-  },{
+    redBall: [1, 13, 14, 21, 24, 30],
+  },
+  {
     blueBall: 4,
     date: "2026 - 01 - 20",
     index: "2026021",
-    redBall: [3,13,25,26,30,31],
-  },{
+    redBall: [3, 13, 25, 26, 30, 31],
+  },
+  {
     blueBall: 11,
     date: "2026 - 01 - 20",
     index: "2026022",
-    redBall: [15,16,23,25,28,32],
-  },{
+    redBall: [15, 16, 23, 25, 28, 32],
+  },
+  {
     blueBall: 6,
     date: "2026 - 01 - 20",
     index: "2026023",
-    redBall: [1,3,8,10,23,29],
-  },{
+    redBall: [1, 3, 8, 10, 23, 29],
+  },
+  {
     blueBall: 14,
     date: "2026 - 01 - 20",
     index: "2026024",
-    redBall: [1,2,13,21,23,29],
-  },{
+    redBall: [1, 2, 13, 21, 23, 29],
+  },
+  {
     blueBall: 10,
     date: "2026 - 01 - 20",
     index: "2026025",
-    redBall: [2,3,15,20,23,24],
-  },{
+    redBall: [2, 3, 15, 20, 23, 24],
+  },
+  {
     blueBall: 3,
     date: "2026 - 01 - 20",
     index: "2026026",
-    redBall: [2,9,16,22,25,29],
-  },{
+    redBall: [2, 9, 16, 22, 25, 29],
+  },
+  {
     blueBall: 13,
     date: "2026 - 01 - 20",
     index: "2026027",
-    redBall: [2,13,17,18,25,26],
-  },{
+    redBall: [2, 13, 17, 18, 25, 26],
+  },
+  {
     blueBall: 15,
     date: "2026 - 01 - 20",
     index: "2026028",
-    redBall: [2,6,9,17,25,28],
-  },{
+    redBall: [2, 6, 9, 17, 25, 28],
+  },
+  {
     blueBall: 5,
     date: "2026 - 01 - 20",
     index: "2026029",
-    redBall: [6,19,22,23,28,31],
-  },{
+    redBall: [6, 19, 22, 23, 28, 31],
+  },
+  {
     blueBall: 4,
     date: "2026 - 01 - 20",
     index: "2026030",
-    redBall: [10,11,14,19,22,24],
-  },{
+    redBall: [10, 11, 14, 19, 22, 24],
+  },
+  {
     blueBall: 8,
     date: "2026 - 01 - 20",
     index: "2026031",
-    redBall: [3,10,12,13,18,33],
-  },{
+    redBall: [3, 10, 12, 13, 18, 33],
+  },
+  {
     blueBall: 2,
     date: "2026 - 01 - 20",
     index: "2026032",
-    redBall: [1,3,11,18,31,33],
-  },{
+    redBall: [1, 3, 11, 18, 31, 33],
+  },
+  {
     blueBall: 6,
     date: "2026 - 01 - 20",
     index: "2026033",
-    redBall: [3,6,13,21,28,29],
-  }
+    redBall: [3, 6, 13, 21, 28, 29],
+  },
+  {
+    blueBall: 7,
+    date: "2026-03-29",
+    index: "2026034",
+    redBall: [1, 3, 7, 13, 22, 23],
+  },
+  {
+    blueBall: 2,
+    date: "2026-03-31",
+    index: "2026035",
+    redBall: [2, 6, 12, 24, 25, 32],
+  },
+  {
+    blueBall: 8,
+    date: "2026-04-02",
+    index: "2026036",
+    redBall: [6, 10, 12, 15, 22, 28],
+  },
+  {
+    blueBall: 12,
+    date: "2026-04-05",
+    index: "2026037",
+    redBall: [11, 22, 27, 29, 31, 33],
+  },
+  {
+    blueBall: 5,
+    date: "2026-04-07",
+    index: "2026038",
+    redBall: [1, 2, 13, 23, 25, 27],
+  },
+  {
+    blueBall: 5,
+    date: "2026-04-09",
+    index: "2026039",
+    redBall: [8, 17, 18, 21, 25, 30],
+  },
 ];
 console.log(`双色球一共${ssqHistory.length}期`);
 
@@ -11942,8 +11992,8 @@ function test() {
   for (let t of T) {
     let max = 0;
     let maxTtaget = null;
-    let maxindex=0;
-    
+    let maxindex = 0;
+
     const li = t.redBall;
     for (let i = 0; i < his.length; i++) {
       // console.log("tt",t)
@@ -11952,31 +12002,30 @@ function test() {
         li.length +
         item.redBall.length -
         new Set([...item.redBall, ...li]).size;
-      if (repeatCount ==4 || repeatCount==5) {
+      if (repeatCount == 4 || repeatCount == 5) {
         // console.log("max index", item);
         if (repeatCount > max) {
-        maxTtaget = item;
-        maxindex=i;
+          maxTtaget = item;
+          maxindex = i;
+        }
+        max = Math.max(max, repeatCount);
       }
-      max = Math.max(max, repeatCount);
-      }
-      
     }
     //console.log("当前：",t)
     //console.log("总量：",his.length);
-    console.log("位置：",maxindex);
+    console.log("位置：", maxindex);
     //console.log("重复量 ：：", max, maxTtaget);
   }
 }
 //test();
-function findsame(){
-  const target=[3,4,14,19,28,32]
-  ssqHistory.map(item=>{
-    const groupList = new Set([...item.redBall,...target]);
+function findsame() {
+  const target = [3, 4, 14, 19, 28, 32];
+  ssqHistory.map((item) => {
+    const groupList = new Set([...item.redBall, ...target]);
     const sameNum = 12 - groupList.size;
-    if(sameNum>4){
-      console.log("重复超过4个",item);
+    if (sameNum > 4) {
+      console.log("重复超过4个", item);
     }
-  })
+  });
 }
 findsame();
