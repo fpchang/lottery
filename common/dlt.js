@@ -17115,3 +17115,11 @@ function findRepeatRedAndBlue(){
   console.log(`that all data length is ${dltHistory.length},repeat is ${sum}`)
 }
 //findRepeatRedAndBlue();
+
+function findsametest(){
+  const target=[14,20];
+ const filter= dltHistory.filter(item=>new Set([...target,...item.redBall]).size==5);
+ console.log("fff",filter);
+
+}
+findsametest();
