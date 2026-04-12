@@ -1,8 +1,8 @@
 import {
-	kl8_data
-} from "./kl8_data.js";
+	historyKl8
+} from "../../common/kl8.js";
 
-const history = kl8_data;
+const history = historyKl8;
 const BALL = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
 	30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
 	58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80
@@ -256,17 +256,18 @@ function S1(list, history) {
 	let count6 = compare(list, history.slice(history.length - 6));
 	let count7 = compare(list, history.slice(history.length - 7));
 	let count8 = compare(list, history.slice(history.length - 8));
-	//console.log("count:",count1,count2,count3,count4,count5);
+	//console.log("count:",count1,count2,count3,count4,count5,count6,count7,count8);
 	const s1 = count1 > 2 && count1 < 8;
 	const s2 = count2 > 5 && count2 < 12;
 	const s3 = count3 > 8 && count3 < 15;
 	const s4 = count4 > 10 && count4 < 17;
-	const s5 = count5 > 12 && count4 < 20;
-	const s6 = count6 > 14 && count4 < 20;
-	const s7 = count7 > 15 && count4 < 20;
+	const s5 = count5 > 12 && count5 < 20;
+	const s6 = count6 > 14 && count6 < 20;
+	const s7 = count7 > 15 && count7 < 20;
 	const s8 = count8 > 16;
-	const s = S0(list,history);
-	if (s&&s1 & s2 && s3 && s4 && s5 && s6 && s7 && s8) {
+	//const s = S0(list,history);
+	
+	if (s1 & s2 && s3 && s4 && s5 && s6 && s7 && s8) {
 		return true
 	}
 	return false;
@@ -371,6 +372,7 @@ function caculate(fn, n = 20) {
 	let result = [];
 	while (thread < n) {
 		let list = getRandomRedBall();
+		//console.log(list);
 		if (fn(list, history)) {
 			result.push({
 				redBall: list
@@ -381,7 +383,7 @@ function caculate(fn, n = 20) {
 	return result;
 }
 //结果 与前2期最多重复2，与前3期最多重复3,前4期最多3
-//console.log(caculate());
+console.log(caculate(S1,1));
 ///sameHistory(1,history);
 //let flag = S1([ 8, 10, 14, 23, 28, 32 ],history);
 //console.log(flag);

@@ -11900,14 +11900,6 @@ export var ssqHistory = [
     date: "2026 - 01 - 20",
     index: "2026027",
     redBall: [2,13,17,18,25,26],
-<<<<<<< HEAD
-  }
-  ,{
-    blueBall: 15,
-    date: "2026 - 01 - 20",
-    index: "2026026",
-    redBall: [2,6,9,17,25,28],
-=======
   },{
     blueBall: 15,
     date: "2026 - 01 - 20",
@@ -11928,7 +11920,42 @@ export var ssqHistory = [
     date: "2026 - 01 - 20",
     index: "2026031",
     redBall: [3,10,12,13,18,33],
->>>>>>> 5b0fbd26742588c3e69d55fab550a4606dc812d6
+  }
+  ,{
+    blueBall: 2,
+    date: "2026 - 01 - 20",
+    index: "2026032",
+    redBall: [1,3,11,18,31,33],
+  } ,{
+    blueBall: 6,
+    date: "2026 - 01 - 20",
+    index: "2026033",
+    redBall: [3,6,13,21,28,29],
+  } ,{
+    blueBall: 7,
+    date: "2026 - 01 - 20",
+    index: "2026034",
+    redBall: [1,3,7,13,22,23],
+  } ,{
+    blueBall: 2,
+    date: "2026 - 01 - 20",
+    index: "2026035",
+    redBall: [2,6,12,24,25,32],
+  } ,{
+    blueBall: 8,
+    date: "2026 - 01 - 20",
+    index: "2026036",
+    redBall: [6,10,12,15,22,28],
+  } ,{
+    blueBall: 12,
+    date: "2026 - 01 - 20",
+    index: "2026037",
+    redBall: [11,22,27,29,31,33],
+  } ,{
+    blueBall: 5,
+    date: "2026 - 01 - 20",
+    index: "2026038",
+    redBall: [1,2,13,23,25,27],
   }
 ];
 console.log(`双色球一共${ssqHistory.length}期`);
