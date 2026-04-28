@@ -217,7 +217,7 @@ function repeatSinglHistory(list, history) {
 function caculate(fn, n = 20) {
   let thread = 0;
   let result = [];
-  const fl = filterList([1, 3, 5, 18, 29, 32], []);
+  //const fl = filterList([1, 3, 5, 18, 29, 32], []);
   while (thread < n) {
     let list = getRandomRedBall();
     const f = history.find((lis) => {
