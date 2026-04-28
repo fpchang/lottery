@@ -208,14 +208,14 @@ function S3_BLUE(list,history){
 		return true;
 	}
 }
-function caculate(fn,num=5,ballIndex='redBall'){
+function caculate(fn,num=14,ballIndex='redBall'){
 	
 
 	let thread=0;
 	let result =[];
 	while(thread<num){
 		let list =getRandomRedBall(ballIndex);		
-		if(fn&&S0(list,dltHistory.slice(-600))&&S1(list,dltHistory)){
+		if(fn&&S0(list,dltHistory)&&S1(list,dltHistory)){
 			result.push({valueBall:list})
 			thread++;
 		}
@@ -223,7 +223,6 @@ function caculate(fn,num=5,ballIndex='redBall'){
 	return result;
 }
 //结果 与前2期最多重复2，与前3期最多重复3,前4期最多3
-//console.log(caculate());
 ///sameHistory(1,history);
 //let flag = S1([ 8, 10, 14, 23, 28, 32 ],history);
 //console.log(flag);
@@ -261,28 +260,22 @@ function caculate(fn,num=5,ballIndex='redBall'){
 // console.log(caculate(S3,1));
 // console.log(caculate(S3_BLUE,1,"blueBall"));
 //热号
-//console.log("上期开奖",dltHistory[dltHistory.length-1])
-//console.log(caculate(S1,14));
+console.log("上期开奖",dltHistory[dltHistory.length-1])
+console.log(caculate(S1,14));
 //console.log(caculate(S1_BLUE,10,"blueBall"));
-// const c3=getGroupList(dltHistory.slice(dltHistory.length-3));
-// const c4=getGroupList(dltHistory.slice(dltHistory.length-4));
-// const c5=getGroupList(dltHistory.slice(dltHistory.length-5));
-// const c6=getGroupList(dltHistory.slice(dltHistory.length-6));
-// const c7=getGroupList(dltHistory.slice(dltHistory.length-7));
-// const c8=getGroupList(dltHistory.slice(dltHistory.length-8));
-// const c9=getGroupList(dltHistory.slice(dltHistory.length-9));
-// const c10=getGroupList(dltHistory.slice(dltHistory.length-10));
-// const c11=getGroupList(dltHistory.slice(dltHistory.length-11));
-// console.log("c3",new Set(c3),new Set(c4),new Set(c5),new Set(c6),new Set(c7),new Set(c8),"c9",new Set(c9),new Set(c10),new Set(c11));
+const c3=getGroupList(dltHistory.slice(dltHistory.length-3));
+const c4=getGroupList(dltHistory.slice(dltHistory.length-4));
+const c5=getGroupList(dltHistory.slice(dltHistory.length-5));
+const c6=getGroupList(dltHistory.slice(dltHistory.length-6));
+const c7=getGroupList(dltHistory.slice(dltHistory.length-7));
+const c8=getGroupList(dltHistory.slice(dltHistory.length-8));
+const c9=getGroupList(dltHistory.slice(dltHistory.length-9));
+const c10=getGroupList(dltHistory.slice(dltHistory.length-10));
+const c11=getGroupList(dltHistory.slice(dltHistory.length-11));
+console.log("c3",new Set(c3),new Set(c4),new Set(c5),new Set(c6),new Set(c7),new Set(c8),"c9",new Set(c9),new Set(c10),new Set(c11));
 
 function testValid(list=[]){
 	const flag = S0(list,dltHistory);
 	console.log(list,flag?"有效":"无效")
 }
-testValid([3,13,16,28,32]);
-//testValid([8,11,13,25,28,31]);
-
-// dltHistory.forEach(item => {
-// 	const result = repeatSinglHistory(item.redBall,dltHistory);
-// 	console.log("result",result)
-// });
+//testValid([3,13,16,28,32]);

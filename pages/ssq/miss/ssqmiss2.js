@@ -152,11 +152,11 @@ function getCombinationStats(num1, num2) {
     组合: stat.combination,
     当前遗漏: stat.currentOmission,
     最大遗漏: stat.maxOmission,
-    最小遗漏: stat.minOmission,
-    平均遗漏: stat.avgOmission,
-    命中次数: stat.hitCount,
-    最后命中期号: stat.lastHitPeriod,
-    总期数: stat.totalPeriods
+    // 最小遗漏: stat.minOmission,
+    // 平均遗漏: stat.avgOmission,
+    // 命中次数: stat.hitCount,
+    // 最后命中期号: stat.lastHitPeriod,
+    // 总期数: stat.totalPeriods
   };
 }
 
@@ -167,13 +167,13 @@ function getCombinationStats(num1, num2) {
 // 示例2：获取当前遗漏最大的前5个组合
 const sortedByCurrentOmission = Object.values(result)
   .sort((a, b) => b.currentOmission - a.currentOmission)
-  .slice(0, 30)
+  .slice(0, 100)
   .map(stat => ({
     组合: stat.combination,
     当前遗漏: stat.currentOmission,
     最大遗漏: stat.maxOmission,
-    平均遗漏: stat.avgOmission,
-    最后命中期号: stat.lastHitPeriod
+    // 平均遗漏: stat.avgOmission,
+    // 最后命中期号: stat.lastHitPeriod
   }));
 
 console.log('当前遗漏最大的前30个组合：', sortedByCurrentOmission);
@@ -181,13 +181,13 @@ console.log('当前遗漏最大的前30个组合：', sortedByCurrentOmission);
 
 const sortedByCurrentOmission2 = Object.values(result)
   .sort((a, b) => b.maxOmission - a.maxOmission)
-  .slice(0, 30)
+  .slice(0, 100)
   .map(stat => ({
     组合: stat.combination,
     当前遗漏: stat.currentOmission,
-    最大遗漏: stat.maxOmission,
-    平均遗漏: stat.avgOmission,
-    最后命中期号: stat.lastHitPeriod
+    // 最大遗漏: stat.maxOmission,
+    // 平均遗漏: stat.avgOmission,
+    // 最后命中期号: stat.lastHitPeriod
   }));
 
 //console.log('历史最大的前30个组合：', sortedByCurrentOmission2);
@@ -195,3 +195,4 @@ const sortedByCurrentOmission2 = Object.values(result)
 // 示例3：导出所有组合数据为JSON（含当前遗漏）
 const exportData = JSON.stringify(result, null, 2);
 //console.log('所有组合遗漏数据（JSON）：', exportData);
+

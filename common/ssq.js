@@ -11981,6 +11981,42 @@ export var ssqHistory = [
     index: "2026039",
     redBall: [8, 17, 18, 21, 25, 30],
   },
+  {
+    blueBall: 4,
+    date: '2026-04-12',
+    index: '2026040',
+    redBall: [ 3, 4, 14, 22, 23, 33 ]
+  },
+  {
+    blueBall: 13,
+    date: '2026-04-12',
+    index: '2026041',
+    redBall: [ 2,8,10,17,19,24 ]
+  },
+  {
+    blueBall: 10,
+    date: '2026-04-12',
+    index: '2026042',
+    redBall: [ 2,7,12,19,24,31 ]
+  },
+  {
+    blueBall: 16,
+    date: '2026-04-12',
+    index: '2026043',
+    redBall: [6,9,14,16,25,32]
+  },
+  {
+    blueBall: 1,
+    date: '2026-04-12',
+    index: '2026044',
+    redBall: [2,14,17,18,22,30]
+  },
+  {
+    blueBall: 15,
+    date: '2026-04-12',
+    index: '2026045',
+    redBall: [4,11,15,17,24,30]
+  }
 ];
 console.log(`双色球一共${ssqHistory.length}期`);
 
@@ -12019,13 +12055,17 @@ function test() {
 }
 //test();
 function findsame() {
-  const target = [3, 4, 14, 19, 28, 32];
+  //const target = [3,4,8,19,31,33];
+  const target = [3,9,14,16,19,31];
+  let repeat = 0;
   ssqHistory.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
     const sameNum = 12 - groupList.size;
-    if (sameNum > 4) {
-      console.log("重复超过4个", item);
+    if(sameNum>repeat){
+      console.log(item)
     }
+    repeat=Math.max(repeat,sameNum);
   });
+  console.log("rr",repeat);
 }
 findsame();

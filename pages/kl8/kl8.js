@@ -329,6 +329,25 @@ function S3(list, history) {
 	}
 	return false;
 }
+function getmaxrepeat(target=[]) {
+  //const target = [3,4,8,19,31,33];
+  //const target = [8,14,19,28,34,42,56,62,7,80];
+  if(target.length!=10){
+    throw new Error("目标不是10位")
+  }
+  let repeat = 0;
+  historyKl8.map((item) => {
+    const groupList = new Set([...item.redBall, ...target]);
+    const sameNum = 30 - groupList.size;
+    if(sameNum>repeat){
+      console.log(item)
+    }
+    repeat=Math.max(repeat,sameNum);
+  });
+  console.log("rr",repeat);
+  return repeat;
+}
+
 //计算历史开奖中中奖率最高的组合
 //n 代表买几，1-10
 function S5(n = 4, minNum = 5) {
@@ -384,82 +403,3 @@ function caculate(fn, n = 20) {
 }
 //结果 与前2期最多重复2，与前3期最多重复3,前4期最多3
 console.log(caculate(S1,1));
-///sameHistory(1,history);
-//let flag = S1([ 8, 10, 14, 23, 28, 32 ],history);
-//console.log(flag);
-//将2024年双色球61到90期开奖结束整理成json格式，要全部开奖数据升序排列，生成附件
-//  sameHistory(1,history);
-// sameHistory(2,history);
-// sameHistory(3,history);
-// sameHistory(4,history);
-// sameHistory(5,history);
-// sameHistory(6,history);
-// sameHistory(7,history);
-// sameHistory(8,history);
-// sameHistory(9,history);
-// sameHistory(10,history);
-// sameHistory(11,history);
-
-//  const c4=getGroupList(history.slice(history.length-4));
-//  const c5=getGroupList(history.slice(history.length-5));
-//  const c6=getGroupList(history.slice(history.length-6));
-//  console.log(new Set(c4),new Set(c5),new Set(c6));
-
-//console.log(sortObjectByNumberValue(S1_stat(list)));
-
-//set NODE_OPTIONS=--max-old-space-size=4096
-//S5(10,6);
-//getWinTime([22,34,56,66],history);//4-75,3-32,2-17,5-23
-
-// history.forEach(item=>{
-// 	//console.log(item)
-// 	const rh=[2,15,55,77,79];
-// 	if(compare(rh,[item])==5){
-// 	console.log(item.index);	
-// 	}
-
-// })
-// '1,8,10,47,54': 6,-305
-//   '11,16,38,61,71': 6,-330
-//   '11,16,38,62,71': 6,-292
-//   '22,34,46,50,52': 6,-222
-//   '2,3,46,55,80': 6,-274
-//   '15,54,70,72,74': 6,-288
-//   '13,21,23,69,80': 6,-295 
-//   '2,15,55,77,79': 5,
-//   '2,5,35,46,65': 5,
-//   '5,9,33,45,55': 5,
-//   '9,27,50,53,73': 5,
-//   '12,50,53,68,80': 5,
-//   '11,14,20,22,80': 5,
-//   '19,33,35,48,52': 5,
-//   '19,33,35,52,59': 5,
-//   '1,2,54,71,79': 5,
-//   '1,18,27,67,74': 5,
-//   '2,18,25,27,74': 5,
-//   '2,10,54,55,60': 5,
-//   '40,46,47,56,67': 5,
-//   '27,46,48,74,76': 5,
-//   '5,25,34,45,47': 5,
-//   '13,33,35,50,65': 5,
-//   '11,53,65,69,72': 5,
-//   '1,10,16,53,71': 5,
-//   '3,10,11,16,62': 5,
-//   '10,12,16,23,80': 5,
-//   '10,16,38,52,71': 5,
-//   '10,16,38,58,71': 5,
-//   '10,38,53,58,71': 5,
-//   '11,16,38,61,62': 5,
-//   '11,16,61,62,71': 5,
-//   '11,38,61,62,71': 5,
-//   '16,38,52,53,58': 5,
-//   '16,38,61,62,71': 5,
-//   '1,2,15,43,62': 5,
-//   '11,16,43,62,68': 5,
-//   '16,46,53,55,62': 5,
-//   '5,28,33,34,45': 5,
-//   '9,13,28,34,48': 5
-// for(let i=0;i<history.length;i++){
-// 	let item = history[i].redBall;
-// 	S0(item,history)
-// }

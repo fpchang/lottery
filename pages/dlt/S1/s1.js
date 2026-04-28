@@ -117,7 +117,36 @@ function C4(list,dan=[]){
     const flag = groupList.size ==list.length; 
     return flag;
 }
+/**
+ * 验证大乐透前区5个号码 是否符合 三区比例规则
+ * @param {number[]} redBalls - 前区号码，例如 [3,5,17,33,35]
+ * @param {string} ratio - 比例字符串，如 "2:2:1"、"1:2:2"
+ * @returns {boolean} 是否符合比例
+ */
+//1-2-2,2,1,2,2-2-1
+function C5(redBalls, ratio="2:1:2") {
+  // 1. 必须是5个红球
+  if (!redBalls || redBalls.length !== 5) return false;
 
+  // 2. 三区定义（大乐透标准分区）
+  const ZONE_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const ZONE_2 = [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
+  const ZONE_3 = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35];
+
+  // 3. 统计每个区出号数量
+  let z1 = 0, z2 = 0, z3 = 0;
+  for (const num of redBalls) {
+    if (ZONE_1.includes(num)) z1++;
+    else if (ZONE_2.includes(num)) z2++;
+    else if (ZONE_3.includes(num)) z3++;
+  }
+
+  // 4. 解析输入比例 如 "2:2:1" → [2,2,1]
+  const [r1, r2, r3] = ratio.split(":").map(Number);
+
+  // 5. 对比是否匹配
+  return z1 === r1 && z2 === r2 && z3 === r3;
+}
 function main(n=14){
     const dan =[];
    const filterarr=dltHistory[dltHistory.length-1].redBall;
@@ -127,7 +156,7 @@ function main(n=14){
     while (thread < n) {
         const list = getRandomRedBall();
         //console.log(list);
-        if(C1(list)&&C2(list)&&C3(list,filterarr)&&C4(list,dan)){
+        if(C1(list)&&C2(list)&&C5(list)){
              result.push({ redBall: list });
             thread++;
         }
