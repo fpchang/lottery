@@ -68,7 +68,7 @@ let num=0;
 while(num<20){
     const openNum = generateHappy8();
     const repeat = getmaxrepeat(openNum);
-    if(repeat<6){
+    if(repeat<7){  
         num++;
         result=openNum;
         console.log("符合条件的",openNum)
