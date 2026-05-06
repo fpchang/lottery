@@ -103,16 +103,14 @@ function compare(list =[],listHistory=[],ballindex='redBall'){
 }
 //与所有历史数据相比
 function S0(list,history){
-	let result =true;
+	let result =false;
 	
 	for(let i=0;i<history.length;i++){
 		 let newList = new Set([...history[i].redBall,...list]);
 		 const repeatCount = 10 -newList.size;
 		// console.log("repeat",repeatCount)
-		 if(repeatCount>2){
-			//console.log("重复数量:",10-newList.size)
-			//console.log("与开过的相同太大:",newList,history[i]);
-			 result=false;
+		 if(repeatCount==4|| repeatCount==5){
+			 result=true;
 			 break;
 		 }
 	}
@@ -227,35 +225,7 @@ function caculate(fn,num=14,ballIndex='redBall'){
 //let flag = S1([ 8, 10, 14, 23, 28, 32 ],history);
 //console.log(flag);
 //将2024年双色球61到90期开奖结束整理成json格式，要全部开奖数据升序排列，生成附件
-// sameHistory(1,dltHistory,"blueBall");
-// sameHistory(2,dltHistory,"blueBall");
-//sameHistory(3,dltHistory,"blueBall");
-// sameHistory(4,dltHistory,"blueBall");
-// sameHistory(5,dltHistory,"blueBall");
-// sameHistory(6,dltHistory,"blueBall");
-// sameHistory(7,dltHistory,"blueBall");
-// sameHistory(8,dltHistory,"blueBall");
-// sameHistory(9,dltHistory,"blueBall");
-// sameHistory(10,dltHistory,"blueBall");
-// sameHistory(11,dltHistory,"blueBall");
-// sameHistory(12,dltHistory,"blueBall");
-// sameHistory(13,dltHistory,"blueBall");
-// sameHistory(14,dltHistory,"blueBall");
-// sameHistory(15,dltHistory,"blueBall");
-// sameHistory(16,dltHistory,"blueBall");
-// sameHistory(17,dltHistory,"blueBall");
-// sameHistory(1,dltHistory);
-// sameHistory(2,dltHistory);
-// sameHistory(3,dltHistory);
-// sameHistory(4,dltHistory);
-// sameHistory(5,dltHistory);
-// sameHistory(6,dltHistory);
-// sameHistory(7,dltHistory);
-// sameHistory(8,dltHistory);
-// sameHistory(9,dltHistory);
-// sameHistory(10,dltHistory);
-// sameHistory(11,dltHistory);
-// sameHistory(12,dltHistory);
+
 //爆冷号
 // console.log(caculate(S3,1));
 // console.log(caculate(S3_BLUE,1,"blueBall"));
@@ -272,7 +242,7 @@ const c8=getGroupList(dltHistory.slice(dltHistory.length-8));
 const c9=getGroupList(dltHistory.slice(dltHistory.length-9));
 const c10=getGroupList(dltHistory.slice(dltHistory.length-10));
 const c11=getGroupList(dltHistory.slice(dltHistory.length-11));
-console.log("c3",new Set(c3),new Set(c4),new Set(c5),new Set(c6),new Set(c7),new Set(c8),"c9",new Set(c9),new Set(c10),new Set(c11));
+//console.log("c3",new Set(c3),new Set(c4),new Set(c5),new Set(c6),new Set(c7),new Set(c8),"c9",new Set(c9),new Set(c10),new Set(c11));
 
 function testValid(list=[]){
 	const flag = S0(list,dltHistory);

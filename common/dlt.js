@@ -17067,6 +17067,120 @@ export const dltHistory = [
     date: '2026-03-21',
     redBall: [ 3, 5, 17, 33, 35 ],
     blueBall: [ 5, 7 ]
+  },
+   {
+    index: '26030',
+    date: '2026-03-23',
+    redBall: [ 2, 13, 22, 28, 34 ],
+    blueBall: [ 5, 12 ]
+  },
+  {
+    index: '26031',
+    date: '2026-03-25',
+    redBall: [ 6, 8, 22, 29, 34 ],
+    blueBall: [ 5, 7 ]
+  },
+  {
+    index: '26032',
+    date: '2026-03-28',
+    redBall: [ 3, 4, 19, 26, 32 ],
+    blueBall: [ 1, 12 ]
+  },
+  {
+    index: '26033',
+    date: '2026-03-30',
+    redBall: [ 3, 5, 7, 9, 18 ],
+    blueBall: [ 2, 10 ]
+  },
+  {
+    index: '26034',
+    date: '2026-04-01',
+    redBall: [ 11, 12, 25, 26, 27 ],
+    blueBall: [ 8, 11 ]
+  },
+  {
+    index: '26035',
+    date: '2026-04-04',
+    redBall: [ 2, 22, 30, 33, 34 ],
+    blueBall: [ 8, 12 ]
+  },
+  {
+    index: '26036',
+    date: '2026-04-06',
+    redBall: [ 4, 7, 16, 26, 32 ],
+    blueBall: [ 5, 8 ]
+  },
+  {
+    index: '26037',
+    date: '2026-04-08',
+    redBall: [ 7, 12, 13, 28, 32 ],
+    blueBall: [ 6, 8 ]
+  },
+  {
+    index: '26038',
+    date: '2026-04-11',
+    redBall: [ 8, 17, 21, 33, 35 ],
+    blueBall: [ 6, 7 ]
+  },
+  {
+    index: '26039',
+    date: '2026-04-13',
+    redBall: [ 9, 11, 20, 26, 27 ],
+    blueBall: [ 6, 9 ]
+  },
+  {
+    index: '26040',
+    date: '2026-04-15',
+    redBall: [ 6, 12, 13, 21, 34 ],
+    blueBall: [ 8, 9 ]
+  },
+  {
+    index: '26041',
+    date: '2026-04-18',
+    redBall: [ 24, 25, 27, 29, 34 ],
+    blueBall: [ 2, 6 ]
+  },
+  {
+    index: '26042',
+    date: '2026-04-20',
+    redBall: [ 2, 7, 13, 19, 24 ],
+    blueBall: [ 3, 8 ]
+  },
+  {
+    index: '26043',
+    date: '2026-04-22',
+    redBall: [ 8, 12, 14, 19, 22 ],
+    blueBall: [ 11, 12 ]
+  },
+  {
+    index: '26044',
+    date: '2026-04-25',
+    redBall: [ 3, 8, 22, 26, 29 ],
+    blueBall: [ 7, 10 ]
+  },
+  {
+    index: '26045',
+    date: '2026-04-27',
+    redBall: [ 1, 15, 21, 26, 33 ],
+    blueBall: [ 4, 7 ]
+  },
+  {
+    index: '26046',
+    date: '2026-04-29',
+    redBall: [ 1, 13, 18, 27, 33 ],
+    blueBall: [ 4, 7 ]
+  },
+  {
+    index: '26047',
+    date: '2026-05-02',
+    redBall: [ 9, 20, 21, 23, 28 ],
+    blueBall: [ 6, 11 ]
+  },
+  {
+    index: '26048',
+    date: '2026-05-04',
+    redBall: [ 11, 17, 20, 23, 35 ],
+    blueBall: [ 1, 10 ]
   }
 ];
 
@@ -17139,4 +17253,4 @@ function findsametest(){
  console.log("fff",filter);
 
 }
-findsametest();
+//findsametest();
