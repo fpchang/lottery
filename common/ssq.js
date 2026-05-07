@@ -12056,15 +12056,18 @@ function test() {
 //test();
 function findsame() {
   //const target = [3,4,8,19,31,33];
-  const target = [3,9,14,16,19,31];
+  const target = [22,25,29];
   let repeat = 0;
   ssqHistory.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
-    const sameNum = 12 - groupList.size;
-    if(sameNum>repeat){
-      console.log(item)
+    // const sameNum = 12 - groupList.size;
+    // if(sameNum>repeat){
+    //   console.log(item)
+    // }
+    // repeat=Math.max(repeat,sameNum);
+    if(groupList.size==6){
+      console.log("符合条件:",item)
     }
-    repeat=Math.max(repeat,sameNum);
   });
   console.log("rr",repeat);
 }
