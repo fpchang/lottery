@@ -67,6 +67,6 @@ const topList = calcTopMissChoose4(historyData);
 
 // 输出前 50 个遗漏最多的4码
 console.log('遗漏最多的前50组选4：');
-console.log(topList.slice(0, 50).map((item, i) => 
+console.log(topList.slice(0, 100).map((item, i) => 
   `${i+1}. ${item.comb.join(' ')}  遗漏 ${item.miss} 期`
 ));
