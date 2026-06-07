@@ -12042,7 +12042,23 @@ export var ssqHistory = [
     date: '2026-05-04',
     index: '2026050',
     redBall: [6,9,25, 27, 28,30]
+  }, {
+    blueBall: 10,
+    date: '2026-05-04',
+    index: '2026051',
+    redBall: [9,14,15,16,29,30]
+  }, {
+    blueBall: 11,
+    date: '2026-05-04',
+    index: '2026052',
+    redBall: [1,3,11,22,26,31]
+  }, {
+    blueBall: 2,
+    date: '2026-05-04',
+    index: '2026053',
+    redBall: [1,2,3,8,13,14]
   }
+ 
  
 ];
 console.log(`双色球一共${ssqHistory.length}期`);
@@ -12083,15 +12099,15 @@ function test() {
 //test();
 function findsame() {
   //const target = [3,4,8,19,31,33];
-  const target = [22,25,29];
+  const target = [5,8,12,15,25,27];
   let repeat = 0;
   ssqHistory.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
-    // const sameNum = 12 - groupList.size;
-    // if(sameNum>repeat){
-    //   console.log(item)
-    // }
-    // repeat=Math.max(repeat,sameNum);
+     const sameNum = 12 - groupList.size;
+    if(sameNum>repeat){
+      console.log(item)
+    }
+     repeat=Math.max(repeat,sameNum);
     if(groupList.size==6){
       console.log("符合条件:",item)
     }

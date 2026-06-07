@@ -17181,6 +17181,12 @@ export const dltHistory = [
     date: '2026-05-04',
     redBall: [ 11, 17, 20, 23, 35 ],
     blueBall: [ 1, 10 ]
+  },
+  {
+    index: '26049',
+    date: '2026-05-04',
+    redBall: [1,6,14,15,17 ],
+    blueBall: [2,3 ]
   }
 ];
 
@@ -17222,16 +17228,16 @@ function test() {
 }
 //test();
 function findsame(){
-  const target=[3,14,19,28,32]
+  const target=[3,4,11,24,31]
   dltHistory.map(item=>{
     const groupList = new Set([...item.redBall,...target]);
     const sameNum = 10 - groupList.size;
-    if(sameNum>2){
-      console.log("重复超过3个",item);
+    if(sameNum>3){
+      console.log("重复超过4个",item);
     }
   })
 }
-//findsame();
+findsame();
 
 function findRepeatRedAndBlue(){
   let sum =0;
