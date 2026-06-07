@@ -17185,8 +17185,68 @@ export const dltHistory = [
   {
     index: '26049',
     date: '2026-05-04',
-    redBall: [1,6,14,15,17 ],
-    blueBall: [2,3 ]
+    redBall: [ 1,6,14,15,17 ],
+    blueBall: [ 2, 3 ]
+  },
+  {
+    index: '26050',
+    date: '2026-05-09',
+    redBall: [ 6, 10, 14, 23, 33 ],
+    blueBall: [ 8, 10 ]
+  },
+  {
+    index: '26051',
+    date: '2026-05-11',
+    redBall: [ 13, 18, 28, 32, 33 ],
+    blueBall: [ 2, 11 ]
+  },
+  {
+    index: '26052',
+    date: '2026-05-13',
+    redBall: [ 2, 3, 20, 28, 33 ],
+    blueBall: [ 2, 12 ]
+  },
+  {
+    index: '26053',
+    date: '2026-05-16',
+    redBall: [ 2, 9, 14, 20, 31 ],
+    blueBall: [ 5, 9 ]
+  },
+  {
+    index: '26054',
+    date: '2026-05-18',
+    redBall: [ 2, 6, 14, 22, 24 ],
+    blueBall: [ 8, 11 ]
+  },
+  {
+    index: '26055',
+    date: '2026-05-20',
+    redBall: [ 9, 10, 20, 33, 35 ],
+    blueBall: [ 4, 11 ]
+  },
+  {
+    index: '26056',
+    date: '2026-05-23',
+    redBall: [ 6, 7, 18, 21, 30 ],
+    blueBall: [ 1, 5 ]
+  },
+  {
+    index: '26057',
+    date: '2026-05-25',
+    redBall: [ 23, 25, 26, 27, 34 ],
+    blueBall: [ 4, 10 ]
+  },
+  {
+    index: '26058',
+    date: '2026-05-27',
+    redBall: [ 7, 12, 13, 18, 34 ],
+    blueBall: [ 1, 5 ]
+  },
+  {
+    index: '26059',
+    date: '2026-05-30',
+    redBall: [ 6, 13, 17, 19, 26 ],
+    blueBall: [ 7, 8 ]
   }
 ];
 
@@ -17254,9 +17314,9 @@ function findRepeatRedAndBlue(){
 //findRepeatRedAndBlue();
 
 function findsametest(){
-  const target=[14,20];
- const filter= dltHistory.filter(item=>new Set([...target,...item.redBall]).size==5);
+  const target=[1,6,14,15,17];
+ const filter= dltHistory.filter(item=>new Set([...target,...item.redBall]).size==6);
  console.log("fff",filter);
 
 }
-//findsametest();
+findsametest();
