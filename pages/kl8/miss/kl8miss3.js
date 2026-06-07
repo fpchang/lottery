@@ -51,7 +51,7 @@ const list = calcTopMissChoose3(history);
 
 // 输出前50个遗漏最多的选3组合
 console.log("Top 50 missing Choose-3 combinations:");
-list.slice(0, 50).forEach((item, i) => {
+list.slice(0, 100).forEach((item, i) => {
   console.log(
     (i+1).toString().padStart(2) + ". " +
     item.comb.join(' ').padEnd(8) +

@@ -260,15 +260,18 @@ const c4 = getGroupList(history.slice(history.length - 4));
 const c5 = getGroupList(history.slice(history.length - 5));
 const c6 = getGroupList(history.slice(history.length - 6));
 
+for(let i = 0;i<1;i++){
 const list = caculate(S1, 14);
 console.log(list);
+}
+
 // console.log(S1_stat(list));
 // const c6=getGroupList(history.slice(history.length-6));
-console.log("c2", c2);
-console.log("c3", c3);
-console.log("c4", c4);
-console.log("c5", c5);
-console.log("c6", c6);
+// console.log("c2", c2);
+// console.log("c3", c3);
+// console.log("c4", c4);
+// console.log("c5", c5);
+// console.log("c6", c6);
 //S1([11,15,17,22,25,30],history);
 
 // history.forEach(item => {
@@ -278,4 +281,5 @@ console.log("c6", c6);
 
 //总结
 //1，c3中选5加一个冷号
-//2，c3与c4前区夹号
+//2，c3与c4前区夹号 
+

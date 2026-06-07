@@ -385,7 +385,7 @@ function S5(n = 4, minNum = 5) {
 }
 
 function caculate(fn, n = 20) {
-
+console.log(222222)
 
 	let thread = 0;
 	let result = [];
@@ -402,4 +402,4 @@ function caculate(fn, n = 20) {
 	return result;
 }
 //结果 与前2期最多重复2，与前3期最多重复3,前4期最多3
-console.log(caculate(S1,1));
+console.log(caculate(S1,14));

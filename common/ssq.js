@@ -12042,7 +12042,78 @@ export var ssqHistory = [
     date: '2026-05-04',
     index: '2026050',
     redBall: [6,9,25, 27, 28,30]
+  }, {
+    blueBall: 10,
+    date: '2026-05-04',
+    index: '2026051',
+    redBall: [9,14,15,16,29,30]
+  },
+  {
+    blueBall: 11,
+    date: '2026-05-10',
+    index: '2026052',
+    redBall: [ 1, 3, 11, 22, 26, 31 ]
+  },
+  {
+    blueBall: 2,
+    date: '2026-05-12',
+    index: '2026053',
+    redBall: [ 1, 2, 3, 8, 13, 14 ]
+  },
+  {
+    blueBall: 2,
+    date: '2026-05-14',
+    index: '2026054',
+    redBall: [ 13, 20, 25, 29, 30, 33 ]
+  },
+  {
+    blueBall: 13,
+    date: '2026-05-17',
+    index: '2026055',
+    redBall: [ 4, 11, 24, 25, 32, 33 ]
+  },
+  {
+    blueBall: 5,
+    date: '2026-05-19',
+    index: '2026056',
+    redBall: [ 10, 19, 21, 22, 31, 33 ]
+  },
+  {
+    blueBall: 7,
+    date: '2026-05-21',
+    index: '2026057',
+    redBall: [ 1, 10, 22, 24, 28, 30 ]
+  },
+  {
+    blueBall: 1,
+    date: '2026-05-24',
+    index: '2026058',
+    redBall: [ 1, 4, 7, 21, 29, 30 ]
+  },
+  {
+    blueBall: 15,
+    date: '2026-05-26',
+    index: '2026059',
+    redBall: [ 8, 16, 26, 28, 29, 30 ]
+  },
+  {
+    blueBall: 11,
+    date: '2026-05-28',
+    index: '2026060',
+    redBall: [ 7, 9, 10, 16, 22, 27 ]
+  },
+  {
+    blueBall: 7,
+    date: '2026-05-31',
+    index: '2026060',
+    redBall: [1, 4, 5, 15, 23, 28]
+  },{
+    blueBall: 9,
+    date: '2026-05-28',
+    index: '2026060',
+    redBall: [2, 4, 7, 14, 28, 29]
   }
+  
  
 ];
 console.log(`双色球一共${ssqHistory.length}期`);
@@ -12083,7 +12154,7 @@ function test() {
 //test();
 function findsame() {
   //const target = [3,4,8,19,31,33];
-  const target = [22,25,29];
+  const target = [2,3,15];
   let repeat = 0;
   ssqHistory.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
