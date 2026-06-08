@@ -1,4 +1,5 @@
 import { ssqHistory } from "../../../common/ssq.js";
+import { generateSSQ } from "../api/randomRate.js";
 const redballAll = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
   23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
@@ -119,9 +120,10 @@ function main(n=14){
     let thread =0;
     let result =[]
     while (thread < n) {
-        const list = getRandomRedBall();
+        const list = generateSSQ([[2,2,2]]);
+      //  console.log("list",list);
         if(C1(list)&&C2(list)&&C3(list,filterarr)&&C4(list,dan)){
-             result.push({ "红球": list, "蓝球":9});
+             result.push({ "红球": list, "蓝球":14});
             thread++;
         }
 
@@ -129,3 +131,10 @@ function main(n=14){
     console.log("result",result);
 }
 main();
+
+
+// { '红球': [ 8, 11, 12, 17, 23, 30 ], '蓝球': 14 }
+// { '红球': [ 5, 8, 12, 17, 24, 30 ], '蓝球': 12 }
+// { '红球': [ 1, 8, 12, 13, 26, 29 ], '蓝球': 15 }
+// { '红球': [ 6, 7, 12, 13, 23, 32 ], '蓝球': 13 }
+// { '红球': [ 4, 6, 12, 13, 23, 33 ], '蓝球': 6 }
