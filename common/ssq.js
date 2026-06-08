@@ -12105,13 +12105,18 @@ export var ssqHistory = [
   {
     blueBall: 7,
     date: '2026-05-31',
-    index: '2026060',
+    index: '2026061',
     redBall: [1, 4, 5, 15, 23, 28]
   },{
     blueBall: 9,
     date: '2026-05-28',
-    index: '2026060',
+    index: '2026062',
     redBall: [2, 4, 7, 14, 28, 29]
+  },{
+    blueBall: 2,
+    date: '2026-05-28',
+    index: '2026063',
+    redBall: [2,8,25,28,30,31]
   }
   
  
@@ -12155,11 +12160,7 @@ function test() {
 //test();
 function findsame() {
   //const target = [3,4,8,19,31,33];
-<<<<<<< HEAD
-  const target = [5,8,12,15,25,27];
-=======
   const target = [2,3,15];
->>>>>>> 431de9eec53658874dcf3674f463d6f6897d8804
   let repeat = 0;
   ssqHistory.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
@@ -12174,4 +12175,4 @@ function findsame() {
   });
   console.log("rr",repeat);
 }
-findsame();
+//findsame();
