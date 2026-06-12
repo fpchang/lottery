@@ -15682,15 +15682,55 @@ export var historyKl8 = [
       78,
     ],
   },
+  {
+    index: "2026147",
+    date: "2026-06-06",
+    redBall: [
+      3, 6, 7, 10, 11, 12, 14, 17, 22, 24, 28, 35, 37, 38, 45, 50, 52, 67, 77,
+      79,
+    ],
+  },
+  {
+    index: "2026148",
+    date: "2026-06-07",
+    redBall: [
+      1, 2, 7, 11, 17, 18, 26, 28, 30, 38, 41, 42, 43, 54, 59, 62, 69, 71, 74,
+      79,
+    ],
+  },
+  {
+    index: "2026149",
+    date: "2026-06-08",
+    redBall: [
+      2, 4, 10, 12, 13, 17, 23, 30, 31, 33, 37, 43, 47, 55, 58, 62, 65, 72, 75,
+      77,
+    ],
+  },
+  {
+    index: "2026150",
+    date: "2026-06-09",
+    redBall: [
+      7, 8, 12, 18, 19, 23, 24, 27, 53, 54, 56, 57, 59, 60, 62, 70, 74, 77, 78,
+      79,
+    ],
+  },
+  {
+    index: "2026151",
+    date: "2026-06-10",
+    redBall: [
+      3, 4, 6, 10, 12, 21, 24, 36, 37, 38, 41, 42, 44, 45, 49, 52, 70, 73, 77,
+      78,
+    ],
+  },
 ];
 
 function findsame() {
   //const target = [3,4,8,19,31,33];
-  const target = [16,30];
+  const target = [10,27,40,55,71];
   let repeat = 0;
   historyKl8.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
-    const sameNum = 22 - groupList.size;
+    const sameNum = 25 - groupList.size;
     if (sameNum > repeat) {
       console.log(item);
     }
@@ -15698,4 +15738,4 @@ function findsame() {
   });
   console.log("rr", repeat);
 }
-findsame();
+//findsame();
