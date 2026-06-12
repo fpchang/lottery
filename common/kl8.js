@@ -15686,11 +15686,11 @@ export var historyKl8 = [
 
 function findsame() {
   //const target = [3,4,8,19,31,33];
-  const target = [4, 16, 19, 31, 33, 43, 54, 59, 72, 78];
+  const target = [16,30];
   let repeat = 0;
   historyKl8.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
-    const sameNum = 30 - groupList.size;
+    const sameNum = 22 - groupList.size;
     if (sameNum > repeat) {
       console.log(item);
     }
@@ -15698,4 +15698,4 @@ function findsame() {
   });
   console.log("rr", repeat);
 }
-//findsame();
+findsame();

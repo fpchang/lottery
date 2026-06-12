@@ -12118,8 +12118,18 @@ export var ssqHistory = [
     index: '2026063',
     redBall: [2,8,25,28,30,31]
   }
-  
- 
+  ,{
+    blueBall: 15,
+    date: '2026-06-07',
+    index: '2026064',
+    redBall: [1,9,15,18,29,33]
+  }
+ ,{
+    blueBall: 2,
+    date: '2026-06-07',
+    index: '2026065',
+    redBall: [7,8,16,24,30,32]
+  }
  
 ];
 console.log(`双色球一共${ssqHistory.length}期`);
@@ -12160,19 +12170,19 @@ function test() {
 //test();
 function findsame() {
   //const target = [3,4,8,19,31,33];
-  const target = [2,3,15];
+  const target = [10,17,18,19,23,30];
   let repeat = 0;
   ssqHistory.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
      const sameNum = 12 - groupList.size;
     if(sameNum>repeat){
-      console.log(item)
+    // console.log(item)
     }
      repeat=Math.max(repeat,sameNum);
-    if(groupList.size==6){
+    if(groupList.size<10){
       console.log("符合条件:",item)
     }
   });
   console.log("rr",repeat);
 }
-//findsame();
+findsame();

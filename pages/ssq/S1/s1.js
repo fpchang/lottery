@@ -120,7 +120,7 @@ function main(n=14){
     let thread =0;
     let result =[]
     while (thread < n) {
-        const list = generateSSQ([[2,2,2]]);
+        const list = generateSSQ();
       //  console.log("list",list);
         if(C1(list)&&C2(list)&&C3(list,filterarr)&&C4(list,dan)){
              result.push({ "红球": list, "蓝球":14});
