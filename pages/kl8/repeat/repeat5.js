@@ -74,6 +74,7 @@ const historyData =historyKl8.map(item=>item.redBall);
 const result = analyzeTopChoose5(historyData, 30);
 
 // 输出
+console.log(result.map(item=>item.comb));
 console.log('=== 快乐8 选5 最热组合 TOP30 ===');
 result.forEach((item, i) => {
   console.log(`第${i+1}名`);

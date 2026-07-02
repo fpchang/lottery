@@ -43,18 +43,27 @@ function calcTopMissChoose3(history) {
   return result;
 }
 
-// 你的历史开奖数组（从旧到新）
-const history = historyKl8.map(item=>item.redBall);
+
 
 // 计算
-const list = calcTopMissChoose3(history);
+//  const list = calcTopMissChoose3(history);
+// export const miss3list = list.map(item=>item.comb);
+// // 输出前50个遗漏最多的选3组合
+// console.log(list);
+// list.slice(0, 200).forEach((item, i) => {
+//   console.log(
+//     (i+1).toString().padStart(2) + ". " +
+//     item.comb.join(' ').padEnd(8) +
+//     " | missing: " + item.miss
+//   );
+// });
 
-// 输出前50个遗漏最多的选3组合
-console.log("Top 50 missing Choose-3 combinations:");
-list.slice(0, 100).forEach((item, i) => {
-  console.log(
-    (i+1).toString().padStart(2) + ". " +
-    item.comb.join(' ').padEnd(8) +
-    " | missing: " + item.miss
-  );
-});
+export const getMiss3=(his)=>{
+  // 你的历史开奖数组（从旧到新）
+    const history = his.map(item=>item.redBall);
+    const list =calcTopMissChoose3(history);
+    console.log("miss3",list)
+    return list.map(item=>item.comb)
+       
+}
+getMiss3(historyKl8);

@@ -62,7 +62,7 @@ function isFullAppeared(combo, historySets) {
  */
 function calcMaxOverlap(combo, historySets) {
   const cSet = new Set(combo);
-  let maxCnt = 0;
+  let maxCnt = 0
   for (const drawSet of historySets) {
     let curr = 0;
     for (const n of cSet) {
