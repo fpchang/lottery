@@ -111,7 +111,7 @@ function C3(list,filterarr){
 
 }
 //定胆
-function C4(list,dan=[]){
+function C4(list,dan=[6,11,33]){
     const groupList = new Set([...list,...dan]);
    // console.log(groupList)
     const flag = groupList.size ==list.length; 
@@ -156,7 +156,7 @@ function main(n=14){
     while (thread < n) {
         const list = getRandomRedBall();
         //console.log(list);
-        if(C1(list)&&C2(list)&&C5(list)){
+        if(C1(list)&&C2(list)&&C4(list)&&C5(list)){
              result.push({ redBall: list });
             thread++;
         }

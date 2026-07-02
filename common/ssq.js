@@ -12129,6 +12129,18 @@ export var ssqHistory = [
     date: '2026-06-07',
     index: '2026065',
     redBall: [7,8,16,24,30,32]
+  },
+   {
+    blueBall: 16,
+    date: '2026-06-11',
+    index: '2026066',
+    redBall: [ 5, 11, 21, 23, 24, 29 ]
+  },
+  {
+    blueBall: 13,
+    date: '2026-06-14',
+    index: '2026067',
+    redBall: [ 4, 19, 27, 29, 30, 32 ]
   }
  
 ];
@@ -12169,8 +12181,8 @@ function test() {
 }
 //test();
 function findsame() {
-  //const target = [3,4,8,19,31,33];
-  const target = [10,17,18,19,23,30];
+  const target = [3,4,12,24];
+  //const target = [10,17,18,19,23,30];
   let repeat = 0;
   ssqHistory.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
@@ -12179,7 +12191,7 @@ function findsame() {
     // console.log(item)
     }
      repeat=Math.max(repeat,sameNum);
-    if(groupList.size<10){
+    if(groupList.size==6){
       console.log("符合条件:",item)
     }
   });

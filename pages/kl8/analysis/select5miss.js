@@ -76,29 +76,19 @@ function fastScanAll(bitmapList) {
   return res;
 }
 
-// ==================== 使用示例 ====================
-// 替换成你的2000期真实历史数据
-const historyData = historyKl8.map((item) => item.redBall); // 假设historyKl8每项有redBall数组，包含20个开奖号码
-
-const bitmapArr = buildBitmapList(historyData);
-
-console.time("完整扫描耗时");
-const validList = fastScanAll(bitmapArr);
-console.timeEnd("完整扫描耗时");
-
-// 按最大重合数升序，重合越小越靠前
-validList.sort((a, b) => a.maxOverlap - b.maxOverlap);
-
-const getResult = (filter = []) => {
-  console.log("有效组合总数：", validList.length);
-  console.log("\n全局最优TOP20：");
-  for (let i = 0; i < validList.length; i++) {
-    const item = validList[i];
-    const arr= new Set([...item.combo,...filter]);
-    if(arr.size === 5){
-    console.log(
-          `第${i + 1} | ${item.combo.join(",")} | 历史单期最大重合：${item.maxOverlap}`,
-        );
+/**
+ * 计算该组合在所有历史期里【单期最大重合号码个数】
+ * @param {number[]} combo
+ * @param {Set<number>[]} historySets
+ * @returns {number}
+ */
+function calcMaxOverlap(combo, historySets) {
+  const cSet = new Set(combo);
+  let maxCnt = 0
+  for (const drawSet of historySets) {
+    let curr = 0;
+    for (const n of cSet) {
+      if (drawSet.has(n)) curr++;
     }
    
   }

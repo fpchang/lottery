@@ -57,4 +57,4 @@ function generateCombinations(arr, k) {
 const history = ssqHistory.map(item=>item.redBall)
 
 const list = calcRed3MissAccurate(history);
-console.log(list.slice(0, 20));
+console.log(list.slice(0, 100));

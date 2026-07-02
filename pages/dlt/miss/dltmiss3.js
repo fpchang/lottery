@@ -1,182 +1,140 @@
 import {dltHistory} from "../../../common/dlt.js";
-const lotteryHistory =dltHistory.map(item=>{
-  return { issue: item.index, frontNumbers: item.redBall }
-});
 /**
- * 大乐透前区3码组合遗漏计算工具（适配数字类型号码）
+ * 生成大乐透前区全部C(35,3)升序3码组合
  */
-class Lotto3CombOmissionCalculator {
-  constructor() {
-    this.frontNumbers = Array.from({ length: 35 }, (_, i) => i + 1); // 前区1-35（纯数字）
-    this.all3Combinations = []; // 所有3码组合
-    this.omissionData = {}; // 遗漏数据存储
-
-    // 初始化：生成所有3码组合
-    this.generateAll3Combinations();
-    // 初始化遗漏数据
-    this.initOmissionData();
-  }
-
-  /**
-   * 生成前区所有不重复的3码组合（数字类型，组合不考虑顺序）
-   */
-  generateAll3Combinations() {
-    const combinations = [];
-    // 三重循环生成C(35,3)组合，i<j<k确保不重复、不考虑顺序
-    for (let i = 0; i < this.frontNumbers.length; i++) {
-      for (let j = i + 1; j < this.frontNumbers.length; j++) {
-        for (let k = j + 1; k < this.frontNumbers.length; k++) {
-          const comb = [this.frontNumbers[i], this.frontNumbers[j], this.frontNumbers[k]];
-          const combKey = comb.join('-'); // 组合唯一标识，如 "1-5-12"
-          combinations.push({
-            key: combKey,
-            numbers: comb
-          });
-        }
+function getAllTriplets() {
+  const list = [];
+  for (let a = 1; a <= 33; a++) {
+    for (let b = a + 1; b <= 34; b++) {
+      for (let c = b + 1; c <= 35; c++) {
+        list.push([a, b, c]);
       }
     }
-    this.all3Combinations = combinations;
-    console.log(`生成前区3码组合总数：${combinations.length} 种`);
   }
-
-  /**
-   * 初始化所有3码组合的遗漏数据
-   */
-  initOmissionData() {
-    this.omissionData = {};
-    this.all3Combinations.forEach(comb => {
-      this.omissionData[comb.key] = {
-        combination: comb.numbers, // 3码组合（数字数组）
-        currentOmission: 0, // 当前遗漏（距离上次开出的期数）
-        maxOmission: 0, // 历史最大遗漏
-        hitCount: 0, // 开出次数（当期开奖包含该组合则计数）
-        totalOmissionPeriods: 0, // 总遗漏期数
-        avgOmission: 0, // 平均遗漏
-        lastHitIndex: -1 // 最后一次开出的期数索引
-      };
-    });
-  }
-
-  /**
-   * 检查当期开奖号码（数字类型）是否包含目标3码组合（不考虑顺序）
-   * @param {Array} drawNumbers 当期前区开奖号码（数字数组，如 [1,5,12,23,30]）
-   * @param {Array} targetComb 目标3码组合（数字数组，如 [1,5,12]）
-   * @returns {Boolean} 是否包含
-   */
-  checkCombInDraw(drawNumbers, targetComb) {
-    // 数字直接对比，无需格式转换，性能更优
-    return targetComb.every(num => drawNumbers.includes(num));
-  }
-
-  /**
-   * 核心计算：根据历史开奖记录（数字类型）计算所有3码组合的遗漏数据
-   * @param {Array} historyData 历史开奖数据，格式：[{issue: '2026001', frontNumbers: [1,5,12,23,30]}, ...]
-   */
-  calculateOmission(historyData) {
-    // 重置遗漏数据
-    this.initOmissionData();
-
-    // 按时间正序遍历每一期开奖数据（从最早到最新）
-    historyData.forEach((draw, index) => {
-      const currentFrontNumbers = draw.frontNumbers; // 当期前区5个数字号码
-
-      // 1. 所有组合的当前遗漏+1，总遗漏期数+1
-      Object.keys(this.omissionData).forEach(combKey => {
-        this.omissionData[combKey].currentOmission += 1;
-        this.omissionData[combKey].totalOmissionPeriods += 1;
-      });
-
-      // 2. 找出当期开奖包含的所有3码组合，重置其遗漏数据
-      this.all3Combinations.forEach(comb => {
-        if (this.checkCombInDraw(currentFrontNumbers, comb.numbers)) {
-          const combData = this.omissionData[comb.key];
-          // 更新历史最大遗漏
-          combData.maxOmission = Math.max(combData.maxOmission, combData.currentOmission);
-          // 重置当前遗漏为0
-          combData.currentOmission = 0;
-          // 增加开出次数
-          combData.hitCount += 1;
-          // 记录最后一次开出的期数索引
-          combData.lastHitIndex = index;
-        }
-      });
-    });
-
-    // 3. 计算平均遗漏（总遗漏期数 / 开出次数，避免除以0）
-    Object.keys(this.omissionData).forEach(combKey => {
-      const data = this.omissionData[combKey];
-      data.avgOmission = data.hitCount > 0
-        ? Number((data.totalOmissionPeriods / data.hitCount).toFixed(2))
-        : data.totalOmissionPeriods; // 从未开出的组合，平均遗漏=总遗漏期数
-    });
-
-    console.log('前区3码组合遗漏数据计算完成！');
-  }
-
-  /**
-   * 对遗漏数据排序
-   * @param {String} sortField 排序字段：currentOmission/maxOmission/avgOmission/hitCount
-   * @param {Boolean} isDesc 是否降序（默认true）
-   * @returns {Array} 排序后的结果列表
-   */
-  sortOmissionData(sortField, isDesc = true) {
-    const sortedList = Object.values(this.omissionData).sort((a, b) => {
-      if (isDesc) {
-        return b[sortField] - a[sortField];
-      } else {
-        return a[sortField] - b[sortField];
-      }
-    });
-    return sortedList;
-  }
-
-  /**
-   * 格式化输出结果（可指定返回条数）
-   * @param {Array} sortedData 排序后的数据
-   * @param {Number} limit 返回条数（默认20）
-   * @returns {Array} 格式化后的结果
-   */
-  formatResult(sortedData, limit = 20) {
-    return sortedData.slice(0, limit).map(item => ({
-      组合: item.combination.join(' '), // 如 "1 5 12"
-      当前遗漏: item.currentOmission,
-      历史最大遗漏: item.maxOmission,
-      平均遗漏: item.avgOmission,
-      开出次数: item.hitCount
-    }));
-  }
+  return list;
 }
 
-// ===================== 示例使用（数字类型历史数据） =====================
-// 1. 模拟大乐透历史开奖数据（前区5个号码为数字类型，按时间从早到晚排序）
-// const mockLottoHistory = [
-//   { issue: '2026001', frontNumbers: [1, 5, 12, 23, 30] },
-//   { issue: '2026002', frontNumbers: [2, 6, 13, 24, 31] },
-//   { issue: '2026003', frontNumbers: [3, 7, 14, 25, 32] },
-//   { issue: '2026004', frontNumbers: [4, 8, 15, 26, 33] },
-//   { issue: '2026005', frontNumbers: [1, 6, 17, 28, 35] },
-//   { issue: '2026006', frontNumbers: [5, 10, 18, 29, 34] },
-//   { issue: '2026007', frontNumbers: [1, 5, 19, 20, 27] },
-//   { issue: '2026008', frontNumbers: [8, 11, 16, 21, 22] }
-// ];
+/**
+ * 全量计算所有3码组合遗漏，返回完整统计表
+ * @param {number[][]} historyData 历史前区开奖数据
+ * @returns {Array} 全量排序后的统计数组
+ */
+function calcAllDLTTripletMiss(historyData) {
+  const bitmapArr = historyData.map(nums => {
+    const bm = new Uint8Array(36);
+    for (const n of nums) bm[n] = 1;
+    return bm;
+  });
+  const totalPeriod = bitmapArr.length;
+  const allTriplets = getAllTriplets();
+  const result = [];
 
-// 2. 创建计算器实例
-const lottoCalculator = new Lotto3CombOmissionCalculator();
+  for (const combo of allTriplets) {
+    const [n1, n2, n3] = combo;
+    const hitIdx = [];
+    for (let i = 0; i < totalPeriod; i++) {
+      const bm = bitmapArr[i];
+      if (bm[n1] && bm[n2] && bm[n3]) hitIdx.push(i);
+    }
+    const hitCnt = hitIdx.length;
 
-// 3. 计算遗漏数据
-lottoCalculator.calculateOmission(lotteryHistory);
+    let currMiss, maxMiss, avgMiss;
+    if (hitCnt === 0) {
+      currMiss = totalPeriod;
+      maxMiss = totalPeriod;
+      avgMiss = totalPeriod;
+    } else {
+      const lastHit = hitIdx.at(-1);
+      currMiss = totalPeriod - 1 - lastHit;
+      const gaps = [hitIdx[0] + 1];
+      for (let i = 1; i < hitIdx.length; i++) {
+        gaps.push(hitIdx[i] - hitIdx[i - 1]);
+      }
+      maxMiss = Math.max(...gaps);
+      avgMiss = gaps.reduce((s, v) => s + v, 0) / gaps.length;
+    }
 
-// 4. 按历史最大遗漏降序排序，取前50条
-const sortedByMaxOmission = lottoCalculator.sortOmissionData('maxOmission', true);
-const formattedMaxOmission = lottoCalculator.formatResult(sortedByMaxOmission, 50);
-//console.log('按历史最大遗漏降序（前20）：', formattedMaxOmission);
+    result.push({
+      combo: combo,
+      count: hitCnt,
+      currMiss: currMiss,
+      maxMiss: maxMiss,
+      avgMiss: Number(avgMiss.toFixed(2))
+    });
+  }
+  // 当前遗漏降序
+  result.sort((a, b) => b.currMiss - a.currMiss);
+  return result;
+}
 
-// 5. 按当前遗漏降序排序，取前50条
-const sortedByCurrentOmission = lottoCalculator.sortOmissionData('currentOmission', true);
-const formattedCurrentOmission = lottoCalculator.formatResult(sortedByCurrentOmission, 50);
-console.log('按当前遗漏降序（前50）：', formattedCurrentOmission);
+/**
+ * 统一查询工具函数
+ * @param {Array} fullTable 全量统计结果
+ * @param {Object} queryOpt 查询配置
+    type: 
+      exact:精确三码 | 
+      hasAny:包含任意一个指定号码 | 
+      hasBoth:必须同时包含两个指定号码（本次需求）|
+      missRange:遗漏区间
+    val: 对应查询值
+ * @returns 筛选后的列表
+ */
+function queryMissData(fullTable, queryOpt) {
+  const { type, val } = queryOpt;
+  let filterList = [];
+  switch (type) {
+    // 精确匹配完整三码
+    case "exact": {
+      const target = [...val].sort((a, b) => a - b);
+      filterList = fullTable.filter(item => {
+        const c = item.combo;
+        return c[0] === target[0] && c[1] === target[1] && c[2] === target[2];
+      });
+      break;
+    }
+    // 包含任意一个号码
+    case "hasAny": {
+      const numSet = new Set(val);
+      filterList = fullTable.filter(item => item.combo.some(n => numSet.has(n)));
+      break;
+    }
+    // 【核心需求】3码组合必须同时包含两个指定号码，例 [10,20]
+    case "hasBoth": {
+      const [numA, numB] = val;
+      filterList = fullTable.filter(item => {
+        const c = item.combo;
+        return c.includes(numA) && c.includes(numB);
+      });
+      break;
+    }
+    // 当前遗漏区间筛选
+    case "missRange": {
+      const [minMiss, maxMiss] = val;
+      filterList = fullTable.filter(item => item.currMiss >= minMiss && item.currMiss <= maxMiss);
+      break;
+    }
+    default:
+      filterList = fullTable;
+  }
+  return filterList;
+}
 
-// 6. 开出最多的取前20条
-// const sortHitCount = lottoCalculator.sortOmissionData('hitCount', true);
-// const sorthitcountresult = lottoCalculator.formatResult(sortHitCount, 50);
-// console.log('出现最多的（前50）：', sorthitcountresult);
+// ===================== 测试示例 =====================
+const historyData = dltHistory.map(item => item.redBall);
+
+// 一次性全量计算，后续多次查询无需重算
+const fullResult = calcAllDLTTripletMiss(historyData);
+
+// 需求：筛选三码组合【一定同时包含10和20】
+const qTarget = queryMissData(fullResult, {
+  type: "hasBoth",
+  val: [3,34]
+});
+
+console.log(`同时包含10、20的3码组合总数：${qTarget.length}`);
+console.log("组合列表（已按当前遗漏降序）：");
+qTarget.forEach((row, idx) => {
+  console.log(
+    `${idx+1} | 号码：${row.combo.join(",")} | 当前遗漏：${row.currMiss} | 历史开出次数：${row.count}`
+  );
+});

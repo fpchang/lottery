@@ -17265,6 +17265,54 @@ export const dltHistory = [
     date: '2026-05-30',
     redBall: [7,15,20,24,29],
     blueBall: [ 4,10 ]
+  },
+  {
+    index: '26062',
+    date: '2026-05-30',
+    redBall: [3,15,20,29,31],
+    blueBall: [ 3,6 ]
+  },
+  {
+    index: '26062',
+    date: '2026-05-30',
+    redBall: [3,13,15,17,21],
+    blueBall: [ 2,7 ]
+  },
+  {
+    index: '26063',
+    date: '2026-06-08',
+    redBall: [ 3, 15, 20, 29, 31 ],
+    blueBall: [ 1, 12 ]
+  },
+  {
+    index: '26064',
+    date: '2026-06-10',
+    redBall: [ 3, 13, 15, 17, 21 ],
+    blueBall: [ 2, 7 ]
+  },
+  {
+    index: '26065',
+    date: '2026-06-13',
+    redBall: [ 4, 11, 12, 13, 25 ],
+    blueBall: [ 4, 8 ]
+  },
+  {
+    index: '26066',
+    date: '2026-06-15',
+    redBall: [10,13,19,21,30 ],
+    blueBall: [ 4, 5 ]
+  },
+  {
+    index: '26067',
+    date: '2026-06-17',
+    redBall: [ 6, 16, 18, 19, 28 ],
+    blueBall: [ 7, 11 ]
+  },
+  {
+    index: '26068',
+    date: '2026-06-20',
+    redBall: [ 3, 11, 12, 21, 22 ],
+    blueBall: [ 6, 10 ]
   }
 ];
 
@@ -17315,7 +17363,7 @@ function findsame(){
     }
   })
 }
-findsame();
+//findsame();
 
 function findRepeatRedAndBlue(){
   let sum =0;
@@ -17332,9 +17380,11 @@ function findRepeatRedAndBlue(){
 //findRepeatRedAndBlue();
 
 function findsametest(){
-  const target=[1,6,14,15,17];
- const filter= dltHistory.filter(item=>new Set([...target,...item.redBall]).size==6);
+  const target=[12,14,19,24,27];
+ const filter= dltHistory.filter(item=>new Set([...target,...item.redBall]).size<6);
  console.log("fff",filter);
 
 }
-findsametest();
+//findsametest();
+// const f = dltHistory.filter(item=> new Set([...item.redBall,...item.blueBall]).size==5);
+// console.log("f===",f);
