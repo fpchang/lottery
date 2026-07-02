@@ -15726,16 +15726,16 @@ export var historyKl8 = [
 
 function findsame() {
   //const target = [3,4,8,19,31,33];
-  const target = [10,27,40,55,71];
+  const target = [13,20,30,46,56,72];
   let repeat = 0;
   historyKl8.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
-    const sameNum = 25 - groupList.size;
+    const sameNum = 26 - groupList.size;
     if (sameNum > repeat) {
-      console.log(item);
+     // console.log(item);
     }
     repeat = Math.max(repeat, sameNum);
   });
   console.log("rr", repeat);
 }
-//findsame();
+findsame();

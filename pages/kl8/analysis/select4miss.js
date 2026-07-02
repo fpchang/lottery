@@ -1,12 +1,11 @@
 import { historyKl8 } from "../../../common/kl8.js";
 // 6个分区
 const zones = [
-  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-  [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26],
-  [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
-  [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
-  [53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66],
-  [67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80],
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15, 16, 17, 18, 19, 20],
+  [ 21, 22, 23, 24, 25, 26,27, 28, 29, 30, 31, 32,33, 34, 35, 36, 37, 38, 39,40],
+  [41, 42, 43, 44, 45, 46, 47, 48,49, 50, 51, 52,53, 54, 55, 56, 57, 58, 59, 60],
+  [ 61, 62, 63, 64, 65, 66,67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80],
+  []
 ];
 const len = zones.map((z) => z.length);
 
@@ -37,16 +36,12 @@ function fastScanAll(bitmapList) {
         const n3 = zones[2][i2];
         for (let i3 = 0; i3 < len[3]; i3++) {
           const n4 = zones[3][i3];
-          for (let i4 = 0; i4 < len[4]; i4++) {
-            const n5 = zones[4][i4];
-            for (let i5 = 0; i5 < len[5]; i5++) {
-              const n6 = zones[5][i5];
-
+   
               // 判定：整套6码是否同一期完整开出
               let fullHit = false;
               for (let h = 0; h < hTotal; h++) {
                 const bm = bitmapList[h];
-                if (bm[n1] && bm[n2] && bm[n3] && bm[n4] && bm[n5] && bm[n6]) {
+                if (bm[n1] && bm[n2] && bm[n3] && bm[n4]) {
                   fullHit = true;
                   break;
                 }
@@ -62,17 +57,15 @@ function fastScanAll(bitmapList) {
                 if (bm[n2]) curr++;
                 if (bm[n3]) curr++;
                 if (bm[n4]) curr++;
-                if (bm[n5]) curr++;
-                if (bm[n6]) curr++;
                 if (curr > maxOver) maxOver = curr;
               }
 
               res.push({
-                combo: [n1, n2, n3, n4, n5, n6],
+                combo: [n1, n2, n3, n4],
                 maxOverlap: maxOver,
               });
-            }
-          }
+            
+          
         }
       }
     }
@@ -93,31 +86,71 @@ console.timeEnd("完整扫描耗时");
 // 按最大重合数升序，重合越小越靠前
 validList.sort((a, b) => a.maxOverlap - b.maxOverlap);
 
-export const getResult = (filter = []) => {
-  console.log("filter:", filter);
-  console.log("有效组合总数：", validList.length);
-  console.log("\n全局最优TOP20：");
+const getResult = (filter = []) => {
+  //console.log("有效组合总数：", validList.length);
+ // console.log("filter:", filter);
   for (let i = 0; i < validList.length; i++) {
     const item = validList[i];
     const arr= new Set([...item.combo,...filter]);
-    if(arr.size === 6){
+    if(arr.size === 4){
     console.log(
-          `第${i + 1} | ${item.combo.join(",")} | 历史单期最大重合：${item.maxOverlap}`,
+          //`第${i + 1} | ${item.combo} | 历史单期最大重合：${item.maxOverlap}`,
+         `选五 胆${item.combo}  拖[46,80]` 
         );
     }
    
   }
 };
-//13,16,30,46,66,80
+//16,30-
+//
+//36,54
+//17,73- 17,22,44,73/ 17,30,42,73
+//24 68-4,24,45,68
+//20,47-
+//1,70-
+//15,59-
+//40,72
+//47,59
 
 
-//getResult([16,30]);
-getResult([40,72]);
-// getResult([47,59]);
-// getResult([17,73]);
-// getResult([24,68]);
-// getResult([25,42]);
-// getResult([20,47]);
-// getResult([49,58]);
-// getResult([1,70]);
-// getResult([15,59]);
+getResult([36,54])
+getResult([17,73])
+getResult([24,68])
+getResult([20,47])
+getResult([1,70])
+getResult([15,59])
+getResult([40,72])
+getResult([47,59])
+
+getResult([25,42])
+getResult([25,58])
+getResult([28,80])
+getResult([15,62])
+getResult([21,56])
+getResult([25,47])
+getResult([55,78])
+getResult([44,74])
+getResult([1,67])
+getResult([15,71])
+getResult([68,73])
+getResult([20,43])
+getResult([25,74])
+// getResult([1,48])
+// getResult([1,75])
+// getResult([28,68])
+// getResult([5,59])
+// getResult([34,46])
+// getResult([34,59])
+// getResult([59,72])
+  //getResult([]);
+
+// 第290 | 17,30,42,73 | 历史单期最大重合：3
+// 第56 | 4,24,45,68 | 历史单期最大重合：3
+// 第96 | 6,25,42,76 | 历史单期最大重合：3
+// 第116 | 7,25,58,77 | 历史单期最大重合：3
+// 第240 | 15,23,41,62 | 历史单期最大重合：3
+// 第250 | 15,35,50,62 | 历史单期最大重合：3
+// 第239 | 15,21,56,66 | 历史单期最大重合：3
+// 第19 | 1,33,46,67 | 历史单期最大重合：3
+// 第353 | 20,24,43,74 | 历史单期最大重合：3
+// 第114 | 7,25,49,74 | 历史单期最大重合：3
