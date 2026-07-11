@@ -12141,6 +12141,54 @@ export var ssqHistory = [
     date: '2026-06-14',
     index: '2026067',
     redBall: [ 4, 19, 27, 29, 30, 32 ]
+  },
+   {
+    blueBall: 4,
+    date: '2026-06-16',
+    index: '2026068',
+    redBall: [ 3, 5, 16, 18, 29, 32 ]
+  },
+  {
+    blueBall: 8,
+    date: '2026-06-18',
+    index: '2026069',
+    redBall: [ 12, 14, 16, 17, 18, 32 ]
+  },
+  {
+    blueBall: 8,
+    date: '2026-06-21',
+    index: '2026070',
+    redBall: [ 3, 6, 8, 14, 26, 27 ]
+  },
+  {
+    blueBall: 5,
+    date: '2026-06-23',
+    index: '2026071',
+    redBall: [ 3, 8, 19, 25, 31, 33 ]
+  },
+  {
+    blueBall: 1,
+    date: '2026-06-25',
+    index: '2026072',
+    redBall: [ 7, 8, 12, 15, 17, 21 ]
+  },
+  {
+    blueBall: 8,
+    date: '2026-06-28',
+    index: '2026073',
+    redBall: [ 9, 10, 13, 16, 19, 21 ]
+  },
+  {
+    blueBall: 4,
+    date: '2026-06-30',
+    index: '2026074',
+    redBall: [ 2, 23, 24, 26, 28, 32 ]
+  },
+   {
+    blueBall: 1,
+    date: '2026-07-02',
+    index: '2026075',
+    redBall: [ 8, 12, 18, 21, 24, 30 ]
   }
  
 ];

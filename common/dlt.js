@@ -17313,6 +17313,42 @@ export const dltHistory = [
     date: '2026-06-20',
     redBall: [ 3, 11, 12, 21, 22 ],
     blueBall: [ 6, 10 ]
+  },
+  {
+    index: '26069',
+    date: '2026-06-22',
+    redBall: [ 12, 19, 21, 24, 29 ],
+    blueBall: [ 3, 10 ]
+  },
+  {
+    index: '26070',
+    date: '2026-06-24',
+    redBall: [ 4, 5, 15, 21, 32 ],
+    blueBall: [ 2, 11 ]
+  },
+  {
+    index: '26071',
+    date: '2026-06-27',
+    redBall: [ 5, 13, 22, 26, 32 ],
+    blueBall: [ 2, 3 ]
+  },
+  {
+    index: '26072',
+    date: '2026-06-29',
+    redBall: [ 1, 13, 26, 29, 30 ],
+    blueBall: [ 9, 11 ]
+  },
+  {
+    index: '26073',
+    date: '2026-07-01',
+    redBall: [ 4, 10, 22, 23, 33 ],
+    blueBall: [ 2, 12 ]
+  },
+   {
+    index: '26074',
+    date: '2026-07-04',
+    redBall: [1, 4, 10, 23, 25, 33 ],
+    blueBall: [ 1, 12 ]
   }
 ];
 
