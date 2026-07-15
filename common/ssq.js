@@ -12189,6 +12189,30 @@ export var ssqHistory = [
     date: '2026-07-02',
     index: '2026075',
     redBall: [ 8, 12, 18, 21, 24, 30 ]
+  },
+   {
+    blueBall: 7,
+    date: '2026-07-05',
+    index: '2026076',
+    redBall: [ 1, 3, 19, 20, 24, 25 ]
+  },
+  {
+    blueBall: 4,
+    date: '2026-07-07',
+    index: '2026077',
+    redBall: [ 1, 4, 5, 14, 18, 25 ]
+  },
+  {
+    blueBall: 6,
+    date: '2026-07-09',
+    index: '2026078',
+    redBall: [ 7, 11, 14, 16, 27, 28 ]
+  },
+  {
+    blueBall: 4,
+    date: '2026-07-12',
+    index: '2026079',
+    redBall: [ 1, 11, 17, 22, 24, 29 ]
   }
  
 ];
