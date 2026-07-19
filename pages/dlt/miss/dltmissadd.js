@@ -93,7 +93,7 @@ function calcLottoMiss(fixedNums, historyDraws) {
 
 // ===================== 【配置区 - 自行修改】=====================
 // 1. 输入固定号码 (长度1~4，示例：[1,5] 计算3码组合遗漏)
-const inputNums = [1,9,10,24];
+const inputNums = [3,7,13,34];
 
 // 2. 大乐透历史前区开奖数据：二维数组，每期5个号码
 const historyData = dltHistory.map(item=>item.redBall);

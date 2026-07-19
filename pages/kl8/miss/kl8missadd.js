@@ -71,7 +71,7 @@ function calcNPlus1Miss(fixedNums, historyDraws) {
 
 // ====================== 使用者配置区 ======================
 // 1. 传入固定n个号码，示例n=2：[10,14]
-const inputFixed = [4,28,66,67,80];//1,3,5,7,11,
+const inputFixed = [1,7,19,38,39,70];//1,3,5,7,11,
 
 // 2. 粘贴你本地历史开奖数据，二维数组，每期20个数字
 const historyData = historyKl8.map(item => item.redBall); // 假设historyKl8每项有redBall数组，包含20个开奖号码
