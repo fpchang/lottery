@@ -15964,12 +15964,12 @@ export var historyKl8 = [
 ];
 console.log("total", historyKl8.length);
 function findsame() {
-  //const target = [3,4,8,19,31,33];
-  const target = [10, 27, 40, 55, 71];
+  const target = [8,11,12,14,19,24,27,28,34,62];
+  //const target = [3,4,11,12,14,19,24,27,28,62];
   let repeat = 0;
   historyKl8.map((item) => {
     const groupList = new Set([...item.redBall, ...target]);
-    const sameNum = 25 - groupList.size;
+    const sameNum = 30 - groupList.size;
     if (sameNum > repeat) {
       console.log(item);
     }
@@ -15977,4 +15977,4 @@ function findsame() {
   });
   console.log("repeat max ", repeat);
 }
-//findsame();
+findsame();
