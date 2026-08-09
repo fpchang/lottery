@@ -17350,7 +17350,7 @@ export const dltHistory = [
     redBall: [1, 4, 10, 23, 25, 33 ],
     blueBall: [ 1, 12 ]
   },
-  {
+   {
     index: '26075',
     date: '2026-07-06',
     redBall: [ 1, 6, 16, 18, 26 ],
@@ -17380,15 +17380,60 @@ export const dltHistory = [
     redBall: [ 6, 8, 23, 26, 27 ],
     blueBall: [ 5, 12 ]
   },
-  {
+   {
     index: '26080',
     date: '2026-07-18',
     redBall: [ 5, 10, 15, 21, 23 ],
     blueBall: [ 7, 8 ]
+  },
+  {
+    redBall: [ 8, 16, 18, 24, 34 ],
+    blueBall: [ 9, 12 ]
+  },
+  {
+    index: '26082',
+    date: '2026-07-22',
+    redBall: [ 16, 26, 27, 28, 34 ],
+    blueBall: [ 2, 6 ]
+  },
+  {
+    index: '26083',
+    date: '2026-07-25',
+    redBall: [ 14, 15, 16, 23, 26 ],
+    blueBall: [ 7, 9 ]
+  },
+  {
+    index: '26084',
+    date: '2026-07-27',
+    redBall: [ 13, 25, 30, 32, 33 ],
+    blueBall: [ 4, 5 ]
+  },
+  {
+    index: '26085',
+    date: '2026-07-29',
+    redBall: [ 3, 4, 14, 28, 31 ],
+    blueBall: [ 5, 7 ]
+  },
+  {
+    index: '26086',
+    date: '2026-08-01',
+    redBall: [ 10, 11, 18, 22, 35 ],
+    blueBall: [ 6, 12 ]
+  },
+  {
+    index: '26087',
+    date: '2026-08-03',
+    redBall: [ 5, 10, 16, 24, 27 ],
+    blueBall: [ 4, 10 ]
+  },
+  {
+    index: '26088',
+    date: '2026-08-05',
+    redBall: [ 3, 9, 11, 24, 27 ],
+    blueBall: [ 5, 11 ]
   }
 ];
 
-// let templist = list.reverse().slice(700,800);
 // let result =[];
 // templist.forEach(item=>{
 //   result.push({

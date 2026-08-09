@@ -47,7 +47,7 @@ function getTop20Red3WithMiss(history) {
     .sort((a, b) => b.count - a.count);
 
   // 返回前 20
-  return list.slice(0, 20);
+  return list.slice(0, 100);
 }
 
 /**

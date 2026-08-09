@@ -77,7 +77,7 @@ function C1(list, history=dltHistory) {
 	let count5 = compare(list,history.slice(history.length-5));
 	let count6 = compare(list,history.slice(history.length-6));
 	let count7 = compare(list,history.slice(history.length-7));
-	const s1 =count1<2;
+	const s1 =count1<3;
 	const s2=count2<3;
 	const s3=count3<4;
 	const s4= count4>0&&count4<5;
@@ -111,7 +111,7 @@ function C3(list,filterarr){
 
 }
 //定胆
-function C4(list,dan=[1,5,24,32]){
+function C4(list,dan=[1,7,25,34]){
     const groupList = new Set([...list,...dan]);
    // console.log(groupList)
     const flag = groupList.size ==list.length; 
