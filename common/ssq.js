@@ -12225,8 +12225,59 @@ export var ssqHistory = [
     date: '2026-07-16',
     index: '2026081',
     redBall: [ 6, 10, 12, 15, 24, 27 ]
+  },{
+    blueBall: 4,
+    date: '2026-07-19',
+    index: '2026082',
+    redBall: [ 5, 7, 10, 14, 21, 28 ]
+  },
+  {
+    blueBall: 3,
+    date: '2026-07-21',
+    index: '2026083',
+    redBall: [ 7, 14, 15, 23, 28, 33 ]
+  },
+  {
+    blueBall: 5,
+    date: '2026-07-23',
+    index: '2026084',
+    redBall: [ 1, 5, 6, 10, 12, 16 ]
+  },
+  {
+    blueBall: 15,
+    date: '2026-07-26',
+    index: '2026085',
+    redBall: [ 6, 9, 13, 17, 24, 28 ]
+  },
+  {
+    blueBall: 5,
+    date: '2026-07-28',
+    index: '2026086',
+    redBall: [ 2, 5, 14, 25, 30, 32 ]
+  },
+  {
+    blueBall: 11,
+    date: '2026-07-30',
+    index: '2026087',
+    redBall: [ 4, 6, 10, 18, 23, 31 ]
+  },
+  {
+    blueBall: 5,
+    date: '2026-08-02',
+    index: '2026088',
+    redBall: [ 6, 7, 11, 18, 22, 33 ]
+  },
+  {
+    blueBall: 3,
+    date: '2026-08-04',
+    index: '2026089',
+    redBall: [ 5, 18, 23, 24, 27, 33 ]
+  },{
+    blueBall: 3,
+    date: '2026-08-06',
+    index: '2026090',
+    redBall: [ 2,4,15,23,25,27 ]
   }
- 
 ];
 console.log(`双色球一共${ssqHistory.length}期`);
 

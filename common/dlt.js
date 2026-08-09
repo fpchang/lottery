@@ -17427,6 +17427,12 @@ export const dltHistory = [
     date: '2026-08-03',
     redBall: [ 5, 10, 16, 24, 27 ],
     blueBall: [ 4, 10 ]
+  },
+  {
+    index: '26088',
+    date: '2026-08-05',
+    redBall: [ 3, 9, 11, 24, 27 ],
+    blueBall: [ 5, 11 ]
   }
 ];
 
