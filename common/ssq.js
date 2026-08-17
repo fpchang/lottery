@@ -12277,7 +12277,20 @@ export var ssqHistory = [
     date: '2026-08-06',
     index: '2026090',
     redBall: [ 2,4,15,23,25,27 ]
+  },
+  {
+    blueBall: 5,
+    date: '2026-08-09',
+    index: '2026091',
+    redBall: [ 2, 13, 14, 16, 20, 24 ]
+  },
+  {
+    blueBall: 11,
+    date: '2026-08-11',
+    index: '2026092',
+    redBall: [ 9, 11, 12, 25, 30, 33 ]
   }
+
 ];
 console.log(`双色球一共${ssqHistory.length}期`);
 
