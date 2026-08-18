@@ -128,13 +128,13 @@ const fullResult = calcAllDLTTripletMiss(historyData);
 // 需求：筛选三码组合【一定同时包含10和20】
 const qTarget = queryMissData(fullResult, {
   type: "hasBoth",
-  val: [3,34]
+  val: []
 });
-
-console.log(`同时包含10、20的3码组合总数：${qTarget.length}`);
-console.log("组合列表（已按当前遗漏降序）：");
-qTarget.forEach((row, idx) => {
-  console.log(
-    `${idx+1} | 号码：${row.combo.join(",")} | 当前遗漏：${row.currMiss} | 历史开出次数：${row.count}`
-  );
-});
+console.log(fullResult)
+// console.log(`同时包含10、20的3码组合总数：${qTarget.length}`);
+// console.log("组合列表（已按当前遗漏降序）：");
+// qTarget.forEach((row, idx) => {
+//   console.log(
+//     `${idx+1} | 号码：${row.combo.join(",")} | 当前遗漏：${row.currMiss} | 历史开出次数：${row.count}`
+//   );
+// });
