@@ -16200,9 +16200,6 @@ function findsame() {
   });
   console.log("repeat max ", repeat);
 }
-<<<<<<< HEAD
-findsame();
-=======
 //findsame();
 function get10() {
   console.log("all", historyKl8.length);
@@ -16217,4 +16214,3 @@ function get10() {
   console.log("小于31的数量", num);
 }
 //get10();
->>>>>>> 8b14443ec96606d7bd128f3ed3cde71f7e58a48a
