@@ -111,7 +111,7 @@ function C3(list,filterarr){
 
 }
 //定胆
-function C4(list,dan=[1,7,25,34]){
+function C4(list,dan=[1]){
     const groupList = new Set([...list,...dan]);
    // console.log(groupList)
     const flag = groupList.size ==list.length; 
@@ -147,7 +147,7 @@ function C5(redBalls, ratio="2:1:2") {
   // 5. 对比是否匹配
   return z1 === r1 && z2 === r2 && z3 === r3;
 }
-function main(n=14){
+function main(n=28){
     const dan =[];
    const filterarr=dltHistory[dltHistory.length-1].redBall;
    //const filterarr=[11,15,17,22,25,30]
@@ -156,7 +156,7 @@ function main(n=14){
     while (thread < n) {
         const list = getRandomRedBall();
         //console.log(list);
-        if(C1(list)&&C2(list)&&C4(list)){
+        if(C1(list)&&C4(list)){
              result.push({ redBall: list });
             thread++;
         }
