@@ -12,7 +12,7 @@ function parseLotteryData(arr) {
     // 1. 匹配期号（2026029 → 26029）
     const periodMatch = str.match(/(\d{7})期/);
     const fullPeriod = periodMatch ? periodMatch[1] : ""; // 2026029
-    const index = fullPeriod.slice(2); // 去掉前2位 → 26029
+    const index = fullPeriod; // 去掉前2位 → 26029
 
     // 2. 匹配日期
     const dateMatch = str.match(/(\d{4}-\d{2}-\d{2})/);
