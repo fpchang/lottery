@@ -79,7 +79,7 @@ function C1(list, history=ssqHistory) {
   let count6 = compare(list, history.slice(history.length - 6));
   let count7 = compare(list, history.slice(history.length - 7));
   //console.log("count:",count1,count2,count3,count4,count5);
-  const s1 = count1 < 3;
+  const s1 = count1 >0 && count1 < 3;
   const s2 = count2 > 0 && count2 < 4;
   const s3 = count3 > 0 && count3 < 5;
   const s4 = count4 < 6 && count4 > 1;
@@ -122,7 +122,7 @@ function main(n=14){
     while (thread < n) {
         const list = generateSSQ();
       //  console.log("list",list);
-        if(C1(list)&&C2(list)&&C3(list,filterarr)&&C4(list,dan)){
+        if(C1(list)&&C4(list,dan)){
              result.push({ "红球": list, "蓝球":14});
             thread++;
         }
@@ -138,3 +138,14 @@ main();
 // { '红球': [ 1, 8, 12, 13, 26, 29 ], '蓝球': 15 }
 // { '红球': [ 6, 7, 12, 13, 23, 32 ], '蓝球': 13 }
 // { '红球': [ 4, 6, 12, 13, 23, 33 ], '蓝球': 6 }
+//06,11,12,13,26,29-14
+//03,04.12.14.19.24-14
+//01, 11, 16, 17, 18, 28-14
+//14,16,21,23,25,33-14
+//02, 09, 15, 16, 22, 29-14
+//02, 03, 06, 12, 13, 26-14
+//06, 07, 13, 26, 27, 32 -14
+//02, 06, 12, 13, 23, 26-14
+//03, 04, 05, 15, 25, 28-14
+//05, 07, 12, 13, 18, 30-14
+//04, 09, 12, 16, 18, 27-14

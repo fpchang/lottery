@@ -77,7 +77,7 @@ function calcSsqFrontNPlus1Miss(fixedNums, historyDraws) {
 
 // ====================== 配置区（自行修改） ======================
 // 示例：输入2个号码，自动生成3码组合计算遗漏
-const inputFixed = [3,12,17,23,30];
+const inputFixed = [5,11,18,25,27];
 
 // 双色球历史前区开奖数据，每一行是一期6个前区号码
 const historyData = ssqHistory.map(item => item.redBall);

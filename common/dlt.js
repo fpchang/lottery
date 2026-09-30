@@ -17387,6 +17387,8 @@ export const dltHistory = [
     blueBall: [ 7, 8 ]
   },
   {
+     index: '26081',
+    date: '2026-07-20',
     redBall: [ 8, 16, 18, 24, 34 ],
     blueBall: [ 9, 12 ]
   },
@@ -17479,6 +17481,39 @@ export const dltHistory = [
     date: '2026-08-22',
     redBall: [ 4, 6, 8, 10, 14 ],
     blueBall: [ 4, 5 ]
+<<<<<<< HEAD
+=======
+  },
+  {
+    index: '26096',
+    date: '2026-08-24',
+    redBall: [ 8, 9, 10, 11, 25 ],
+    blueBall: [ 4, 12 ]
+  },
+  {
+    index: '26097',
+    date: '2026-08-26',
+    redBall: [ 3, 10, 12, 20, 25 ],
+    blueBall: [ 1, 9 ]
+  },
+  {
+    index: '26098',
+    date: '2026-08-29',
+    redBall: [ 7, 9, 18, 19, 21 ],
+    blueBall: [ 2, 9 ]
+  },
+  {
+    index: '26099',
+    date: '2026-08-31',
+    redBall: [ 2, 17, 20, 29, 33 ],
+    blueBall: [ 8, 9 ]
+  },
+  {
+    index: '26100',
+    date: '2026-09-02',
+    redBall: [ 2, 6, 11, 15, 31 ],
+    blueBall: [ 7, 8 ]
+>>>>>>> 5e99376d0b3fa08d1fda350168ca77ff6038c4c8
   }
 ];
 
