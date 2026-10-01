@@ -1,0 +1,3764 @@
+{
+  "lottery": "快乐8 (中国福利彩票)",
+  "data_source": "中国福彩官网 cwl.gov.cn 开奖公告接口 (官方权威数据源)",
+  "fetched_at": "2026-10-01",
+  "total_draws": 2084,
+  "coverage": {
+    "first_issue": "2020001",
+    "first_date": "2020-10-28",
+    "last_issue": "2026263",
+    "last_date": "2026-09-30"
+  },
+  "rules_note": "快乐8于2020-10-28(第2020001期)起在部分省市试点，2021年起全国上市，每日开奖。每期开出20个号码(1-80)。玩法为选一至选十，共40个奖级(prizes字段，选十中十单注奖金500万元)。中零奖级(如选十中零)为一个号码都不中的特殊奖。",
+  "fields": {
+    "issue": "期号(如2026263)",
+    "date": "开奖日期 YYYY-MM-DD",
+    "weekday": "星期(汉字)",
+    "numbers": "开奖号码数组(20个, 1-80, 升序)",
+    "sum": "20个开奖号码之和",
+    "sales": "当期全国销售额(元)",
+    "prizes": "各奖级中奖注数(winners)与单注奖金(prize_per, 元)"
+  },
+  "draws": [
+    {
+      "issue": "2026244",
+      "date": "2026-09-11",
+      "weekday": "五",
+      "numbers": [
+        1,
+        4,
+        7,
+        8,
+        10,
+        12,
+        34,
+        46,
+        47,
+        53,
+        55,
+        56,
+        59,
+        61,
+        63,
+        65,
+        71,
+        73,
+        78,
+        79
+      ],
+      "sum": 882,
+      "sales": 147771044,
+      "prizes": {
+        "选十中十": {
+          "winners": 1,
+          "prize_per": 5000000
+        },
+        "选十中九": {
+          "winners": 61,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 993,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 10307,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 80922,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 389575,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 432812,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 3,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 211,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 3158,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 32254,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 200583,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 736145,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 504925,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 1,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 315,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 4691,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 41163,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 198196,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 279525,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 20,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 931,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 17746,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 117112,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 353557,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 719,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 24305,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 244403,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1222294,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 9325,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 220515,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1718260,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 2764,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 39943,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 217414,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 29890,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 335560,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 657906,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 56449,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026245",
+      "date": "2026-09-12",
+      "weekday": "六",
+      "numbers": [
+        5,
+        6,
+        9,
+        15,
+        18,
+        25,
+        26,
+        27,
+        30,
+        31,
+        34,
+        36,
+        39,
+        43,
+        44,
+        48,
+        54,
+        63,
+        65,
+        77
+      ],
+      "sum": 695,
+      "sales": 137278086,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 34,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 1077,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 12657,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 84861,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 361185,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 258273,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 2,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 247,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 5075,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 43764,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 227726,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 743701,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 339469,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 10,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 592,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 7525,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 50237,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 207495,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 196277,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 28,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 1981,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 24400,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 137758,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 264034,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 1591,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 34970,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 284065,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1270400,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 15292,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 274906,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1835283,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 2950,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 37265,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 214179,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 27864,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 304236,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 662036,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 50239,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026246",
+      "date": "2026-09-13",
+      "weekday": "日",
+      "numbers": [
+        3,
+        8,
+        10,
+        16,
+        18,
+        20,
+        23,
+        29,
+        31,
+        35,
+        51,
+        53,
+        54,
+        56,
+        58,
+        69,
+        70,
+        75,
+        78,
+        80
+      ],
+      "sum": 837,
+      "sales": 139177362,
+      "prizes": {
+        "选十中十": {
+          "winners": 1,
+          "prize_per": 5000000
+        },
+        "选十中九": {
+          "winners": 41,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 722,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 9776,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 76358,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 351089,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 271878,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 4,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 260,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 3553,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 34188,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 203911,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 725072,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 331265,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 4,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 301,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 5176,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 47496,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 215148,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 185575,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 29,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 1159,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 18511,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 126197,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 267411,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 852,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 24275,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 277349,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1286763,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 11824,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 240933,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1804811,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 2155,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 42640,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 220208,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 31137,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 359918,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 787998,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 68377,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026247",
+      "date": "2026-09-14",
+      "weekday": "一",
+      "numbers": [
+        5,
+        7,
+        19,
+        22,
+        28,
+        29,
+        38,
+        39,
+        41,
+        42,
+        43,
+        44,
+        55,
+        58,
+        61,
+        65,
+        66,
+        71,
+        72,
+        73
+      ],
+      "sum": 878,
+      "sales": 140835136,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 37,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 914,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 10573,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 76873,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 341610,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 279681,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 2,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 171,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 3458,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 36639,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 208897,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 724047,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 349790,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 6,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 485,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 6045,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 45321,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 204026,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 201671,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 112,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 2167,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 22878,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 135185,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 278186,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 1433,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 33210,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 295981,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1318835,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 15288,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 285457,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1983844,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 3024,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 45209,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 219638,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 38737,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 366299,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 816824,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 60107,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026248",
+      "date": "2026-09-15",
+      "weekday": "二",
+      "numbers": [
+        3,
+        5,
+        9,
+        15,
+        23,
+        28,
+        31,
+        33,
+        34,
+        35,
+        39,
+        42,
+        48,
+        50,
+        53,
+        70,
+        73,
+        74,
+        76,
+        78
+      ],
+      "sum": 819,
+      "sales": 141145028,
+      "prizes": {
+        "选十中十": {
+          "winners": 1,
+          "prize_per": 5000000
+        },
+        "选十中九": {
+          "winners": 17,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 587,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 7723,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 60382,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 295650,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 337474,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选九中八": {
+          "winners": 89,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 1986,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 23277,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 151942,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 583623,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 470256,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 4,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 162,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 3570,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 34668,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 168777,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 265864,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 23,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 905,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 13461,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 94895,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 370765,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 375,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 17197,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 179147,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 951227,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 6574,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 161330,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1312708,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 1132,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 27922,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 168298,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 19832,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 254240,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 463660,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 30239,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026249",
+      "date": "2026-09-16",
+      "weekday": "三",
+      "numbers": [
+        4,
+        8,
+        10,
+        11,
+        13,
+        26,
+        29,
+        34,
+        41,
+        50,
+        51,
+        52,
+        53,
+        57,
+        59,
+        65,
+        66,
+        73,
+        74,
+        77
+      ],
+      "sum": 853,
+      "sales": 144728354,
+      "prizes": {
+        "选十中十": {
+          "winners": 1,
+          "prize_per": 5000000
+        },
+        "选十中九": {
+          "winners": 26,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 621,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 8479,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 66353,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 314376,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 276445,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 4,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 151,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 2843,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 29764,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 183907,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 682740,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 356555,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 3,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 161,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 4255,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 40717,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 196482,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 191917,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 13,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 818,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 16725,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 115448,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 278180,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 973,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 24307,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 258787,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1237872,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 12240,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 256873,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1921677,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 3989,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 41136,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 218509,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 26416,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 354554,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 774087,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 42948,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026250",
+      "date": "2026-09-17",
+      "weekday": "四",
+      "numbers": [
+        4,
+        5,
+        6,
+        8,
+        17,
+        22,
+        23,
+        31,
+        35,
+        47,
+        49,
+        51,
+        59,
+        60,
+        62,
+        65,
+        67,
+        68,
+        76,
+        78
+      ],
+      "sum": 833,
+      "sales": 144780332,
+      "prizes": {
+        "选十中十": {
+          "winners": 1,
+          "prize_per": 5000000
+        },
+        "选十中九": {
+          "winners": 12,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 709,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 8496,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 63504,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 315899,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 293350,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 2,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 108,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 2171,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 26831,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 171321,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 654968,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 374499,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 4,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 214,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 3975,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 37537,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 191937,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 211923,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 37,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 1314,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 16133,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 117658,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 291769,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 592,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 20278,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 237768,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1196520,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 8955,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 229639,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1789767,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 1993,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 40293,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 222002,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 28829,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 365281,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 1569593,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 1039467,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026251",
+      "date": "2026-09-18",
+      "weekday": "五",
+      "numbers": [
+        1,
+        4,
+        8,
+        9,
+        10,
+        11,
+        18,
+        26,
+        28,
+        29,
+        43,
+        49,
+        51,
+        52,
+        53,
+        54,
+        62,
+        66,
+        70,
+        76
+      ],
+      "sum": 720,
+      "sales": 146286126,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 48,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 1337,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 16612,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 111935,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 470985,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 398675,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 2,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 240,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 4563,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 43697,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 234076,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 783610,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 466383,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 4,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 406,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 7725,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 53895,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 222265,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 250755,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 86,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 2058,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 26114,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 146686,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 345484,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 1155,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 35466,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 327346,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1315797,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 17991,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 331794,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 2088330,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 4840,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 53887,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 226021,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 55430,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 401499,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 1379291,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 54258,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026252",
+      "date": "2026-09-19",
+      "weekday": "六",
+      "numbers": [
+        2,
+        3,
+        4,
+        8,
+        36,
+        38,
+        40,
+        41,
+        46,
+        49,
+        50,
+        52,
+        53,
+        56,
+        57,
+        62,
+        63,
+        65,
+        68,
+        72
+      ],
+      "sum": 865,
+      "sales": 134419642,
+      "prizes": {
+        "选十中十": {
+          "winners": 3,
+          "prize_per": 5000000
+        },
+        "选十中九": {
+          "winners": 57,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 791,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 8592,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 61920,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 290330,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 348293,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 3,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 117,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 2715,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 29125,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 171335,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 625874,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 440217,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 1,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 306,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 5250,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 44972,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 207580,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 252612,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 30,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 1411,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 17659,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 113630,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 355393,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 1071,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 24031,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 236062,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1113363,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 12707,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 241098,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1786880,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 2184,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 45663,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 203323,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 32966,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 375419,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 761724,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 65350,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026253",
+      "date": "2026-09-20",
+      "weekday": "日",
+      "numbers": [
+        1,
+        2,
+        8,
+        17,
+        23,
+        24,
+        29,
+        31,
+        40,
+        41,
+        46,
+        47,
+        51,
+        54,
+        59,
+        62,
+        65,
+        72,
+        74,
+        79
+      ],
+      "sum": 825,
+      "sales": 135058376,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 30,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 549,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 6372,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 51228,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 256103,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 400603,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选九中八": {
+          "winners": 95,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 1311,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 16359,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 110456,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 453555,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 442714,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 2,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 143,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 2511,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 27551,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 148081,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 301605,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 28,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 752,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 10975,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 79872,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 381143,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 381,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 12477,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 156001,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 905211,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 5992,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 147909,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1320360,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 1028,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 25755,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 182919,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 14567,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 281988,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 631865,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 69246,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026254",
+      "date": "2026-09-21",
+      "weekday": "一",
+      "numbers": [
+        2,
+        4,
+        10,
+        13,
+        18,
+        20,
+        21,
+        26,
+        32,
+        37,
+        43,
+        49,
+        50,
+        57,
+        62,
+        66,
+        69,
+        73,
+        78,
+        80
+      ],
+      "sum": 810,
+      "sales": 129459790,
+      "prizes": {
+        "选十中十": {
+          "winners": 1,
+          "prize_per": 5000000
+        },
+        "选十中九": {
+          "winners": 27,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 673,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 8766,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 65602,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 316710,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 294406,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 1,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 111,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 2060,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 22778,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 142863,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 535611,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 296646,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 6,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 224,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 4513,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 37207,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 187780,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 205482,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 45,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 1677,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 16168,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 116049,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 283172,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 694,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 19558,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 223878,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1157779,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 9950,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 218174,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1685665,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 2008,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 38010,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 217083,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 27822,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 383063,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 863740,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 67180,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026255",
+      "date": "2026-09-22",
+      "weekday": "二",
+      "numbers": [
+        2,
+        9,
+        12,
+        16,
+        18,
+        23,
+        26,
+        31,
+        36,
+        44,
+        47,
+        52,
+        54,
+        55,
+        59,
+        60,
+        61,
+        66,
+        72,
+        77
+      ],
+      "sum": 820,
+      "sales": 128257538,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 35,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 847,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 9756,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 70512,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 326150,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 283479,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 2,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 110,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 2140,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 23742,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 144281,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 534151,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 279926,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 5,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 229,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 6590,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 42361,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 194390,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 196228,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 89,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 2241,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 15478,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 112068,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 276602,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 545,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 21078,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 221481,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1111574,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 9260,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 198899,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1567766,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 1731,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 32227,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 205541,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 25783,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 313708,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 727799,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 52865,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026256",
+      "date": "2026-09-23",
+      "weekday": "三",
+      "numbers": [
+        1,
+        2,
+        6,
+        11,
+        12,
+        14,
+        15,
+        22,
+        24,
+        32,
+        33,
+        35,
+        38,
+        46,
+        67,
+        68,
+        71,
+        73,
+        74,
+        76
+      ],
+      "sum": 720,
+      "sales": 128809766,
+      "prizes": {
+        "选十中十": {
+          "winners": 2,
+          "prize_per": 5000000
+        },
+        "选十中九": {
+          "winners": 107,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 1523,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 14902,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 97161,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 405925,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 286496,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 5,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 173,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 3900,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 38844,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 200471,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 629913,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 289778,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 11,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 590,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 9052,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 61523,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 252107,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 206167,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 72,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 2528,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 29632,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 167995,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 280311,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 1859,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 39893,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 338187,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1316728,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 18133,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 320637,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 2034931,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 4122,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 58026,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 244329,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 51513,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 438401,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 1185755,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 86320,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026257",
+      "date": "2026-09-24",
+      "weekday": "四",
+      "numbers": [
+        1,
+        4,
+        7,
+        8,
+        10,
+        13,
+        23,
+        24,
+        31,
+        33,
+        39,
+        40,
+        47,
+        48,
+        58,
+        61,
+        65,
+        74,
+        76,
+        79
+      ],
+      "sum": 741,
+      "sales": 126146498,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 48,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 1080,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 12332,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 89472,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 393597,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 266652,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 2,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 164,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 3076,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 32224,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 182822,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 616258,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 238555,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 2,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 413,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 7716,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 56396,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 247491,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 173873,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 70,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 2167,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 29535,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 163777,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 227029,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 1299,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 40762,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 322017,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1351051,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 20009,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 337552,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 2183545,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 4511,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 55970,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 248219,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 50661,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 447288,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 948945,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 63548,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026258",
+      "date": "2026-09-25",
+      "weekday": "五",
+      "numbers": [
+        7,
+        13,
+        14,
+        15,
+        17,
+        19,
+        20,
+        24,
+        28,
+        30,
+        35,
+        44,
+        50,
+        51,
+        54,
+        57,
+        60,
+        64,
+        75,
+        78
+      ],
+      "sum": 755,
+      "sales": 133339938,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 46,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 1041,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 13002,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 95203,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 426527,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 372746,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 6,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 134,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 2833,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 30659,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 175511,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 600982,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 328966,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 11,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 612,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 7363,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 51492,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 229599,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 229283,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 179,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 1902,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 23666,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 148246,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 321678,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 1185,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 30662,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 280850,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1203660,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 13223,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 269534,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1788387,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 2966,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 46508,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 217230,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 39291,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 356560,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 934595,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 104900,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026259",
+      "date": "2026-09-26",
+      "weekday": "六",
+      "numbers": [
+        5,
+        6,
+        13,
+        26,
+        29,
+        30,
+        34,
+        36,
+        44,
+        50,
+        54,
+        56,
+        61,
+        62,
+        66,
+        73,
+        74,
+        76,
+        79,
+        80
+      ],
+      "sum": 954,
+      "sales": 125528722,
+      "prizes": {
+        "选十中十": {
+          "winners": 2,
+          "prize_per": 5000000
+        },
+        "选十中九": {
+          "winners": 42,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 837,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 9230,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 70078,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 324869,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 302438,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 1,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 122,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 2613,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 26973,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 151441,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 517799,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 291001,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 18,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 560,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 6894,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 46563,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 206431,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 213583,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 56,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 1914,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 20261,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 122415,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 292373,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 1204,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 28079,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 247468,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1147770,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 14615,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 263401,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1802824,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 2895,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 41474,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 217766,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 40554,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 392146,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 903320,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 45473,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026260",
+      "date": "2026-09-27",
+      "weekday": "日",
+      "numbers": [
+        2,
+        7,
+        16,
+        19,
+        21,
+        25,
+        30,
+        31,
+        33,
+        35,
+        42,
+        45,
+        50,
+        52,
+        53,
+        55,
+        56,
+        60,
+        63,
+        72
+      ],
+      "sum": 767,
+      "sales": 129098322,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 75,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 1081,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 13039,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 91367,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 385916,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 286523,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 2,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 158,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 2824,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 30083,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 171274,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 560814,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 280030,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 38,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 472,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 8816,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 59414,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 226098,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 215540,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 72,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 2130,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 28157,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 153854,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 298917,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 1508,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 37273,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 299308,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1203225,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 16604,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 309620,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1945076,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 3950,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 59281,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 223929,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 45381,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 412136,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 1243519,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 204577,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026261",
+      "date": "2026-09-28",
+      "weekday": "一",
+      "numbers": [
+        1,
+        11,
+        17,
+        21,
+        23,
+        27,
+        28,
+        35,
+        37,
+        42,
+        45,
+        46,
+        48,
+        61,
+        72,
+        73,
+        75,
+        78,
+        79,
+        80
+      ],
+      "sum": 899,
+      "sales": 129635284,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 5,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 524,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 7508,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 55852,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 272930,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 382849,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选九中八": {
+          "winners": 62,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 1564,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 17308,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 113363,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 438349,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 384432,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 8,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 183,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 3692,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 33547,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 172864,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 314225,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 10,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 1183,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 13485,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 97657,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 406707,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 517,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 16890,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 172116,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 905037,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 8389,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 179954,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1409600,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 1967,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 32570,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 200914,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 30845,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 318813,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 686455,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 69287,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026262",
+      "date": "2026-09-29",
+      "weekday": "二",
+      "numbers": [
+        4,
+        6,
+        9,
+        12,
+        15,
+        17,
+        20,
+        33,
+        42,
+        44,
+        49,
+        54,
+        55,
+        59,
+        61,
+        65,
+        72,
+        73,
+        78,
+        80
+      ],
+      "sum": 848,
+      "sales": 128616270,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 21,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 707,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 8799,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 68612,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 332556,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 301370,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 2,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 79,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 1876,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 19893,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 132906,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 516639,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 282487,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 5,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 251,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 4246,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 38950,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 195814,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 224307,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 34,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 1071,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 15783,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 119827,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 308020,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 541,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 16471,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 207270,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1100264,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 7372,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 186010,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 1576581,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 1564,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 35317,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 212980,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 34764,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 353839,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 673774,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 51472,
+          "prize_per": 4
+        }
+      }
+    },
+    {
+      "issue": "2026263",
+      "date": "2026-09-30",
+      "weekday": "三",
+      "numbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        22,
+        24,
+        25,
+        26,
+        31,
+        33,
+        37,
+        45,
+        50,
+        51,
+        62,
+        67,
+        70,
+        80
+      ],
+      "sum": 681,
+      "sales": 136356996,
+      "prizes": {
+        "选十中十": {
+          "winners": 0,
+          "prize_per": 0
+        },
+        "选十中九": {
+          "winners": 88,
+          "prize_per": 8000
+        },
+        "选十中八": {
+          "winners": 1879,
+          "prize_per": 720
+        },
+        "选十中七": {
+          "winners": 20698,
+          "prize_per": 80
+        },
+        "选十中六": {
+          "winners": 133441,
+          "prize_per": 5
+        },
+        "选十中五": {
+          "winners": 528880,
+          "prize_per": 3
+        },
+        "选十中零": {
+          "winners": 248125,
+          "prize_per": 2
+        },
+        "选九中九": {
+          "winners": 3,
+          "prize_per": 250000
+        },
+        "选九中八": {
+          "winners": 316,
+          "prize_per": 2000
+        },
+        "选九中七": {
+          "winners": 5690,
+          "prize_per": 225
+        },
+        "选九中六": {
+          "winners": 49867,
+          "prize_per": 22
+        },
+        "选九中五": {
+          "winners": 246038,
+          "prize_per": 5
+        },
+        "选九中四": {
+          "winners": 717927,
+          "prize_per": 3
+        },
+        "选九中零": {
+          "winners": 221286,
+          "prize_per": 2
+        },
+        "选八中八": {
+          "winners": 24,
+          "prize_per": 50000
+        },
+        "选八中七": {
+          "winners": 1094,
+          "prize_per": 800
+        },
+        "选八中六": {
+          "winners": 14476,
+          "prize_per": 80
+        },
+        "选八中五": {
+          "winners": 90352,
+          "prize_per": 10
+        },
+        "选八中四": {
+          "winners": 327941,
+          "prize_per": 3
+        },
+        "选八中零": {
+          "winners": 169383,
+          "prize_per": 2
+        },
+        "选七中七": {
+          "winners": 186,
+          "prize_per": 8500
+        },
+        "选七中六": {
+          "winners": 5054,
+          "prize_per": 300
+        },
+        "选七中五": {
+          "winners": 46708,
+          "prize_per": 30
+        },
+        "选七中四": {
+          "winners": 225937,
+          "prize_per": 4
+        },
+        "选七中零": {
+          "winners": 234169,
+          "prize_per": 2
+        },
+        "选六中六": {
+          "winners": 3317,
+          "prize_per": 2880
+        },
+        "选六中五": {
+          "winners": 65639,
+          "prize_per": 30
+        },
+        "选六中四": {
+          "winners": 455645,
+          "prize_per": 10
+        },
+        "选六中三": {
+          "winners": 1639501,
+          "prize_per": 3
+        },
+        "选五中五": {
+          "winners": 38211,
+          "prize_per": 1000
+        },
+        "选五中四": {
+          "winners": 544752,
+          "prize_per": 20
+        },
+        "选五中三": {
+          "winners": 2814523,
+          "prize_per": 3
+        },
+        "选四中四": {
+          "winners": 10368,
+          "prize_per": 93
+        },
+        "选四中三": {
+          "winners": 83428,
+          "prize_per": 5
+        },
+        "选四中二": {
+          "winners": 285172,
+          "prize_per": 3
+        },
+        "选三中三": {
+          "winners": 87677,
+          "prize_per": 52
+        },
+        "选三中二": {
+          "winners": 554430,
+          "prize_per": 3
+        },
+        "选二中二": {
+          "winners": 1341747,
+          "prize_per": 19
+        },
+        "选一中一": {
+          "winners": 77833,
+          "prize_per": 4
+        }
+      }
+    }
+  ]
+}

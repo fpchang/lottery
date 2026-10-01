@@ -1,0 +1,590 @@
+{
+  "lottery": "双色球 (中国福利彩票)",
+  "data_source": "500彩票网数据图表 datachart.500.com (最新一期与中国福彩官网 cwl.gov.cn 开奖公告逐字段交叉核验一致)",
+  "fetched_at": "2026-10-01",
+  "total_draws": 3510,
+  "coverage": {
+    "first_issue": "2003001",
+    "first_date": "2003-02-23",
+    "last_issue": "2026113",
+    "last_date": "2026-09-29"
+  },
+  "rules_note": "双色球首期为2003年第03001期(2003-02-23)。红球6个(01-33)+蓝球1个(01-16)。现为每周二/四/日开奖。快乐星期天(happy_sunday)为2003-2004年间周日开奖的附加玩法奖金(元)，后期为空(null)。",
+  "fields": {
+    "issue": "规范化期号(年份+3位序号, 如2026113)",
+    "issue_raw": "源数据原始期号(如26113)",
+    "date": "开奖日期 YYYY-MM-DD",
+    "weekday": "星期(汉字)",
+    "red_numbers": "红球号码数组(6个, 1-33, 升序)",
+    "blue": "蓝球(1个, 1-16)",
+    "red_sum": "红球号码之和",
+    "pool": "当期奖池滚存(元)",
+    "first_prize": "一等奖: winners=中奖注数, prize_per=单注奖金(元)",
+    "second_prize": "二等奖: winners=中奖注数, prize_per=单注奖金(元)",
+    "sales": "当期全国总投注额(元)",
+    "happy_sunday": "快乐星期天附加玩法奖金(元), 仅2003-2004年部分期有值",
+    "ball_set": "摇奖用球(第几套)"
+  },
+  "draws": [
+    {
+      "issue": "2026094",
+      "issue_raw": "26094",
+      "date": "2026-08-16",
+      "weekday": "日",
+      "red_numbers": [
+        6,
+        13,
+        15,
+        17,
+        24,
+        25
+      ],
+      "blue": 1,
+      "red_sum": 100,
+      "pool": 616242219,
+      "first_prize": {
+        "winners": 4,
+        "prize_per": 10000000
+      },
+      "second_prize": {
+        "winners": 142,
+        "prize_per": 210861
+      },
+      "sales": 373881722,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026095",
+      "issue_raw": "26095",
+      "date": "2026-08-18",
+      "weekday": "二",
+      "red_numbers": [
+        4,
+        6,
+        14,
+        21,
+        22,
+        33
+      ],
+      "blue": 16,
+      "red_sum": 100,
+      "pool": 628888733,
+      "first_prize": {
+        "winners": 7,
+        "prize_per": 7475143
+      },
+      "second_prize": {
+        "winners": 112,
+        "prize_per": 193370
+      },
+      "sales": 347737104,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026096",
+      "issue_raw": "26096",
+      "date": "2026-08-20",
+      "weekday": "四",
+      "red_numbers": [
+        1,
+        4,
+        16,
+        22,
+        26,
+        31
+      ],
+      "blue": 4,
+      "red_sum": 100,
+      "pool": 654135395,
+      "first_prize": {
+        "winners": 6,
+        "prize_per": 8348282
+      },
+      "second_prize": {
+        "winners": 118,
+        "prize_per": 212814
+      },
+      "sales": 344932190,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026097",
+      "issue_raw": "26097",
+      "date": "2026-08-23",
+      "weekday": "日",
+      "red_numbers": [
+        5,
+        16,
+        24,
+        26,
+        29,
+        30
+      ],
+      "blue": 2,
+      "red_sum": 130,
+      "pool": 710238057,
+      "first_prize": {
+        "winners": 2,
+        "prize_per": 10000000
+      },
+      "second_prize": {
+        "winners": 96,
+        "prize_per": 264245
+      },
+      "sales": 369897178,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026098",
+      "issue_raw": "26098",
+      "date": "2026-08-25",
+      "weekday": "二",
+      "red_numbers": [
+        8,
+        16,
+        18,
+        22,
+        25,
+        26
+      ],
+      "blue": 7,
+      "red_sum": 115,
+      "pool": 711169786,
+      "first_prize": {
+        "winners": 7,
+        "prize_per": 6866583
+      },
+      "second_prize": {
+        "winners": 122,
+        "prize_per": 133873
+      },
+      "sales": 337464770,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026099",
+      "issue_raw": "26099",
+      "date": "2026-08-27",
+      "weekday": "四",
+      "red_numbers": [
+        1,
+        12,
+        14,
+        18,
+        30,
+        31
+      ],
+      "blue": 2,
+      "red_sum": 106,
+      "pool": 776452438,
+      "first_prize": {
+        "winners": 2,
+        "prize_per": 10000000
+      },
+      "second_prize": {
+        "winners": 75,
+        "prize_per": 379034
+      },
+      "sales": 344486222,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026100",
+      "issue_raw": "26100",
+      "date": "2026-08-30",
+      "weekday": "日",
+      "red_numbers": [
+        3,
+        4,
+        9,
+        13,
+        22,
+        31
+      ],
+      "blue": 4,
+      "red_sum": 82,
+      "pool": 743395010,
+      "first_prize": {
+        "winners": 40,
+        "prize_per": 2500000
+      },
+      "second_prize": {
+        "winners": 217,
+        "prize_per": 102830
+      },
+      "sales": 357107230,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026101",
+      "issue_raw": "26101",
+      "date": "2026-09-01",
+      "weekday": "二",
+      "red_numbers": [
+        5,
+        6,
+        8,
+        9,
+        24,
+        25
+      ],
+      "blue": 12,
+      "red_sum": 77,
+      "pool": 766096090,
+      "first_prize": {
+        "winners": 4,
+        "prize_per": 8881916
+      },
+      "second_prize": {
+        "winners": 183,
+        "prize_per": 106063
+      },
+      "sales": 329493946,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026102",
+      "issue_raw": "26102",
+      "date": "2026-09-03",
+      "weekday": "四",
+      "red_numbers": [
+        3,
+        4,
+        10,
+        13,
+        16,
+        25
+      ],
+      "blue": 9,
+      "red_sum": 71,
+      "pool": 782244968,
+      "first_prize": {
+        "winners": 4,
+        "prize_per": 8286261
+      },
+      "second_prize": {
+        "winners": 93,
+        "prize_per": 176680
+      },
+      "sales": 335960988,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026103",
+      "issue_raw": "26103",
+      "date": "2026-09-06",
+      "weekday": "日",
+      "red_numbers": [
+        4,
+        11,
+        20,
+        27,
+        28,
+        30
+      ],
+      "blue": 15,
+      "red_sum": 120,
+      "pool": 805259723,
+      "first_prize": {
+        "winners": 7,
+        "prize_per": 8013753
+      },
+      "second_prize": {
+        "winners": 125,
+        "prize_per": 210962
+      },
+      "sales": 362416068,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026104",
+      "issue_raw": "26104",
+      "date": "2026-09-08",
+      "weekday": "二",
+      "red_numbers": [
+        11,
+        12,
+        13,
+        19,
+        20,
+        31
+      ],
+      "blue": 3,
+      "red_sum": 106,
+      "pool": 798557035,
+      "first_prize": {
+        "winners": 11,
+        "prize_per": 6596605
+      },
+      "second_prize": {
+        "winners": 171,
+        "prize_per": 128382
+      },
+      "sales": 333116798,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026105",
+      "issue_raw": "26105",
+      "date": "2026-09-10",
+      "weekday": "四",
+      "red_numbers": [
+        2,
+        4,
+        13,
+        14,
+        15,
+        30
+      ],
+      "blue": 8,
+      "red_sum": 78,
+      "pool": 833007469,
+      "first_prize": {
+        "winners": 1,
+        "prize_per": 10000000
+      },
+      "second_prize": {
+        "winners": 100,
+        "prize_per": 148168
+      },
+      "sales": 333874688,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026106",
+      "issue_raw": "26106",
+      "date": "2026-09-13",
+      "weekday": "日",
+      "red_numbers": [
+        6,
+        11,
+        13,
+        14,
+        22,
+        30
+      ],
+      "blue": 14,
+      "red_sum": 96,
+      "pool": 856497196,
+      "first_prize": {
+        "winners": 4,
+        "prize_per": 8953611
+      },
+      "second_prize": {
+        "winners": 105,
+        "prize_per": 188267
+      },
+      "sales": 361568656,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026107",
+      "issue_raw": "26107",
+      "date": "2026-09-15",
+      "weekday": "二",
+      "red_numbers": [
+        1,
+        5,
+        9,
+        17,
+        24,
+        33
+      ],
+      "blue": 4,
+      "red_sum": 89,
+      "pool": 858528126,
+      "first_prize": {
+        "winners": 9,
+        "prize_per": 6900239
+      },
+      "second_prize": {
+        "winners": 249,
+        "prize_per": 85854
+      },
+      "sales": 328194638,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026108",
+      "issue_raw": "26108",
+      "date": "2026-09-17",
+      "weekday": "四",
+      "red_numbers": [
+        6,
+        11,
+        13,
+        14,
+        20,
+        28
+      ],
+      "blue": 16,
+      "red_sum": 92,
+      "pool": 917243647,
+      "first_prize": {
+        "winners": 2,
+        "prize_per": 10000000
+      },
+      "second_prize": {
+        "winners": 95,
+        "prize_per": 276194
+      },
+      "sales": 335294274,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026109",
+      "issue_raw": "26109",
+      "date": "2026-09-20",
+      "weekday": "日",
+      "red_numbers": [
+        9,
+        12,
+        15,
+        26,
+        30,
+        33
+      ],
+      "blue": 6,
+      "red_sum": 125,
+      "pool": 936353465,
+      "first_prize": {
+        "winners": 5,
+        "prize_per": 8207986
+      },
+      "second_prize": {
+        "winners": 114,
+        "prize_per": 175876
+      },
+      "sales": 359008756,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026110",
+      "issue_raw": "26110",
+      "date": "2026-09-22",
+      "weekday": "二",
+      "red_numbers": [
+        2,
+        5,
+        16,
+        19,
+        26,
+        32
+      ],
+      "blue": 14,
+      "red_sum": 100,
+      "pool": 930967826,
+      "first_prize": {
+        "winners": 12,
+        "prize_per": 6654980
+      },
+      "second_prize": {
+        "winners": 173,
+        "prize_per": 143495
+      },
+      "sales": 327624764,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026111",
+      "issue_raw": "26111",
+      "date": "2026-09-24",
+      "weekday": "四",
+      "red_numbers": [
+        6,
+        7,
+        14,
+        22,
+        31,
+        32
+      ],
+      "blue": 5,
+      "red_sum": 112,
+      "pool": 966038984,
+      "first_prize": {
+        "winners": 2,
+        "prize_per": 10000000
+      },
+      "second_prize": {
+        "winners": 102,
+        "prize_per": 179971
+      },
+      "sales": 325191464,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026112",
+      "issue_raw": "26112",
+      "date": "2026-09-27",
+      "weekday": "日",
+      "red_numbers": [
+        1,
+        4,
+        11,
+        12,
+        17,
+        29
+      ],
+      "blue": 11,
+      "red_sum": 74,
+      "pool": 972650894,
+      "first_prize": {
+        "winners": 6,
+        "prize_per": 7218903
+      },
+      "second_prize": {
+        "winners": 123,
+        "prize_per": 135299
+      },
+      "sales": 351384920,
+      "happy_sunday": null,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026113",
+      "issue_raw": "26113",
+      "date": "2026-09-29",
+      "weekday": "二",
+      "red_numbers": [
+        3,
+        4,
+        20,
+        24,
+        29,
+        30
+      ],
+      "blue": 11,
+      "red_sum": 110,
+      "pool": 973407364,
+      "first_prize": {
+        "winners": 10,
+        "prize_per": 6845689
+      },
+      "second_prize": {
+        "winners": 165,
+        "prize_per": 139824
+      },
+      "sales": 338536676,
+      "happy_sunday": null,
+      "ball_set": 2
+    }
+  ]
+}

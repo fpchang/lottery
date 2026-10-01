@@ -1,0 +1,409 @@
+{
+  "lottery": "七星彩 (中国体育彩票)",
+  "data_source": "500彩票网数据图表 datachart.500.com (与国家体彩中心开奖公告交叉核验)",
+  "fetched_at": "2026-10-01",
+  "total_draws": 3397,
+  "coverage": {
+    "first_issue": "2004101",
+    "first_date": "2004-05-21",
+    "last_issue": "2026113",
+    "last_date": "2026-09-29"
+  },
+  "rules_note": {
+    "old": "2004年第04101期(2004-05-21全国联网首期)至2020年第2020100期：7位开奖数字，每位0-9。numbers为7个数字。",
+    "new": "2020年第2020101期(2020-10-16)起规则改版：前区6位数字(每位0-9)+后区1位(0-14)。numbers前6个为前区，第7个为后区(可能为10-14的两位数)。"
+  },
+  "fields": {
+    "issue": "规范化期号(年份+3位序号, 如2026113)",
+    "issue_raw": "源数据原始期号(如26113)",
+    "date": "开奖日期 YYYY-MM-DD",
+    "weekday": "星期(汉字)",
+    "numbers": "开奖号码数组(见rules_note)",
+    "rule": "old=旧7位数字规则, new=新前区6位+后区规则",
+    "sum": "全加和(各位数字之和)",
+    "sales": "当期全国销售额(元)",
+    "ball_set": "摇奖用球(第几套)"
+  },
+  "draws": [
+    {
+      "issue": "2026094",
+      "issue_raw": "26094",
+      "date": "2026-08-16",
+      "weekday": "日",
+      "numbers": [
+        0,
+        6,
+        0,
+        2,
+        4,
+        0,
+        0
+      ],
+      "rule": "new",
+      "sum": 12,
+      "sales": 17662548,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026095",
+      "issue_raw": "26095",
+      "date": "2026-08-18",
+      "weekday": "二",
+      "numbers": [
+        6,
+        6,
+        4,
+        9,
+        0,
+        8,
+        7
+      ],
+      "rule": "new",
+      "sum": 40,
+      "sales": 17662328,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026096",
+      "issue_raw": "26096",
+      "date": "2026-08-21",
+      "weekday": "五",
+      "numbers": [
+        1,
+        4,
+        2,
+        6,
+        9,
+        5,
+        5
+      ],
+      "rule": "new",
+      "sum": 32,
+      "sales": 25798192,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026097",
+      "issue_raw": "26097",
+      "date": "2026-08-23",
+      "weekday": "日",
+      "numbers": [
+        8,
+        2,
+        7,
+        4,
+        4,
+        8,
+        12
+      ],
+      "rule": "new",
+      "sum": 45,
+      "sales": 17738382,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026098",
+      "issue_raw": "26098",
+      "date": "2026-08-25",
+      "weekday": "二",
+      "numbers": [
+        5,
+        6,
+        8,
+        6,
+        3,
+        3,
+        3
+      ],
+      "rule": "new",
+      "sum": 34,
+      "sales": 17328440,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026099",
+      "issue_raw": "26099",
+      "date": "2026-08-28",
+      "weekday": "五",
+      "numbers": [
+        9,
+        4,
+        6,
+        3,
+        3,
+        4,
+        5
+      ],
+      "rule": "new",
+      "sum": 34,
+      "sales": 25305764,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026100",
+      "issue_raw": "26100",
+      "date": "2026-08-30",
+      "weekday": "日",
+      "numbers": [
+        8,
+        3,
+        1,
+        1,
+        7,
+        3,
+        0
+      ],
+      "rule": "new",
+      "sum": 23,
+      "sales": 17720386,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026101",
+      "issue_raw": "26101",
+      "date": "2026-09-01",
+      "weekday": "二",
+      "numbers": [
+        6,
+        8,
+        6,
+        1,
+        0,
+        5,
+        13
+      ],
+      "rule": "new",
+      "sum": 39,
+      "sales": 17370196,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026102",
+      "issue_raw": "26102",
+      "date": "2026-09-04",
+      "weekday": "五",
+      "numbers": [
+        1,
+        7,
+        5,
+        5,
+        8,
+        8,
+        6
+      ],
+      "rule": "new",
+      "sum": 40,
+      "sales": 25186278,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026103",
+      "issue_raw": "26103",
+      "date": "2026-09-06",
+      "weekday": "日",
+      "numbers": [
+        0,
+        0,
+        0,
+        6,
+        0,
+        2,
+        8
+      ],
+      "rule": "new",
+      "sum": 16,
+      "sales": 17642292,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026104",
+      "issue_raw": "26104",
+      "date": "2026-09-08",
+      "weekday": "二",
+      "numbers": [
+        7,
+        4,
+        0,
+        7,
+        2,
+        8,
+        14
+      ],
+      "rule": "new",
+      "sum": 42,
+      "sales": 17332862,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026105",
+      "issue_raw": "26105",
+      "date": "2026-09-11",
+      "weekday": "五",
+      "numbers": [
+        5,
+        9,
+        9,
+        5,
+        3,
+        3,
+        0
+      ],
+      "rule": "new",
+      "sum": 34,
+      "sales": 24961344,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026106",
+      "issue_raw": "26106",
+      "date": "2026-09-13",
+      "weekday": "日",
+      "numbers": [
+        5,
+        1,
+        9,
+        5,
+        8,
+        5,
+        11
+      ],
+      "rule": "new",
+      "sum": 44,
+      "sales": 17370904,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026107",
+      "issue_raw": "26107",
+      "date": "2026-09-15",
+      "weekday": "二",
+      "numbers": [
+        2,
+        8,
+        3,
+        4,
+        5,
+        6,
+        4
+      ],
+      "rule": "new",
+      "sum": 32,
+      "sales": 16854278,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026108",
+      "issue_raw": "26108",
+      "date": "2026-09-18",
+      "weekday": "五",
+      "numbers": [
+        9,
+        5,
+        2,
+        0,
+        8,
+        6,
+        9
+      ],
+      "rule": "new",
+      "sum": 39,
+      "sales": 25316222,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026109",
+      "issue_raw": "26109",
+      "date": "2026-09-20",
+      "weekday": "日",
+      "numbers": [
+        2,
+        9,
+        0,
+        5,
+        0,
+        3,
+        9
+      ],
+      "rule": "new",
+      "sum": 28,
+      "sales": 17587914,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026110",
+      "issue_raw": "26110",
+      "date": "2026-09-22",
+      "weekday": "二",
+      "numbers": [
+        6,
+        2,
+        5,
+        9,
+        6,
+        9,
+        13
+      ],
+      "rule": "new",
+      "sum": 50,
+      "sales": 17175876,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026111",
+      "issue_raw": "26111",
+      "date": "2026-09-25",
+      "weekday": "五",
+      "numbers": [
+        7,
+        8,
+        9,
+        1,
+        0,
+        1,
+        1
+      ],
+      "rule": "new",
+      "sum": 27,
+      "sales": 24560396,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026112",
+      "issue_raw": "26112",
+      "date": "2026-09-27",
+      "weekday": "日",
+      "numbers": [
+        4,
+        2,
+        6,
+        4,
+        1,
+        4,
+        8
+      ],
+      "rule": "new",
+      "sum": 29,
+      "sales": 15775054,
+      "ball_set": 2
+    },
+    {
+      "issue": "2026113",
+      "issue_raw": "26113",
+      "date": "2026-09-29",
+      "weekday": "二",
+      "numbers": [
+        7,
+        0,
+        6,
+        8,
+        7,
+        4,
+        0
+      ],
+      "rule": "new",
+      "sum": 32,
+      "sales": 16144844,
+      "ball_set": 2
+    }
+  ]
+}
